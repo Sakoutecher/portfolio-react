@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { useState, useEffect } from 'react'
 import '../fonts/font-face.css'
 
 const Navbar = ({styles}) => {
@@ -13,9 +12,6 @@ const Navbar = ({styles}) => {
             <Links textColor={styles.colors.text}>Projets</Links>
             <Links textColor={styles.colors.text}>Hardware</Links>
           </LinksContainer>
-          <ToggleContainer>
-            <ToggleTheme />
-          </ToggleContainer>
         </RightPart>
       </NavContainer>
     </Nav>
@@ -53,7 +49,7 @@ const Name = styled.h1`
 
 const RightPart = styled.div`
     height: 100%;
-    width: 50%;
+    width: 40%;
     background-color: green;
     display: flex;
     justify-content: space-between;
@@ -62,18 +58,11 @@ const RightPart = styled.div`
 
 const LinksContainer = styled.div`
     height: 100%;
-    width: 80%;
+    width: 100%;
     background-color: blue;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-`
-
-const ToggleTheme = styled.button`
-    height: 40px;
-    width: 40px;
-    background-color: orange;
-    border-radius: 12px;
 `
 
 const Links = styled.a`
@@ -82,15 +71,6 @@ const Links = styled.a`
     font-family: 'Poppins';
     font-weight: regular;
     cursor: pointer;
-`
-
-const ToggleContainer = styled.div`
-    height: 100%;
-    width: 20%;
-    background-color: purple;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 `
 
 export default Navbar

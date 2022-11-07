@@ -1,11 +1,16 @@
 import React from 'react';
 import Navbar from './partials/Navbar'
+import ToggleTheme from './components/ToggleTheme'
 import MainSection from './section/MainSection'
 import { useState, useEffect } from 'react'
 
 function App() {
 
   const [theme, setTheme] = useState('dark')
+
+  const handleChange = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark')
+  }
 
   const externalLinks = {
     gmail: 'hcampospro@gmail.com',
@@ -34,10 +39,14 @@ function App() {
   const colorsThemeToggle = {
     black: {
       dark : '#815AD5',
+      hoverDark : '#6B46C1',
+      svg : 'moon'
     },
 
     light: {
       light : '#FBD38D',
+      hoverLight : '#F6AD55',
+      svg : 'sun'
     }
   }
 
@@ -47,6 +56,8 @@ function App() {
       background: theme === 'light' ? colors.light.background : colors.black.background,
       highlight: theme === 'light' ? colors.light.hightlight : colors.black.highlight,
       toggleColor: theme === 'light' ? colorsThemeToggle.black.dark : colorsThemeToggle.light.light,
+      toggleColorHover: theme === 'light' ? colorsThemeToggle.black.hoverDark : colorsThemeToggle.light.hoverLight,
+      toggleSymbol: theme === 'light' ? colorsThemeToggle.black.svg : colorsThemeToggle.light.svg,
     },
   }
 
@@ -56,7 +67,8 @@ function App() {
 
   return (
     <>
-      <Navbar styles={styles} />
+      <Navbar styles={styles}></Navbar>
+      <ToggleTheme onClick={handleChange} styles={styles}/>
       <MainSection />
     </>
   );
