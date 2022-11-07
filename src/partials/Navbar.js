@@ -3,7 +3,7 @@ import '../fonts/font-face.css'
 
 const Navbar = ({styles}) => {
   return (
-    <Nav background={styles.colors.background}>
+    <Nav background={styles.colors.highlight}>
       <NavContainer>
         <Name textColor={styles.colors.text}>👋  hcampos</Name>
         <RightPart>
@@ -24,7 +24,7 @@ const Nav = styled.nav`
     position: fixed;
     top: 0;
     backdrop-filter: blur(5px);
-    background-color: red;
+    background-color: ${props => props.background};
     //opacity: 0.5;
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@ const Nav = styled.nav`
 const NavContainer = styled.div`
     width: 60%;
     height: 100%;
-    background-color: yellow;
+    //background-color: yellow;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,7 @@ const Name = styled.h1`
 const RightPart = styled.div`
     height: 100%;
     width: 40%;
-    background-color: green;
+    //background-color: green;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,7 +59,7 @@ const RightPart = styled.div`
 const LinksContainer = styled.div`
     height: 100%;
     width: 100%;
-    background-color: blue;
+    //background-color: blue;
     display: flex;
     justify-content: space-evenly;
     align-items: center;

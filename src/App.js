@@ -6,11 +6,12 @@ import { useState, useEffect } from 'react'
 
 function App() {
 
-  const [theme, setTheme] = useState('dark')
-
-  const handleChange = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark')
+  const handleClick = () => {
+    //setTheme(theme === 'dark' ? 'light' : 'dark')
+    console.log("Hello world: :)")
   }
+
+  const [theme, setTheme] = useState('dark')
 
   const externalLinks = {
     gmail: 'hcampospro@gmail.com',
@@ -68,7 +69,7 @@ function App() {
   return (
     <>
       <Navbar styles={styles}></Navbar>
-      <ToggleTheme onClick={handleChange} styles={styles}/>
+      <ToggleTheme onClick={handleClick} styles={styles}/>
       <MainSection />
     </>
   );
