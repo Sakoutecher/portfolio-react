@@ -1,13 +1,8 @@
 @font-face {
-    font-family: 'Cooper Black Regular';
+    font-family: 'Cooper Black';
     font-style: normal;
     font-weight: normal;
-    src: local('Cooper Black Regular'), url('COOPBL.woff') format('woff');
+    src: local('Cooper Black Regular'), url('Cooper Black Regular.ttf') format('ttf');
 }
 
-@font-face {
-    font-family: 'Poppins Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Poppins Regular'), url('Poppins-Regular.woff') format('woff');
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');

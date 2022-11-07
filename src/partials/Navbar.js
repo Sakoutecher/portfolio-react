@@ -1,11 +1,6 @@
 import styled from 'styled-components'
 import { useState, useEffect } from 'react'
 import '../fonts/font-face.css'
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-} from 'react-router-dom'
 
 const Navbar = ({styles}) => {
   return (
@@ -14,9 +9,13 @@ const Navbar = ({styles}) => {
         <Name textColor={styles.colors.text}>👋  hcampos</Name>
         <RightPart>
           <LinksContainer>
-    
+            <Links textColor={styles.colors.text}>Parcours</Links>
+            <Links textColor={styles.colors.text}>Projets</Links>
+            <Links textColor={styles.colors.text}>Hardware</Links>
           </LinksContainer>
-          <ToggleTheme></ToggleTheme>
+          <ToggleContainer>
+            <ToggleTheme />
+          </ToggleContainer>
         </RightPart>
       </NavContainer>
     </Nav>
@@ -49,12 +48,12 @@ const Name = styled.h1`
     font-size: 20px;
     letter-spacing: 4px;
     color: ${props => props.textColor};
-    font-family: Cooper Black Regular;
+    font-family: Cooper Black;
 `
 
 const RightPart = styled.div`
     height: 100%;
-    width: 60%;
+    width: 50%;
     background-color: green;
     display: flex;
     justify-content: space-between;
@@ -63,19 +62,35 @@ const RightPart = styled.div`
 
 const LinksContainer = styled.div`
     height: 100%;
-    width: 70%;
+    width: 80%;
     background-color: blue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 `
 
 const ToggleTheme = styled.button`
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background-color: orange;
+    border-radius: 12px;
 `
 
 const Links = styled.a`
-    font-size: 1em;
-    color: white;
+    font-size: 16px;
+    color: ${props => props.textColor};
+    font-family: 'Poppins';
+    font-weight: regular;
+    cursor: pointer;
+`
+
+const ToggleContainer = styled.div`
+    height: 100%;
+    width: 20%;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 export default Navbar

@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './partials/Navbar'
+import MainSection from './section/MainSection'
 import { useState, useEffect } from 'react'
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
       text: theme === 'light' ? colors.light.textColor : colors.black.textColor,
       background: theme === 'light' ? colors.light.background : colors.black.background,
       highlight: theme === 'light' ? colors.light.hightlight : colors.black.highlight,
+      toggleColor: theme === 'light' ? colorsThemeToggle.black.dark : colorsThemeToggle.light.light,
     },
   }
 
@@ -53,8 +55,13 @@ function App() {
   }, [styles.colors.background])
 
   return (
-    <Navbar styles={styles} />
+    <>
+      <Navbar styles={styles} />
+      <MainSection />
+    </>
   );
 }
 
 export default App;
+
+
