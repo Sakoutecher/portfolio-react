@@ -7,7 +7,7 @@ function Contact({styles, externalLinks}) {
     <ContactContainer>
       <Center>
         <Top>
-          <Title text={'Contact'} styles={styles} />
+          <Title text={'📲 Contact'} styles={styles} />
         </Top>
       </Center>
     </ContactContainer>
