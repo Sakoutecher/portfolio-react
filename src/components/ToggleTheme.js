@@ -2,12 +2,17 @@ import React from 'react';
 import styled from 'styled-components'
 
 function ToggleTheme({styles, setTheme, theme}) {
+
     const handleChange = () => {
         setTheme(theme === 'dark' ? 'light' : 'dark')
     }
 
     return (
-        <ToggleBackground onClick={handleChange} hoverBackground={styles.colors.toggleColorHover} colorBackground={styles.colors.toggleColor}>
+        <ToggleBackground 
+            onClick={handleChange} 
+            hoverBackground={styles.colors.toggleColorHover} 
+            colorBackground={styles.colors.toggleColor}
+        >
             <ToggleLogo src={`./toggle-button/${styles.colors.toggleSymbol}.svg`} alt={styles.colors.toggleSymbol} />
         </ToggleBackground>
     );
