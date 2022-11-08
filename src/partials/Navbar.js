@@ -53,7 +53,7 @@ const Name = styled.h1`
 
 const RightPart = styled.div`
     height: 100%;
-    width: 60%;
+    width: 50%;
     //background-color: green;
     display: flex;
     justify-content: space-between;
@@ -62,7 +62,7 @@ const RightPart = styled.div`
 
 const LinksContainer = styled.div`
     height: 100%;
-    width: 80%;
+    width: 90%;
     //background-color: blue;
     display: flex;
     justify-content: space-evenly;
@@ -79,9 +79,9 @@ const Links = styled.a`
 
 const Toggle = styled.div`
     height: 100%;
-    width: 20%;
+    width: 10%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 `
 

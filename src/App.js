@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './partials/Navbar'
-import MainSection from './section/MainSection'
+import Contact from './section/Contact'
 import { useState, useEffect } from 'react'
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
     black: {
       background : '#21252D',
       highlight : '#272C35',
-      navbar : '#272C35',
+      navbar : '#272C35D9',
       textColor : '#D9D9D9',
     },
 
@@ -66,7 +66,7 @@ function App() {
   return (
     <>
       <Navbar theme={theme} setTheme={setTheme} styles={styles}></Navbar>
-      <MainSection />
+      <Contact links={externalLinks} styles={styles} />
     </>
   );
 }

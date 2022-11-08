@@ -8,7 +8,7 @@ function ToggleTheme({styles, setTheme, theme}) {
 
     return (
         <ToggleBackground onClick={handleChange} hoverBackground={styles.colors.toggleColorHover} colorBackground={styles.colors.toggleColor}>
-            <ToggleLogo src={`./${styles.colors.toggleSymbol}.svg`} alt={styles.colors.toggleSymbol} />
+            <ToggleLogo src={`./toggle-button/${styles.colors.toggleSymbol}.svg`} alt={styles.colors.toggleSymbol} />
         </ToggleBackground>
     );
 }
