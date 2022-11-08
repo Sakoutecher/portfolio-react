@@ -1,17 +1,11 @@
 import React from 'react';
 import Navbar from './partials/Navbar'
-import ToggleTheme from './components/ToggleTheme'
 import MainSection from './section/MainSection'
 import { useState, useEffect } from 'react'
 
 function App() {
 
   const [theme, setTheme] = useState('dark')
-
-  const changeTheme = ()=>{
-    //setTheme = 'light';
-    console.log('Bonjour le monde :)')
-  }
 
   const externalLinks = {
     gmail: 'hcampospro@gmail.com',
@@ -23,12 +17,14 @@ function App() {
     black: {
       background : '#21252D',
       highlight : '#272C35',
+      navbar : '#272C35',
       textColor : '#D9D9D9',
     },
 
     light: {
       background : '#E3D0B7',
       hightlight : '#F4EDE4',
+      navbar : '#F4EDEB3',
       textColor : '#1E1E1E',
     },
 
@@ -56,6 +52,7 @@ function App() {
       text: theme === 'light' ? colors.light.textColor : colors.black.textColor,
       background: theme === 'light' ? colors.light.background : colors.black.background,
       highlight: theme === 'light' ? colors.light.hightlight : colors.black.highlight,
+      navbar: theme === 'light' ? colors.light.navbar : colors.black.navbar,
       toggleColor: theme === 'light' ? colorsThemeToggle.black.dark : colorsThemeToggle.light.light,
       toggleColorHover: theme === 'light' ? colorsThemeToggle.black.hoverDark : colorsThemeToggle.light.hoverLight,
       toggleSymbol: theme === 'light' ? colorsThemeToggle.black.svg : colorsThemeToggle.light.svg,
@@ -68,8 +65,7 @@ function App() {
 
   return (
     <>
-      <Navbar styles={styles}></Navbar>
-      <ToggleTheme onClick={changeTheme} styles={styles}/>
+      <Navbar theme={theme} setTheme={setTheme} styles={styles}></Navbar>
       <MainSection />
     </>
   );

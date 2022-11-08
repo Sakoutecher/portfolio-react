@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import ToggleTheme from '../components/ToggleTheme'
 import '../fonts/font-face.css'
 
-const Navbar = ({styles}) => {
+const Navbar = ({styles, setTheme, theme}) => {
   return (
-    <Nav background={styles.colors.highlight}>
+    <Nav background={styles.colors.navbar}>
       <NavContainer>
         <Name textColor={styles.colors.text}>👋  hcampos</Name>
         <RightPart>
@@ -12,6 +13,9 @@ const Navbar = ({styles}) => {
             <Links textColor={styles.colors.text}>Projets</Links>
             <Links textColor={styles.colors.text}>Hardware</Links>
           </LinksContainer>
+          <Toggle>
+            <ToggleTheme theme={theme} setTheme={setTheme} styles={styles} />
+          </Toggle>
         </RightPart>
       </NavContainer>
     </Nav>
@@ -49,7 +53,7 @@ const Name = styled.h1`
 
 const RightPart = styled.div`
     height: 100%;
-    width: 40%;
+    width: 60%;
     //background-color: green;
     display: flex;
     justify-content: space-between;
@@ -58,7 +62,7 @@ const RightPart = styled.div`
 
 const LinksContainer = styled.div`
     height: 100%;
-    width: 100%;
+    width: 80%;
     //background-color: blue;
     display: flex;
     justify-content: space-evenly;
@@ -71,6 +75,14 @@ const Links = styled.a`
     font-family: 'Poppins';
     font-weight: regular;
     cursor: pointer;
+`
+
+const Toggle = styled.div`
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 export default Navbar

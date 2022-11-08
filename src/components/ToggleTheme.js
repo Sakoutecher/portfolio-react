@@ -1,9 +1,13 @@
 import React from 'react';
 import styled from 'styled-components'
 
-function ToggleTheme({styles}) {
+function ToggleTheme({styles, setTheme, theme}) {
+    const handleChange = () => {
+        setTheme(theme === 'dark' ? 'light' : 'dark')
+    }
+
     return (
-        <ToggleBackground hoverBackground={styles.colors.toggleColorHover} colorBackground={styles.colors.toggleColor}>
+        <ToggleBackground onClick={handleChange} hoverBackground={styles.colors.toggleColorHover} colorBackground={styles.colors.toggleColor}>
             <ToggleLogo src={`./${styles.colors.toggleSymbol}.svg`} alt={styles.colors.toggleSymbol} />
         </ToggleBackground>
     );
@@ -20,9 +24,6 @@ const ToggleBackground = styled.button`
     justify-content: center;
     align-items: center;
     transition: background 300ms ease;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
 
     &:hover {
         background-color: ${props => props.hoverBackground};
