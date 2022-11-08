@@ -59,8 +59,15 @@ function App() {
 
   return (
     <>
-      <Navbar theme={theme} setTheme={setTheme} styles={styles}></Navbar>
-      <Contact colors={colors} styles={styles} />
+      <Navbar 
+        theme={theme} 
+        setTheme={setTheme} 
+        styles={styles}
+      />
+      <Contact 
+        colors={colors} 
+        styles={styles} 
+      />
     </>
   );
 }

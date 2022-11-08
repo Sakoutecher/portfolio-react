@@ -25,8 +25,8 @@ function Contact({styles, colors}) {
 
   const externalLinks = [
     {
-      title: 'gmail',
-      link: 'mailto:hcampospro@gmail.com',
+      title: 'github',
+      link: 'https://github.com/Sakoutecher',
     },
 
     {
@@ -35,26 +35,38 @@ function Contact({styles, colors}) {
     },
 
     {
-      title: 'github',
-      link: 'https://github.com/Sakoutecher',
-    }
+      title: 'gmail',
+      link: 'mailto:hcampospro@gmail.com',
+    },
   ]
 
   return (
     <ContactContainer>
       <Center>
         <Top>
-          <Title text={'📲 Contact'} styles={styles} />
+          <Title 
+            text={'📲 Contact'} 
+            styles={styles} 
+          />
         </Top>
         <Bottom>
           {sectionText.map(({ key, text }) => {
             return (
-              <Text key={key} text={text} styles={styles}/>
+              <Text 
+                key={key} 
+                text={text} 
+                styles={styles}
+              />
             )
           })}
           <SocialLinksContainer>
           {externalLinks.map(({ title, link }) => (
-            <SocialLinks key={title} colorLinks={colors.colorLinks.primary} alt={title} links={link} />
+            <SocialLinks 
+              key={title} 
+              colorLinks={colors.colorLinks.primary} 
+              alt={title} 
+              links={link} 
+            />
           ))}
           </SocialLinksContainer>
         </Bottom>

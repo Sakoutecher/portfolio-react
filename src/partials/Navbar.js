@@ -14,7 +14,11 @@ const Navbar = ({styles, setTheme, theme}) => {
             <Links textColor={styles.colors.text}>Hardware</Links>
           </LinksContainer>
           <Toggle>
-            <ToggleTheme theme={theme} setTheme={setTheme} styles={styles} />
+            <ToggleTheme 
+              theme={theme} 
+              setTheme={setTheme} 
+              styles={styles} 
+            />
           </Toggle>
         </RightPart>
       </NavContainer>

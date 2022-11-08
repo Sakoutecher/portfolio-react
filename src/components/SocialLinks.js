@@ -3,8 +3,15 @@ import styled from 'styled-components'
 
 function SocialLinks({links, alt, colorLinks}) {
     return (
-        <BackLinks background={colorLinks} target={'_blank'} href={links}>
-            <ImgLinks src={`./social-links/${alt}.svg`} alt={alt} />
+        <BackLinks 
+            background={colorLinks} 
+            target={'_blank'} 
+            href={links}
+        >
+            <ImgLinks 
+                src={`./social-links/${alt}.svg`} 
+                alt={alt} 
+            />
         </BackLinks>
     );
 }
