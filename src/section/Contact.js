@@ -6,12 +6,22 @@ import styled from 'styled-components'
 
 function Contact({styles, colors}) {
 
-  const sectionText = {
-    title : '📲 Contact',
-    firstLine : 'Thank you for visiting ! 🙂',
-    secondLine : 'If you would like to contact me this happens just below.',
-    thirdLine : 'Have a good day 🚀',
-  }
+  const sectionText = [
+    {
+      key: 'first',
+      text: 'Thank you for visiting ! 🙂',
+    }, 
+
+    {
+      key: 'second',
+      text: 'If you would like to contact me this happens just below.',
+    }, 
+    
+    {
+      key: 'third',
+      text: 'Have a good day 🚀',
+    },
+  ]
 
   const externalLinks = [
     {
@@ -34,12 +44,14 @@ function Contact({styles, colors}) {
     <ContactContainer>
       <Center>
         <Top>
-          <Title text={sectionText.title} styles={styles} />
+          <Title text={'📲 Contact'} styles={styles} />
         </Top>
         <Bottom>
-          <Text text={sectionText.firstLine} styles={styles}/>
-          <Text text={sectionText.secondLine} styles={styles}/>
-          <Text text={sectionText.thirdLine} styles={styles}/>
+          {sectionText.map(({ key, text }) => {
+            return (
+              <Text key={key} text={text} styles={styles}/>
+            )
+          })}
           <SocialLinksContainer>
           {externalLinks.map(({ title, link }) => (
             <SocialLinks key={title} colorLinks={colors.colorLinks.primary} alt={title} links={link} />
