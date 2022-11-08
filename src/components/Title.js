@@ -11,7 +11,7 @@ const Titleh2 = styled.h2`
     font-family: Cooper Black;
     color: ${props => props.color};
     position: relative;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
 
     &:before {

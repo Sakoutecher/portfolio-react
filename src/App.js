@@ -7,24 +7,18 @@ function App() {
 
   const [theme, setTheme] = useState('dark')
 
-  const externalLinks = {
-    gmail: 'hcampospro@gmail.com',
-    linkedin: 'https://www.linkedin.com/in/hugo-campos-782702203/',
-    github: 'https://github.com/Sakoutecher',
-  }
-
   const colors = {
     black: {
       background : '#21252D',
       highlight : '#272C35',
-      navbar : '#272C35D9',
+      navbar : '#272C35B0',
       textColor : '#D9D9D9',
     },
 
     light: {
       background : '#E3D0B7',
       hightlight : '#F4EDE4',
-      navbar : '#F4EDEB3',
+      navbar : '#F4EDEB0',
       textColor : '#1E1E1E',
     },
 
@@ -66,7 +60,7 @@ function App() {
   return (
     <>
       <Navbar theme={theme} setTheme={setTheme} styles={styles}></Navbar>
-      <Contact links={externalLinks} styles={styles} />
+      <Contact colors={colors} styles={styles} />
     </>
   );
 }
