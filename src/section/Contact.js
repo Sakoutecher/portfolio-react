@@ -13,22 +13,22 @@ function Contact({styles, colors}) {
     thirdLine : 'Have a good day 🚀',
   }
 
-  const externalLinks = {
-    gmail: {
+  const externalLinks = [
+    {
       title: 'gmail',
       link: 'mailto:hcampospro@gmail.com',
     },
 
-    linkedin: {
+    {
       title: 'linkedin',
       link: 'https://www.linkedin.com/in/hugo-campos-782702203/',
     },
 
-    github: {
+    {
       title: 'github',
       link: 'https://github.com/Sakoutecher',
     }
-  }
+  ]
 
   return (
     <ContactContainer>
@@ -41,9 +41,9 @@ function Contact({styles, colors}) {
           <Text text={sectionText.secondLine} styles={styles}/>
           <Text text={sectionText.thirdLine} styles={styles}/>
           <SocialLinksContainer>
-            <SocialLinks colorLinks={colors.colorLinks.primary} alt={externalLinks.github.title} links={externalLinks.github.link} />
-            <SocialLinks colorLinks={colors.colorLinks.primary} alt={externalLinks.linkedin.title} links={externalLinks.linkedin.link} />
-            <SocialLinks colorLinks={colors.colorLinks.primary} alt={externalLinks.gmail.title} links={externalLinks.gmail.link} />
+          {externalLinks.map(({ title, link }) => (
+            <SocialLinks key={title} colorLinks={colors.colorLinks.primary} alt={title} links={link} />
+          ))}
           </SocialLinksContainer>
         </Bottom>
       </Center>
