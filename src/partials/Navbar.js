@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { keyframes } from 'styled-components'
 import ToggleTheme from '../components/ToggleTheme'
-import '../css/anim.css'
 
 const Navbar = ({styles, setTheme, theme}) => {
   return (
