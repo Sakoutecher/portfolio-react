@@ -31,12 +31,13 @@ const Nav = styled.nav`
     height: 10vh;
     position: fixed;
     top: 0;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(6px);
     background-color: ${props => props.background};
     //opacity: 0.5;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 `
 
 const NavContainer = styled.div`

@@ -105,11 +105,12 @@ const Top = styled.div`
 `
 
 const Bottom = styled.div`
-    height: 70%; 
+    height: 80%; 
     width: 100%;
     //background-color: purple;
     padding-left: 3em;
     padding-right: 3em;
+    margin-top: 30px;
 `
 
 const SocialLinksContainer = styled.div`

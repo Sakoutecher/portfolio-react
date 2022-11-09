@@ -13,6 +13,7 @@ const Titleh2 = styled.h2`
     position: relative;
     font-size: 14px;
     text-transform: uppercase;
+    letter-spacing: 2px;
 
     &:before {
         content: '';

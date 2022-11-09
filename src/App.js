@@ -11,14 +11,14 @@ function App() {
   const colors = {
     black: {
       background : '#21252D',
-      highlight : '#272C35',
+      highlight : '#272C35B0',
       navbar : '#272C3580',
       textColor : '#D9D9D9',
     },
 
     light: {
       background : '#E3D0B7',
-      hightlight : '#F4EDE4',
+      hightlight : '#F4EDE4B0',
       navbar : '#F4EDEB0',
       textColor : '#1E1E1E',
     },
@@ -65,7 +65,9 @@ function App() {
         setTheme={setTheme} 
         styles={styles}
       />
-      <Welcome />
+      <Welcome 
+        styles={styles}
+      />
       <Contact 
         colors={colors} 
         styles={styles} 
