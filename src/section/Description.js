@@ -101,7 +101,7 @@ const DescriptionContainer = styled.div`
     height: 80vh;
     width: 100vw;
     //background-color: purple;
-    margin-top: 10vh;
+    margin-top: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './partials/Navbar'
 import Welcome from './section/Welcome';
 import Description from './section/Description';
+import Technologies from './section/Technologies';
 import Contact from './section/Contact'
 import Footer from './partials/Footer';
 import { useState, useEffect } from 'react'
@@ -73,6 +74,9 @@ function App() {
       <Description 
         styles={styles}
         colors={colors}
+      />
+      <Technologies 
+        styles={styles}
       />
       <Contact 
         colors={colors} 
