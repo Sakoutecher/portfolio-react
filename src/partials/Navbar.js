@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import ToggleTheme from '../components/ToggleTheme'
-import '../fonts/font-face.css'
 
 const Navbar = ({styles, setTheme, theme}) => {
   return (

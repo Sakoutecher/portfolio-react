@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './partials/Navbar'
 import Welcome from './section/Welcome';
 import Contact from './section/Contact'
+import Footer from './partials/Footer';
 import { useState, useEffect } from 'react'
 
 function App() {
@@ -71,6 +72,9 @@ function App() {
       <Contact 
         colors={colors} 
         styles={styles} 
+      />
+      <Footer 
+        styles={styles}
       />
     </>
   );
