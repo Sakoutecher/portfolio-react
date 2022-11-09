@@ -1,11 +1,13 @@
 import styled from 'styled-components'
+import { keyframes } from 'styled-components'
 import ToggleTheme from '../components/ToggleTheme'
+import '../css/anim.css'
 
 const Navbar = ({styles, setTheme, theme}) => {
   return (
     <Nav background={styles.colors.navbar}>
       <NavContainer>
-        <Name textColor={styles.colors.text}>👋  hcampos</Name>
+        <Name textColor={styles.colors.text}><Hand>👋 </Hand> hcampos</Name>
         <RightPart>
           <LinksContainer>
             <Links textColor={styles.colors.text}>Parcours</Links>
@@ -24,6 +26,24 @@ const Navbar = ({styles, setTheme, theme}) => {
     </Nav>
   )
 }
+
+const swing = keyframes`
+  20% {
+    transform: rotate3d(0,0,1,15deg);
+  }
+  40% {
+    transform: rotate3d(0,0,1,-10deg);
+  }
+  60% {
+    transform: rotate3d(0,0,1,5deg);
+  }
+  80% {
+    transform: rotate3d(0,0,1,-5deg);
+  }
+  100% {
+    transform: rotate3d(0,0,1,0);
+  }
+`
 
 const Nav = styled.nav`
     width: 100%;
@@ -53,6 +73,13 @@ const Name = styled.h1`
     letter-spacing: 4px;
     color: ${props => props.textColor};
     font-family: Cooper Black;
+    display: flex;
+    align-items: center;
+`
+
+const Hand = styled.div`
+  animation: ${swing} 2s ease-in-out infinite;
+  margin-right: 0.3em;
 `
 
 const RightPart = styled.div`
