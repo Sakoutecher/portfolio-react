@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './partials/Navbar'
 import Welcome from './section/Welcome';
+import Description from './section/Description';
 import Contact from './section/Contact'
 import Footer from './partials/Footer';
 import { useState, useEffect } from 'react'
@@ -67,6 +68,9 @@ function App() {
         styles={styles}
       />
       <Welcome 
+        styles={styles}
+      />
+      <Description 
         styles={styles}
       />
       <Contact 

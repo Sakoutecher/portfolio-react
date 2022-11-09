@@ -79,7 +79,7 @@ const ContactContainer = styled.div`
     height: 30vh;
     width: 100vw;
     //background-color: red;
-    //margin-top: 10vh;
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
