@@ -72,6 +72,7 @@ function App() {
       />
       <Description 
         styles={styles}
+        colors={colors}
       />
       <Contact 
         colors={colors} 
