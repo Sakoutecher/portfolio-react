@@ -88,6 +88,7 @@ function Description({ styles, colors }) {
                     </ButtonLink>
                     <Resume 
                         styles={styles} 
+                        colors={colors}
                     />
                 </BottomBottom>
             </Bottom>
