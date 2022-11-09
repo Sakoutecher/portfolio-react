@@ -45,7 +45,7 @@ const Center = styled.div`
 const Hightlight = styled.h1`
     background: ${props => props.background};
     height: 12%;
-    width: 80%;
+    width: 70%;
     border-radius: 15px;
     position: absolute;
     bottom: 15%;
@@ -54,7 +54,7 @@ const Hightlight = styled.h1`
     color: ${props => props.textColor};
     font-family: Poppins;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
