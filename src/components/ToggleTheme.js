@@ -1,10 +1,15 @@
 import React from 'react';
 import styled from 'styled-components'
+import { keyframes } from 'styled-components'
+import { useState } from 'react'
 
 function ToggleTheme({styles, setTheme, theme}) {
 
+    const [active, setActive] = useState(false)
+
     const handleChange = () => {
         setTheme(theme === 'dark' ? 'light' : 'dark')
+        setActive(true)
     }
 
     return (
@@ -12,6 +17,8 @@ function ToggleTheme({styles, setTheme, theme}) {
             onClick={handleChange} 
             hoverBackground={styles.colors.toggleColorHover} 
             colorBackground={styles.colors.toggleColor}
+            onAnimationEnd={() => setActive(false)}
+            isActive={active}
         >
             <ToggleLogo 
                 src={`./toggle-button/${styles.colors.toggleSymbol}.svg`} 
@@ -20,6 +27,18 @@ function ToggleTheme({styles, setTheme, theme}) {
         </ToggleBackground>
     );
 }
+
+const slideDown = keyframes`
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+`
 
 const ToggleBackground = styled.button`
     height: 40px;
@@ -32,6 +51,7 @@ const ToggleBackground = styled.button`
     justify-content: center;
     align-items: center;
     transition: background 300ms ease;
+    animation: ${props => props.isActive ? slideDown : null} 0.3s linear;
 
     &:hover {
         background-color: ${props => props.hoverBackground};
