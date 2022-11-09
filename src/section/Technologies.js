@@ -14,7 +14,7 @@ function Technologies({ styles }) {
             />
             </Top>
             <Bottom>
-            
+                <TechnoCateg styles={styles} />
             </Bottom>
         </Center>
     </TechnologiesContainer>
@@ -22,7 +22,7 @@ function Technologies({ styles }) {
 }
 
 const TechnologiesContainer = styled.div`
-    height: 85vh;
+    height: 90vh;
     width: 100vw;
     background-color: purple;
     margin-top: 15vh;

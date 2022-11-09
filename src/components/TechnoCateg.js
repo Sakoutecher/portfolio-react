@@ -1,18 +1,19 @@
 import React from 'react';
+import Text from '../components/Text'
 import styled from 'styled-components'
 
-function TechnoCateg({}) {
+function TechnoCateg() {
     return (
-        <Paragraph></Paragraph>
+        <Categ>
+
+        </Categ>
     );
 }
 
-const Paragraph = styled.p`
-    font-family: Poppins;
-    color: ${props => props.color};
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 1px;
+const Categ = styled.p`
+    width: 100%;
+    background-color: green;
+    height: 20%;
 `
 
 export default TechnoCateg;
