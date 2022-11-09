@@ -24,7 +24,7 @@ function Technologies({ styles }) {
 const TechnologiesContainer = styled.div`
     height: 90vh;
     width: 100vw;
-    background-color: purple;
+    //background-color: purple;
     margin-top: 15vh;
     display: flex;
     justify-content: center;
@@ -34,13 +34,13 @@ const TechnologiesContainer = styled.div`
 const Center = styled.div`
     height: 100%;
     width: 60%;
-    background-color: blue;
+    //background-color: blue;
 `
 
 const Top = styled.div`
     height: 10%;
     width: 100%;
-    background-color: yellow;
+    //background-color: yellow;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -49,7 +49,7 @@ const Top = styled.div`
 const Bottom = styled.div`
     height: 90%; 
     width: 100%;
-    background-color: orange;
+    //background-color: orange;
     padding-left: 3em;
     padding-right: 3em;
     margin-top: 30px;
