@@ -1,5 +1,6 @@
 import React from 'react';
 import Avatar from '../components/Avatar';
+import Resume from '../components/Resume'
 import Text from '../components/Text'
 import Title from '../components/Title';
 import styled from 'styled-components'
@@ -85,6 +86,9 @@ function Description({ styles, colors }) {
                     >
                         🚧  See my projects 
                     </ButtonLink>
+                    <Resume 
+                        styles={styles} 
+                    />
                 </BottomBottom>
             </Bottom>
         </Center>
@@ -142,6 +146,7 @@ const Name = styled.h1`
     font-family: Cooper Black;
     color: ${props => props.colorText};
     font-size: 28px;
+    letter-spacing: 2px;
 `
 
 const TopMiddle = styled.div`
