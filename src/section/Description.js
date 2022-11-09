@@ -1,4 +1,5 @@
 import React from 'react';
+import Avatar from '../components/Avatar';
 import Text from '../components/Text'
 import styled from 'styled-components'
 
@@ -14,6 +15,7 @@ function Description({ styles }) {
                         text={'(Student in web development at Niort)'} 
                     />
                 </RightTop>
+                <Avatar styles={styles} />
             </Top>
             <Middle>
 
