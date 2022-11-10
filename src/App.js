@@ -22,7 +22,7 @@ function App() {
     light: {
       background : '#E3D0B7',
       hightlight : '#F4EDE4B0',
-      navbar : '#F4EDEB0',
+      navbar : '#dbc7adb0',
       textColor : '#1E1E1E',
     },
 
