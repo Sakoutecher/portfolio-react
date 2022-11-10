@@ -9,9 +9,15 @@ const Navbar = ({styles, setTheme, theme}) => {
         <Name textColor={styles.colors.text}><Hand>👋 </Hand> hcampos</Name>
         <RightPart>
           <LinksContainer>
-            <Links textColor={styles.colors.text}>Parcours</Links>
-            <Links textColor={styles.colors.text}>Projets</Links>
-            <Links textColor={styles.colors.text}>Hardware</Links>
+            <UnderlineContainer>
+              <Links textColor={styles.colors.text}>Parcours</Links>
+            </UnderlineContainer>
+            <UnderlineContainer>
+              <Links textColor={styles.colors.text}>Projets</Links>
+            </UnderlineContainer>
+            <UnderlineContainer>
+              <Links textColor={styles.colors.text}>Hardware</Links>
+            </UnderlineContainer>
           </LinksContainer>
           <Toggle>
             <ToggleTheme 
@@ -97,6 +103,20 @@ const LinksContainer = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+`
+
+const UnderlineContainer = styled.div`
+    position: relative;
+
+    &:before {
+      content: ''
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background-color: red;
+    }
 `
 
 const Links = styled.a`
