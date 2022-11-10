@@ -2,19 +2,17 @@ import React from 'react';
 import Text from '../components/Text'
 import styled from 'styled-components'
 
-function TechnoCateg({ styles }) {
+function TechnoCateg({ styles, title, links }) {
     return (
         <Categ>
-            <Text styles={styles} text={'👀 FrontEnd'} />
-            <Line />
+            <Text styles={styles} text={title} />
+            <Line color={styles.colors.text} />
             <Container>
-                <img src='https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white' alt='html' />
-                <img src='https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white' alt='css'/>
-                <img src='https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white' alt='sass'/>
-                <img src='https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E' alt='javascript'/>
-                <img src='https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white' alt='typescript'/>
+                {links.map(({ title, link }) => (
+                    <img key={title} src={link} alt={title} />
+                ))}
             </Container>
-            <Line />
+            <Line color={styles.colors.text} />
         </Categ>
     );
 }
@@ -22,11 +20,12 @@ function TechnoCateg({ styles }) {
 const Categ = styled.p`
     width: 100%;
     //background-color: green;
-    height: 20%;
+    //height: 20%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
+    margin-bottom: 2em;
 `
 
 const Container = styled.div`
@@ -34,8 +33,10 @@ const Container = styled.div`
     height: 70%;
     //background-color: brown;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 1em;
     align-items: center;
+    flex-wrap: wrap;
 `
 
 const Line = styled.hr`
@@ -44,6 +45,7 @@ const Line = styled.hr`
     margin-top: 1.3em;
     margin-bottom: 1.3em;
     padding: 0;
+    color: ${props => props.color};
 `
 
 export default TechnoCateg;

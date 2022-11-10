@@ -140,7 +140,7 @@ function Technologies({ styles }) {
                 <Bottom>
                     <TechnoCateg title={'👀 FrontEnd'} styles={styles} links={TechnoLinksFront} />
                     <TechnoCateg title={'🔐 BackEnd'} styles={styles} links={TechnoLinksBack} />
-                    <TechnoCateg title={'⚙ Framework & Librairies'} styles={styles} links={TechnoLinksFramework} />
+                    <TechnoCateg title={'🧰 Framework & Librairies'} styles={styles} links={TechnoLinksFramework} />
                     <TechnoCateg title={'🌐 Languages'} styles={styles} links={TechnoLinksLanguages} />
                 </Bottom>
             </Center>
@@ -149,7 +149,7 @@ function Technologies({ styles }) {
 }
 
 const TechnologiesContainer = styled.div`
-    height: 90vh;
+    height: 110vh;
     width: 100vw;
     //background-color: purple;
     margin-top: 15vh;
