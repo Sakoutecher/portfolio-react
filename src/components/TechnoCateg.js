@@ -1,6 +1,8 @@
 import React from 'react';
 import Text from '../components/Text'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 function TechnoCateg({ styles, title, links }) {
     return (
@@ -9,7 +11,14 @@ function TechnoCateg({ styles, title, links }) {
             <Line color={styles.colors.text} />
             <Container>
                 {links.map(({ title, link }) => (
-                    <img key={title} src={link} alt={title} />
+                    <SmallContainer>
+                        <Tech key={title} src={link} alt={title} />
+                        <Star background={styles.colors.text}>
+                            <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs'/>
+                            <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs' />
+                            <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs'/>
+                        </Star>
+                    </SmallContainer>
                 ))}
             </Container>
             <Line color={styles.colors.text} />
@@ -46,6 +55,36 @@ const Line = styled.hr`
     margin-bottom: 1.3em;
     padding: 0;
     color: ${props => props.color};
+`
+
+const Tech = styled.img`
+    position: relative;
+    cursor: pointer;
+`
+
+const SmallContainer = styled.div `
+    position: relative;
+    cursor: pointer;
+
+    &:hover ${Star} {
+        opacity: 1;
+    }
+`
+
+const Star = styled.div`
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: ${props => props.background + 'D5'};
+    top: 0; 
+    left: 0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    align-items: center;
+    opacity: 0;
+    transition: all 300ms ease;
 `
 
 export default TechnoCateg;
