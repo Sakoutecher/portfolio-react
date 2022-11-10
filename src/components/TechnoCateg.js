@@ -6,6 +6,7 @@ function TechnoCateg({ styles }) {
     return (
         <Categ>
             <Text styles={styles} text={'👀 FrontEnd'} />
+            <Line />
             <Container>
                 <img src='https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white' alt='html' />
                 <img src='https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white' alt='css'/>
@@ -13,6 +14,7 @@ function TechnoCateg({ styles }) {
                 <img src='https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E' alt='javascript'/>
                 <img src='https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white' alt='typescript'/>
             </Container>
+            <Line />
         </Categ>
     );
 }
@@ -34,6 +36,14 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+`
+
+const Line = styled.hr`
+    width: 100%;
+    opacity: 0.3;
+    margin-top: 1.3em;
+    margin-bottom: 1.3em;
+    padding: 0;
 `
 
 export default TechnoCateg;
