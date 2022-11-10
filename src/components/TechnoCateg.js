@@ -3,6 +3,7 @@ import Text from '../components/Text'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
+import Fade from 'react-reveal/Fade';
 
 function TechnoCateg({ styles, title, links }) {
     return (
@@ -10,35 +11,37 @@ function TechnoCateg({ styles, title, links }) {
             <Text styles={styles} text={title} />
             <Line color={styles.colors.text} />
             <Container>
-                {links.map(({ title, link, star }) => (
-                    <SmallContainer>
+                {links.map(({ title, link, star}) => (
+                    <Fade top>
+                    <SmallContainer key={title}>
                         <Tech key={title} src={link} alt={title} />
                             {star === '1' ?
-                            <Star background={styles.colors.text}> 
+                            <Star key={title} background={styles.colors.text}> 
                                 <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs'/> 
                                 <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs' />
                                 <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs'/>
                             </Star>
                             : star === '2' ?
-                            <Star background={styles.colors.text}> 
+                            <Star key={title} background={styles.colors.text}> 
                                 <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs'/> 
                                 <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs' />
                                 <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs'/>
                             </Star>
                             : star === '3' ?
-                            <Star background={styles.colors.text}> 
+                            <Star key={title} background={styles.colors.text}> 
                                 <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs'/> 
                                 <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs' />
                                 <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs'/>
                             </Star>
                             : 
-                            <Star background={styles.colors.text}> 
+                            <Star key={title} background={styles.colors.text}> 
                                 <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs'/> 
                                 <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs' />
                                 <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs'/>
                             </Star>
                             }
                     </SmallContainer>
+                    </Fade>
                 ))}
             </Container>
             <Line color={styles.colors.text} />
@@ -46,7 +49,7 @@ function TechnoCateg({ styles, title, links }) {
     );
 }
 
-const Categ = styled.p`
+const Categ = styled.div`
     width: 100%;
     //background-color: green;
     //height: 20%;
