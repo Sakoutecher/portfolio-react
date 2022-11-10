@@ -54,6 +54,7 @@ function App() {
       toggleColor: theme === 'light' ? colorsThemeToggle.black.dark : colorsThemeToggle.light.light,
       toggleColorHover: theme === 'light' ? colorsThemeToggle.black.hoverDark : colorsThemeToggle.light.hoverLight,
       toggleSymbol: theme === 'light' ? colorsThemeToggle.black.svg : colorsThemeToggle.light.svg,
+      star: theme === 'light' ? colors.black.textColor : colors.light.textColor,
     },
   }
 

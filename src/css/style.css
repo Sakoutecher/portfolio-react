@@ -18,3 +18,8 @@ path {
         transform: rotate(360deg);
     }
 }
+
+.starfull {
+    stroke: #1E1E1E;
+    stroke-width: 50;
+}

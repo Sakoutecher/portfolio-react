@@ -4,8 +4,15 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import Fade from 'react-reveal/Fade';
+import '../css/style.css'
 
 function TechnoCateg({ styles, title, links }) {
+
+    const starfullstyle = {
+        stroke: styles.colors.star,
+        strokeWidth: '50',
+    }
+
     return (
         <Categ>
             <Text 
@@ -35,6 +42,7 @@ function TechnoCateg({ styles, title, links }) {
                                     icon={faStar} 
                                     color={'#3BC3A4'} 
                                     size='xs'
+                                    style={starfullstyle}
                                 /> 
                                 <FontAwesomeIcon 
                                     icon={faStar} 
@@ -56,11 +64,13 @@ function TechnoCateg({ styles, title, links }) {
                                     icon={faStar} 
                                     color={'#3BC3A4'} 
                                     size='xs'
+                                    style={starfullstyle}
                                 /> 
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={'#3BC3A4'} 
                                     size='xs' 
+                                    style={starfullstyle}
                                 />
                                 <FontAwesomeIcon 
                                     icon={faStar} 
@@ -77,16 +87,19 @@ function TechnoCateg({ styles, title, links }) {
                                     icon={faStar} 
                                     color={'#3BC3A4'} 
                                     size='xs'
+                                    style={starfullstyle}
                                 /> 
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={'#3BC3A4'} 
                                     size='xs' 
+                                    style={starfullstyle}
                                 />
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={'#3BC3A4'} 
                                     size='xs'
+                                    style={starfullstyle}
                                 />
                             </Star>
                             : 
