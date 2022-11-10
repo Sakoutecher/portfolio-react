@@ -4,6 +4,7 @@ import Resume from '../components/Resume'
 import Text from '../components/Text'
 import Title from '../components/Title';
 import styled from 'styled-components'
+import Fade from 'react-reveal/Fade';
 
 function Description({ styles, colors }) {
 
@@ -56,10 +57,12 @@ function Description({ styles, colors }) {
                     />
                 </TopMiddle>
                 <BottomMiddle>
-                    <Text 
-                        styles={styles} 
-                        text={description} 
-                    />
+                    <Fade>
+                       <Text 
+                            styles={styles} 
+                            text={description} 
+                        /> 
+                    </Fade>
                 </BottomMiddle>
             </Middle>
             <Bottom>
@@ -70,6 +73,7 @@ function Description({ styles, colors }) {
                     />
                 </TopBottom>
                 <BottomBottom>
+                    <Fade>
                     {hobbies.map(({ key, text }) => {
                         return (
                         <Text 
@@ -79,6 +83,7 @@ function Description({ styles, colors }) {
                         />
                         )
                     })}
+                    </Fade>
                     <ButtonLink 
                         textColor={colors.light.textColor} 
                         background={colors.colorLinks.primary} 
