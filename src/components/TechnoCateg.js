@@ -10,14 +10,34 @@ function TechnoCateg({ styles, title, links }) {
             <Text styles={styles} text={title} />
             <Line color={styles.colors.text} />
             <Container>
-                {links.map(({ title, link }) => (
+                {links.map(({ title, link, star }) => (
                     <SmallContainer>
                         <Tech key={title} src={link} alt={title} />
-                        <Star background={styles.colors.text}>
-                            <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs'/>
-                            <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs' />
-                            <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs'/>
-                        </Star>
+                            {star === '1' ?
+                            <Star background={styles.colors.text}> 
+                                <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs'/> 
+                                <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs' />
+                                <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs'/>
+                            </Star>
+                            : star === '2' ?
+                            <Star background={styles.colors.text}> 
+                                <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs'/> 
+                                <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs' />
+                                <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs'/>
+                            </Star>
+                            : star === '3' ?
+                            <Star background={styles.colors.text}> 
+                                <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs'/> 
+                                <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs' />
+                                <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs'/>
+                            </Star>
+                            : 
+                            <Star background={styles.colors.text}> 
+                                <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs'/> 
+                                <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs' />
+                                <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs'/>
+                            </Star>
+                            }
                     </SmallContainer>
                 ))}
             </Container>
@@ -62,15 +82,6 @@ const Tech = styled.img`
     cursor: pointer;
 `
 
-const SmallContainer = styled.div `
-    position: relative;
-    cursor: pointer;
-
-    &:hover ${Star} {
-        opacity: 1;
-    }
-`
-
 const Star = styled.div`
     position: absolute;
     width: 100%;
@@ -85,6 +96,18 @@ const Star = styled.div`
     align-items: center;
     opacity: 0;
     transition: all 300ms ease;
+`
+
+const SmallContainer = styled.div `
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+        ${Star} {
+          transform: translateY(-120%);
+          opacity: 1;
+        }        
+    }
 `
 
 export default TechnoCateg;
