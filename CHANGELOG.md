@@ -5,6 +5,9 @@
 
 ### Added
 
+- ➕ Add gsap [[c1abe6b](https://github.com/Sakoutecher/portfolio-react/commit/c1abe6b7e1e2b20e140544aa5d3a0ee70cee4ad4)]
+- ✨ Display star for the technologies from the techno arrays in the techno component [[4cbf99d](https://github.com/Sakoutecher/portfolio-react/commit/4cbf99db3be6cbcca4190aa2e385dd1d284e3e17)]
+- 🔊 Update logs [[b466f4f](https://github.com/Sakoutecher/portfolio-react/commit/b466f4fbcb3a576cda9e16fe2e93065537965c8e)]
 - ➕ Add font awesome [[1197fb4](https://github.com/Sakoutecher/portfolio-react/commit/1197fb4b9f81f154cf71ac4db5b2f4dba5b66b30)]
 - ✨ Display technologies from an array on the technologies component [[7a3a734](https://github.com/Sakoutecher/portfolio-react/commit/7a3a73425e58300b3f95a5fa2959e6a89f45f5ad)]
 - 🔊 Update logs [[2a0b7b0](https://github.com/Sakoutecher/portfolio-react/commit/2a0b7b0e0c61e013e0041c854bdd8b61b9dd3c5e)]
@@ -19,6 +22,8 @@
 
 ### Changed
 
+- 💄 Add border on the star in the technologies component [[ed7add1](https://github.com/Sakoutecher/portfolio-react/commit/ed7add170896177f98d0db78ed0f79d7dafb96ec)]
+- 🎨 Add spaces for the technologies component [[08792b6](https://github.com/Sakoutecher/portfolio-react/commit/08792b62a66e9ce8be33281746685ee7f6a25bdd)]
 - 🏗️ Add a data folder [[dff8f3a](https://github.com/Sakoutecher/portfolio-react/commit/dff8f3a1c42efacedf7e98fd3d55569acf9d8ed9)]
 - 🎨 Add space in the resume component [[9b08ec5](https://github.com/Sakoutecher/portfolio-react/commit/9b08ec505673118a5d7a3b41e38a9014582a0397)]
 - 💄 Finish the style of the description component [[641133e](https://github.com/Sakoutecher/portfolio-react/commit/641133e0e835a0217645bf5dadbf060ff4e7a70d)]
@@ -43,6 +48,9 @@
 
 ### Miscellaneous
 
+- 🚧 Start adding hover on the links in the navbar [[8f03d66](https://github.com/Sakoutecher/portfolio-react/commit/8f03d664f9c1084d1e7393ddceab70a70e1c682a)]
+- 💫 Add animation on the description section [[1b8251d](https://github.com/Sakoutecher/portfolio-react/commit/1b8251d1b9395824848d925fe57e4ceff37284e7)]
+- 💫 Add animation on scroll for the technologies [[0e6979d](https://github.com/Sakoutecher/portfolio-react/commit/0e6979d8efcd4e6bf3a046ee65d05aa8161964ae)]
 - 🚧 Start the div with the start for the technologies [[6575019](https://github.com/Sakoutecher/portfolio-react/commit/6575019d8a6809fa1d46e3ba26f1e08692564990)]
 - 🚧 Continue the technologies component [[834f126](https://github.com/Sakoutecher/portfolio-react/commit/834f126ecd0953dd67ffbdc8b4e89eb515792044)]
 - 🚧 Start the technologies component [[22c8b4f](https://github.com/Sakoutecher/portfolio-react/commit/22c8b4f70032014c69e08e8f73dd875179ccf64b)]
