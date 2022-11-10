@@ -161,10 +161,26 @@ function Technologies({ styles }) {
                 />
                 </Top>
                 <Bottom>
-                    <TechnoCateg title={'👀 FrontEnd'} styles={styles} links={TechnoLinksFront} />
-                    <TechnoCateg title={'🔐 BackEnd'} styles={styles} links={TechnoLinksBack} />
-                    <TechnoCateg title={'🧰 Framework & Librairies'} styles={styles} links={TechnoLinksFramework} />
-                    <TechnoCateg title={'🌐 Languages'} styles={styles} links={TechnoLinksLanguages} />
+                    <TechnoCateg 
+                        title={'👀 FrontEnd'} 
+                        styles={styles} 
+                        links={TechnoLinksFront} 
+                    />
+                    <TechnoCateg 
+                        title={'🔐 BackEnd'} 
+                        styles={styles} 
+                        links={TechnoLinksBack} 
+                    />
+                    <TechnoCateg 
+                        title={'🧰 Framework & Librairies'} 
+                        styles={styles} 
+                        links={TechnoLinksFramework} 
+                    />
+                    <TechnoCateg 
+                        title={'🌐 Languages'} 
+                        styles={styles} 
+                        links={TechnoLinksLanguages} 
+                    />
                 </Bottom>
             </Center>
         </TechnologiesContainer>

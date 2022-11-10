@@ -8,43 +8,116 @@ import Fade from 'react-reveal/Fade';
 function TechnoCateg({ styles, title, links }) {
     return (
         <Categ>
-            <Text styles={styles} text={title} />
-            <Line color={styles.colors.text} />
+            <Text 
+                styles={styles} 
+                text={title} 
+            />
+            <Line 
+                color={styles.colors.text} 
+            />
             <Container>
                 {links.map(({ title, link, star}) => (
                     <Fade top>
-                    <SmallContainer key={title}>
-                        <Tech key={title} src={link} alt={title} />
+                    <SmallContainer 
+                        key={title}
+                    >
+                        <Tech 
+                            key={title} 
+                            src={link} 
+                            alt={title} 
+                        />
                             {star === '1' ?
-                            <Star key={title} background={styles.colors.text}> 
-                                <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs'/> 
-                                <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs' />
-                                <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs'/>
+                            <Star 
+                                key={title} 
+                                background={styles.colors.text}
+                            > 
+                                <FontAwesomeIcon 
+                                    icon={faStar} 
+                                    color={'#3BC3A4'} 
+                                    size='xs'
+                                /> 
+                                <FontAwesomeIcon 
+                                    icon={faStar} 
+                                    color={styles.colors.background} 
+                                    size='xs' 
+                                />
+                                <FontAwesomeIcon 
+                                    icon={faStar} 
+                                    color={styles.colors.background} 
+                                    size='xs'
+                                />
                             </Star>
                             : star === '2' ?
-                            <Star key={title} background={styles.colors.text}> 
-                                <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs'/> 
-                                <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs' />
-                                <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs'/>
+                            <Star 
+                                key={title} 
+                                background={styles.colors.text}
+                            > 
+                                <FontAwesomeIcon 
+                                    icon={faStar} 
+                                    color={'#3BC3A4'} 
+                                    size='xs'
+                                /> 
+                                <FontAwesomeIcon 
+                                    icon={faStar} 
+                                    color={'#3BC3A4'} 
+                                    size='xs' 
+                                />
+                                <FontAwesomeIcon 
+                                    icon={faStar} 
+                                    color={styles.colors.background} 
+                                    size='xs'
+                                />
                             </Star>
                             : star === '3' ?
-                            <Star key={title} background={styles.colors.text}> 
-                                <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs'/> 
-                                <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs' />
-                                <FontAwesomeIcon icon={faStar} color={'#3BC3A4'} size='xs'/>
+                            <Star 
+                                key={title} 
+                                background={styles.colors.text}
+                            > 
+                                <FontAwesomeIcon 
+                                    icon={faStar} 
+                                    color={'#3BC3A4'} 
+                                    size='xs'
+                                /> 
+                                <FontAwesomeIcon 
+                                    icon={faStar} 
+                                    color={'#3BC3A4'} 
+                                    size='xs' 
+                                />
+                                <FontAwesomeIcon 
+                                    icon={faStar} 
+                                    color={'#3BC3A4'} 
+                                    size='xs'
+                                />
                             </Star>
                             : 
-                            <Star key={title} background={styles.colors.text}> 
-                                <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs'/> 
-                                <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs' />
-                                <FontAwesomeIcon icon={faStar} color={styles.colors.background} size='xs'/>
+                            <Star 
+                                key={title} 
+                                background={styles.colors.text}
+                            > 
+                                <FontAwesomeIcon 
+                                    icon={faStar} 
+                                    color={styles.colors.background} 
+                                    size='xs'
+                                /> 
+                                <FontAwesomeIcon 
+                                    icon={faStar} 
+                                    color={styles.colors.background} 
+                                    size='xs' 
+                                />
+                                <FontAwesomeIcon 
+                                    icon={faStar} 
+                                    color={styles.colors.background} 
+                                    size='xs'
+                                />
                             </Star>
                             }
                     </SmallContainer>
                     </Fade>
                 ))}
             </Container>
-            <Line color={styles.colors.text} />
+            <Line 
+                color={styles.colors.text} 
+            />
         </Categ>
     );
 }
