@@ -1,10 +1,13 @@
 # Changelog
 
 <a name="0.1.0"></a>
-## 0.1.0 (2022-11-09)
+## 0.1.0 (2022-11-10)
 
 ### Added
 
+- ➕ Add font awesome [[1197fb4](https://github.com/Sakoutecher/portfolio-react/commit/1197fb4b9f81f154cf71ac4db5b2f4dba5b66b30)]
+- ✨ Display technologies from an array on the technologies component [[7a3a734](https://github.com/Sakoutecher/portfolio-react/commit/7a3a73425e58300b3f95a5fa2959e6a89f45f5ad)]
+- 🔊 Update logs [[2a0b7b0](https://github.com/Sakoutecher/portfolio-react/commit/2a0b7b0e0c61e013e0041c854bdd8b61b9dd3c5e)]
 - 🔊 Update logs [[e4f887c](https://github.com/Sakoutecher/portfolio-react/commit/e4f887c2ed81ae1406521290bceedf4e9c80b4d9)]
 - ✨ Add display text from array in contact section [[f735c68](https://github.com/Sakoutecher/portfolio-react/commit/f735c689a1b4c82b6078e4d874919984c7114824)]
 - ✨ Add display social links from array of objects in contact section [[3e0bbbf](https://github.com/Sakoutecher/portfolio-react/commit/3e0bbbfdab3629fe53c421a740f358cfabcbf0b7)]
@@ -16,6 +19,7 @@
 
 ### Changed
 
+- 🏗️ Add a data folder [[dff8f3a](https://github.com/Sakoutecher/portfolio-react/commit/dff8f3a1c42efacedf7e98fd3d55569acf9d8ed9)]
 - 🎨 Add space in the resume component [[9b08ec5](https://github.com/Sakoutecher/portfolio-react/commit/9b08ec505673118a5d7a3b41e38a9014582a0397)]
 - 💄 Finish the style of the description component [[641133e](https://github.com/Sakoutecher/portfolio-react/commit/641133e0e835a0217645bf5dadbf060ff4e7a70d)]
 - 💄 Finish the style of the avatar component [[07543f9](https://github.com/Sakoutecher/portfolio-react/commit/07543f9ca417e6a6982fd6c43192296e5294263c)]
@@ -33,11 +37,13 @@
 
 ### Removed
 
+- 🔥 Remove the data folder [[71f87ff](https://github.com/Sakoutecher/portfolio-react/commit/71f87fff8e7c3e172554ebc28d6981760dc14872)]
 - 🔥 Remove anim.css it was useless [[10d92f2](https://github.com/Sakoutecher/portfolio-react/commit/10d92f24fb8816f07547148e4dbe880add51a4c8)]
 - 🔥 Remove useless things from create-react-app [[938962f](https://github.com/Sakoutecher/portfolio-react/commit/938962fab7a21b01ce3823dcf42abc3fc422ab96)]
 
 ### Miscellaneous
 
+- 🚧 Start the div with the start for the technologies [[6575019](https://github.com/Sakoutecher/portfolio-react/commit/6575019d8a6809fa1d46e3ba26f1e08692564990)]
 - 🚧 Continue the technologies component [[834f126](https://github.com/Sakoutecher/portfolio-react/commit/834f126ecd0953dd67ffbdc8b4e89eb515792044)]
 - 🚧 Start the technologies component [[22c8b4f](https://github.com/Sakoutecher/portfolio-react/commit/22c8b4f70032014c69e08e8f73dd875179ccf64b)]
 - 💫 Finish the style of resume component and add rotate animation [[df7fb03](https://github.com/Sakoutecher/portfolio-react/commit/df7fb030f80a808d667a2327934e6b98ed446f28)]
