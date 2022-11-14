@@ -8,6 +8,7 @@ import Footer from './partials/Footer'
 import Parcours from './pages/Parcours'
 import Hardware from './pages/Hardware'
 import Project from './pages/Project'
+import CustomCursor from './components/CustomCursor'
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
@@ -68,6 +69,7 @@ function App() {
 
   return (
     <>
+      <CustomCursor styles={styles} />
       <Navbar 
         theme={theme} 
         setTheme={setTheme} 

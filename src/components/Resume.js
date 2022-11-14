@@ -4,7 +4,6 @@ import '../css/style.css'
 
 document.onmousemove = (ev) => {
     const resume = document.querySelector('#resume');
-    //resume.style.transfrom = 'translate(' + ev.clientY / 10 + 'px,' + ev.clientX / 10 + 'px)';
     resume.style.transform = `translate(${ev.clientX / 20}px, ${ev.clientY / 20}px)`
 }
 

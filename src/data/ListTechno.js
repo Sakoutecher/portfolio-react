@@ -128,6 +128,12 @@ const TechnoLinksFramework = [
         link: 'https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white',
         star: '2',
     },
+
+    {
+        title: 'styled-component',
+        link: 'https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white',
+        star: '2',
+    },
 ]
 
 const TechnoLinksLanguages = [
