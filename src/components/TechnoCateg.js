@@ -1,9 +1,10 @@
-import React from 'react';
+import React from 'react'
 import Text from '../components/Text'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
-import Fade from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade'
+import uuid from 'react-uuid'
 import '../css/style.css'
 
 function TechnoCateg({ styles, title, links }) {
@@ -24,18 +25,18 @@ function TechnoCateg({ styles, title, links }) {
             />
             <Container>
                 {links.map(({ title, link, star}) => (
-                    <Fade top key={title}>
+                    <Fade top key={uuid()}>
                     <SmallContainer 
-                        key={title}
+                        key={uuid()}
                     >
                         <Tech 
-                            key={title} 
+                            key={uuid()}
                             src={link} 
                             alt={title} 
                         />
                             {star === '1' ?
                             <Star 
-                                key={title} 
+                            key={uuid()}
                                 background={styles.colors.text}
                             > 
                                 <FontAwesomeIcon 
@@ -43,24 +44,24 @@ function TechnoCateg({ styles, title, links }) {
                                     color={'#3BC3A4'} 
                                     size='xs'
                                     style={starfullstyle}
-                                    key={title}
+                                    key={uuid()}
                                 /> 
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={styles.colors.background} 
                                     size='xs' 
-                                    key={title}
+                                    key={uuid()}
                                 />
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={styles.colors.background} 
                                     size='xs'
-                                    key={title}
+                                    key={uuid()}
                                 />
                             </Star>
                             : star === '2' ?
                             <Star 
-                                key={title} 
+                                key={uuid()}
                                 background={styles.colors.text}
                             > 
                                 <FontAwesomeIcon 
@@ -68,25 +69,25 @@ function TechnoCateg({ styles, title, links }) {
                                     color={'#3BC3A4'} 
                                     size='xs'
                                     style={starfullstyle}
-                                    key={title}
+                                    key={uuid()}
                                 /> 
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={'#3BC3A4'} 
                                     size='xs' 
                                     style={starfullstyle}
-                                    key={title}
+                                    key={uuid()}
                                 />
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={styles.colors.background} 
                                     size='xs'
-                                    key={title}
+                                    key={uuid()}
                                 />
                             </Star>
                             : star === '3' ?
                             <Star 
-                                key={title} 
+                                key={uuid()}
                                 background={styles.colors.text}
                             > 
                                 <FontAwesomeIcon 
@@ -94,45 +95,45 @@ function TechnoCateg({ styles, title, links }) {
                                     color={'#3BC3A4'} 
                                     size='xs'
                                     style={starfullstyle}
-                                    key={title}
+                                    key={uuid()}
                                 /> 
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={'#3BC3A4'} 
                                     size='xs' 
                                     style={starfullstyle}
-                                    key={title}
+                                    key={uuid()}
                                 />
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={'#3BC3A4'} 
                                     size='xs'
                                     style={starfullstyle}
-                                    key={title}
+                                    key={uuid()}
                                 />
                             </Star>
                             : 
                             <Star 
-                                key={title} 
+                                key={uuid()}
                                 background={styles.colors.text}
                             > 
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={styles.colors.background} 
                                     size='xs'
-                                    key={title}
+                                    key={uuid()}
                                 /> 
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={styles.colors.background} 
                                     size='xs' 
-                                    key={title}
+                                    key={uuid()}
                                 />
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={styles.colors.background} 
                                     size='xs'
-                                    key={title}
+                                    key={uuid()}
                                 />
                             </Star>
                             }
