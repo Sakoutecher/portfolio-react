@@ -24,7 +24,7 @@ function TechnoCateg({ styles, title, links }) {
             />
             <Container>
                 {links.map(({ title, link, star}) => (
-                    <Fade top>
+                    <Fade top key={title}>
                     <SmallContainer 
                         key={title}
                     >
@@ -43,16 +43,19 @@ function TechnoCateg({ styles, title, links }) {
                                     color={'#3BC3A4'} 
                                     size='xs'
                                     style={starfullstyle}
+                                    key={title}
                                 /> 
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={styles.colors.background} 
                                     size='xs' 
+                                    key={title}
                                 />
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={styles.colors.background} 
                                     size='xs'
+                                    key={title}
                                 />
                             </Star>
                             : star === '2' ?
@@ -65,17 +68,20 @@ function TechnoCateg({ styles, title, links }) {
                                     color={'#3BC3A4'} 
                                     size='xs'
                                     style={starfullstyle}
+                                    key={title}
                                 /> 
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={'#3BC3A4'} 
                                     size='xs' 
                                     style={starfullstyle}
+                                    key={title}
                                 />
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={styles.colors.background} 
                                     size='xs'
+                                    key={title}
                                 />
                             </Star>
                             : star === '3' ?
@@ -88,18 +94,21 @@ function TechnoCateg({ styles, title, links }) {
                                     color={'#3BC3A4'} 
                                     size='xs'
                                     style={starfullstyle}
+                                    key={title}
                                 /> 
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={'#3BC3A4'} 
                                     size='xs' 
                                     style={starfullstyle}
+                                    key={title}
                                 />
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={'#3BC3A4'} 
                                     size='xs'
                                     style={starfullstyle}
+                                    key={title}
                                 />
                             </Star>
                             : 
@@ -111,16 +120,19 @@ function TechnoCateg({ styles, title, links }) {
                                     icon={faStar} 
                                     color={styles.colors.background} 
                                     size='xs'
+                                    key={title}
                                 /> 
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={styles.colors.background} 
                                     size='xs' 
+                                    key={title}
                                 />
                                 <FontAwesomeIcon 
                                     icon={faStar} 
                                     color={styles.colors.background} 
                                     size='xs'
+                                    key={title}
                                 />
                             </Star>
                             }
