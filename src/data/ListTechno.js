@@ -133,13 +133,13 @@ const TechnoLinksFramework = [
 const TechnoLinksLanguages = [
     {
         title: 'french',
-        link: 'https://img.shields.io/badge/French-Native-blue?style=for-the-badge',
+        link: 'https://img.shields.io/badge/French-Native-3BC3A4?style=for-the-badge',
         star: '3',
     },
 
     {
         title: 'english',
-        link: 'https://img.shields.io/badge/English-B2-blue?style=for-the-badge',
+        link: 'https://img.shields.io/badge/English-B2-3BC3A4?style=for-the-badge',
         star: '3',
     },
 ]
