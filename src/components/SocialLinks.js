@@ -26,6 +26,7 @@ const BackLinks = styled.a`
     margin-right: 1.5em;
     border-radius: 12px;
     transition: background 300ms ease;
+    cursor: none;
 
     &:hover {
         background-color: #1d9f81;
@@ -34,6 +35,7 @@ const BackLinks = styled.a`
 
 const ImgLinks = styled.img`
     width: 45%;
+    cursor: none;
 `
 
 export default SocialLinks;

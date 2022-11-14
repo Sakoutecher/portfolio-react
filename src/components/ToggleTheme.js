@@ -52,6 +52,7 @@ const ToggleBackground = styled.button`
     align-items: center;
     transition: background 300ms ease;
     animation: ${props => props.isActive ? slideDown : null} 0.3s linear;
+    cursor: none;
 
     &:hover {
         background-color: ${props => props.hoverBackground};

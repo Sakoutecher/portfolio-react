@@ -181,7 +181,7 @@ const Line = styled.hr`
 
 const Tech = styled.img`
     position: relative;
-    cursor: pointer;
+    cursor: none;
 `
 
 const Star = styled.div`
@@ -202,7 +202,7 @@ const Star = styled.div`
 
 const SmallContainer = styled.div `
     position: relative;
-    cursor: pointer;
+    cursor: none;
 
     &:hover {
         ${Star} {

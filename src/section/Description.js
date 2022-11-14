@@ -211,6 +211,7 @@ const ButtonLink = styled.span`
     left: 50%;
     transform: translateX(-50%);
     transition: background 300ms ease;
+    cursor: none;
 
     &:hover {
         background-color: #1d9f81;

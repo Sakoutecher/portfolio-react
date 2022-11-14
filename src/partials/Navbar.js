@@ -87,6 +87,7 @@ const Name = styled.h1`
     font-family: Cooper Black;
     display: flex;
     align-items: center;
+    cursor: none;
 `
 
 const Hand = styled.div`
@@ -131,7 +132,7 @@ const Links = styled.span`
     color: ${props => props.textColor};
     font-family: 'Poppins';
     font-weight: regular;
-    cursor: pointer;
+    cursor: none;
 `
 
 const Toggle = styled.div`
