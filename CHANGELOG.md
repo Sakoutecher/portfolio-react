@@ -1,10 +1,14 @@
 # Changelog
 
 <a name="0.1.0"></a>
-## 0.1.0 (2022-11-10)
+## 0.1.0 (2022-11-14)
 
 ### Added
 
+- ➕ Add uuid [[26bf042](https://github.com/Sakoutecher/portfolio-react/commit/26bf042b727f2b0cf7be566f709db2b305fc63d1)]
+- ✨ Adding routing for new pages in app.js adding links in the navbar for navigation and creating new pages [[fd0f12a](https://github.com/Sakoutecher/portfolio-react/commit/fd0f12ab9a777bd20ee0b09b0384082d5bb0f1e5)]
+- ✨ Adding routing in the app.js [[9a2944c](https://github.com/Sakoutecher/portfolio-react/commit/9a2944c6937a1b1865a60a69c503ce77a7df48ce)]
+- 🔊 Update logs [[f1688e2](https://github.com/Sakoutecher/portfolio-react/commit/f1688e24f54540038941bf71a2eacc7494763cdb)]
 - ➕ Add gsap [[c1abe6b](https://github.com/Sakoutecher/portfolio-react/commit/c1abe6b7e1e2b20e140544aa5d3a0ee70cee4ad4)]
 - ✨ Display star for the technologies from the techno arrays in the techno component [[4cbf99d](https://github.com/Sakoutecher/portfolio-react/commit/4cbf99db3be6cbcca4190aa2e385dd1d284e3e17)]
 - 🔊 Update logs [[b466f4f](https://github.com/Sakoutecher/portfolio-react/commit/b466f4fbcb3a576cda9e16fe2e93065537965c8e)]
@@ -22,6 +26,8 @@
 
 ### Changed
 
+- 🚨 Changing a into span for resolving console error [[734e226](https://github.com/Sakoutecher/portfolio-react/commit/734e2262631896262513273fc158cffd22a523be)]
+- 🚨 Fix error in the console, multiple keys similitude [[8d46131](https://github.com/Sakoutecher/portfolio-react/commit/8d461316317681356463e1e8e60115474c89b584)]
 - 💄 Add border on the star in the technologies component [[ed7add1](https://github.com/Sakoutecher/portfolio-react/commit/ed7add170896177f98d0db78ed0f79d7dafb96ec)]
 - 🎨 Add spaces for the technologies component [[08792b6](https://github.com/Sakoutecher/portfolio-react/commit/08792b62a66e9ce8be33281746685ee7f6a25bdd)]
 - 🏗️ Add a data folder [[dff8f3a](https://github.com/Sakoutecher/portfolio-react/commit/dff8f3a1c42efacedf7e98fd3d55569acf9d8ed9)]
