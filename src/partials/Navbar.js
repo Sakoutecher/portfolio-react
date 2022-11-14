@@ -1,22 +1,29 @@
 import styled from 'styled-components'
 import { keyframes } from 'styled-components'
 import ToggleTheme from '../components/ToggleTheme'
+import { Link } from 'react-router-dom'
 
 const Navbar = ({styles, setTheme, theme}) => {
   return (
     <Nav background={styles.colors.navbar}>
       <NavContainer>
-        <Name textColor={styles.colors.text}><Hand>👋 </Hand> hcampos</Name>
+        <Link to='/'><Name textColor={styles.colors.text}><Hand>👋 </Hand> hcampos</Name></Link>
         <RightPart>
           <LinksContainer>
             <UnderlineContainer>
-              <Links textColor={styles.colors.text}>Parcours</Links>
+              <Link to='/parcours'>
+                <Links textColor={styles.colors.text}>Parcours</Links>
+              </Link>
             </UnderlineContainer>
             <UnderlineContainer>
-              <Links textColor={styles.colors.text}>Projets</Links>
+              <Link to='/projects'>
+                <Links textColor={styles.colors.text}>Projets</Links>
+              </Link>
             </UnderlineContainer>
             <UnderlineContainer>
-              <Links textColor={styles.colors.text}>Hardware</Links>
+              <Link to='hardware'>
+                <Links textColor={styles.colors.text}>Hardware</Links>
+              </Link>
             </UnderlineContainer>
           </LinksContainer>
           <Toggle>

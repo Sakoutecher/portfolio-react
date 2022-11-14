@@ -1,10 +1,13 @@
-import React from 'react';
+import React from 'react'
 import Navbar from './partials/Navbar'
-import Welcome from './section/Welcome';
-import Description from './section/Description';
-import Technologies from './section/Technologies';
+import Welcome from './section/Welcome'
+import Description from './section/Description'
+import Technologies from './section/Technologies'
 import Contact from './section/Contact'
-import Footer from './partials/Footer';
+import Footer from './partials/Footer'
+import Parcours from './pages/Parcours'
+import Hardware from './pages/Hardware'
+import Project from './pages/Project'
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
@@ -81,6 +84,18 @@ function App() {
               <Contact colors={colors} styles={styles} />
             </>
           } 
+        />
+        <Route 
+          path='/parcours' 
+          element={ <Parcours /> } 
+        />
+        <Route 
+          path='/hardware' 
+          element={ <Hardware /> } 
+        />
+        <Route 
+          path='/projects' 
+          element={ <Project /> } 
         />
       </Routes>
       <Footer 
