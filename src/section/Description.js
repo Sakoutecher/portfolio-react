@@ -5,6 +5,7 @@ import Text from '../components/Text'
 import Title from '../components/Title';
 import styled from 'styled-components'
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom'
 
 function Description({ styles, colors }) {
 
@@ -84,13 +85,14 @@ function Description({ styles, colors }) {
                         )
                     })}
                     </Fade>
-                    <ButtonLink 
-                        textColor={colors.light.textColor} 
-                        background={colors.colorLinks.primary} 
-                        href='#'
-                    >
-                        🚧  See my projects 
-                    </ButtonLink>
+                    <Link to='/projects'>
+                        <ButtonLink 
+                            textColor={colors.light.textColor} 
+                            background={colors.colorLinks.primary} 
+                        >
+                            🚧  See my projects 
+                        </ButtonLink>
+                    </Link>
                     <Resume 
                         styles={styles} 
                         colors={colors}
@@ -192,7 +194,7 @@ const BottomBottom = styled.div`
     position: relative;
 `
 
-const ButtonLink = styled.a`
+const ButtonLink = styled.span`
     background-color: ${props => props.background};
     color: ${props => props.textColor};
     width: 30%;
