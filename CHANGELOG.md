@@ -5,6 +5,9 @@
 
 ### Added
 
+- ✨ Adding new cursor wich following the mouse of the user [[9a7d51e](https://github.com/Sakoutecher/portfolio-react/commit/9a7d51ee219ae443edf1b0362905a11d26539e87)]
+- ✨ Link the projects button to the projects page [[e378a15](https://github.com/Sakoutecher/portfolio-react/commit/e378a15b6be59f467c381223ab43416520f53fca)]
+- 🔊 Update logs [[b680db4](https://github.com/Sakoutecher/portfolio-react/commit/b680db4534e2f1422619a9a7f57b8e7de07657cb)]
 - ➕ Add uuid [[26bf042](https://github.com/Sakoutecher/portfolio-react/commit/26bf042b727f2b0cf7be566f709db2b305fc63d1)]
 - ✨ Adding routing for new pages in app.js adding links in the navbar for navigation and creating new pages [[fd0f12a](https://github.com/Sakoutecher/portfolio-react/commit/fd0f12ab9a777bd20ee0b09b0384082d5bb0f1e5)]
 - ✨ Adding routing in the app.js [[9a2944c](https://github.com/Sakoutecher/portfolio-react/commit/9a2944c6937a1b1865a60a69c503ce77a7df48ce)]
@@ -26,6 +29,8 @@
 
 ### Changed
 
+- 💄 Adding cursor none on every button or link for the custom cursor [[dee37e6](https://github.com/Sakoutecher/portfolio-react/commit/dee37e657e9dd2b7e33a913f30f67c3e79148a79)]
+- 🎨 Moving list of technologies into a data folder [[af814e3](https://github.com/Sakoutecher/portfolio-react/commit/af814e35ec026c0a71c1712f0bd7d0aedfb878cf)]
 - 🚨 Changing a into span for resolving console error [[734e226](https://github.com/Sakoutecher/portfolio-react/commit/734e2262631896262513273fc158cffd22a523be)]
 - 🚨 Fix error in the console, multiple keys similitude [[8d46131](https://github.com/Sakoutecher/portfolio-react/commit/8d461316317681356463e1e8e60115474c89b584)]
 - 💄 Add border on the star in the technologies component [[ed7add1](https://github.com/Sakoutecher/portfolio-react/commit/ed7add170896177f98d0db78ed0f79d7dafb96ec)]
@@ -54,6 +59,9 @@
 
 ### Miscellaneous
 
+- 💫 Add animation while hovering link or button on the custom cursor [[87e7140](https://github.com/Sakoutecher/portfolio-react/commit/87e7140945531c84df7462c9a686ac637215dc52)]
+- 💫 Add animation on the resume button wich following the mouse of the user [[06cc22c](https://github.com/Sakoutecher/portfolio-react/commit/06cc22c9cdf1196876ea60524a536d87aea93855)]
+- 🚧 Link the resume button to my resume but need to change some info on the resume [[99947d6](https://github.com/Sakoutecher/portfolio-react/commit/99947d65df50389aa9fd1c758d2d033d2c79b845)]
 - 🚧 Start adding hover on the links in the navbar [[8f03d66](https://github.com/Sakoutecher/portfolio-react/commit/8f03d664f9c1084d1e7393ddceab70a70e1c682a)]
 - 💫 Add animation on the description section [[1b8251d](https://github.com/Sakoutecher/portfolio-react/commit/1b8251d1b9395824848d925fe57e4ceff37284e7)]
 - 💫 Add animation on scroll for the technologies [[0e6979d](https://github.com/Sakoutecher/portfolio-react/commit/0e6979d8efcd4e6bf3a046ee65d05aa8161964ae)]
