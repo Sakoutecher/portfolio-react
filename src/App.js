@@ -6,6 +6,7 @@ import Technologies from './section/Technologies';
 import Contact from './section/Contact'
 import Footer from './partials/Footer';
 import { useState, useEffect } from 'react'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
 
@@ -69,22 +70,21 @@ function App() {
         setTheme={setTheme} 
         styles={styles}
       />
-      <Welcome 
-        styles={styles}
-      />
-      <Description 
-        styles={styles}
-        colors={colors}
-      />
-      <Technologies 
-        styles={styles}
-      />
-      <Contact 
-        colors={colors} 
-        styles={styles} 
-      />
+      <Routes>
+        <Route 
+          path='/' 
+          element={ 
+            <>
+              <Welcome styles={styles} />
+              <Description styles={styles}colors={colors} />
+              <Technologies styles={styles} /> 
+              <Contact colors={colors} styles={styles} />
+            </>
+          } 
+        />
+      </Routes>
       <Footer 
-        styles={styles}
+          styles={styles}
       />
     </>
   );
