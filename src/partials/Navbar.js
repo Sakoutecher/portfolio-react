@@ -7,22 +7,22 @@ const Navbar = ({styles, setTheme, theme}) => {
   return (
     <Nav background={styles.colors.navbar}>
       <NavContainer>
-        <Link to='/'><Name textColor={styles.colors.text}><Hand>👋 </Hand> hcampos</Name></Link>
+        <Link to='/'><Name data-cursor textColor={styles.colors.text}><Hand>👋 </Hand> hcampos</Name></Link>
         <RightPart>
           <LinksContainer>
             <UnderlineContainer>
               <Link to='/parcours'>
-                <Links textColor={styles.colors.text}>Parcours</Links>
+                <Links data-cursor textColor={styles.colors.text}>Parcours</Links>
               </Link>
             </UnderlineContainer>
             <UnderlineContainer>
               <Link to='/projects'>
-                <Links textColor={styles.colors.text}>Projets</Links>
+                <Links data-cursor textColor={styles.colors.text}>Projets</Links>
               </Link>
             </UnderlineContainer>
             <UnderlineContainer>
               <Link to='hardware'>
-                <Links textColor={styles.colors.text}>Hardware</Links>
+                <Links data-cursor textColor={styles.colors.text}>Hardware</Links>
               </Link>
             </UnderlineContainer>
           </LinksContainer>

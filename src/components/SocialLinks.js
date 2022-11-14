@@ -7,10 +7,12 @@ function SocialLinks({links, alt, colorLinks}) {
             background={colorLinks} 
             target={'_blank'} 
             href={links}
+            data-cursor
         >
             <ImgLinks 
                 src={`./social-links/${alt}.svg`} 
                 alt={alt} 
+                data-cursor
             />
         </BackLinks>
     );

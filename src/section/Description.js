@@ -89,6 +89,7 @@ function Description({ styles, colors }) {
                         <ButtonLink 
                             textColor={colors.light.textColor} 
                             background={colors.colorLinks.primary} 
+                            data-cursor
                         >
                             🚧  See my projects 
                         </ButtonLink>

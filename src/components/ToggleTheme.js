@@ -14,6 +14,7 @@ function ToggleTheme({styles, setTheme, theme}) {
 
     return (
         <ToggleBackground 
+            data-cursor
             onClick={handleChange} 
             hoverBackground={styles.colors.toggleColorHover} 
             colorBackground={styles.colors.toggleColor}
@@ -21,6 +22,7 @@ function ToggleTheme({styles, setTheme, theme}) {
             isActive={active}
         >
             <ToggleLogo 
+                data-cursor
                 src={`./toggle-button/${styles.colors.toggleSymbol}.svg`} 
                 alt={styles.colors.toggleSymbol} 
             />

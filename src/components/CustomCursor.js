@@ -3,7 +3,7 @@ import { useRef, useEffect, useState } from 'react'
 
 const Cursor = ({ styles }) => {
   const cursor = useRef()
-  const [size, setSize] = useState(50)
+  const [size, setSize] = useState(40)
 
   useEffect(() => {
     window.addEventListener('mousemove', e => {
@@ -11,9 +11,9 @@ const Cursor = ({ styles }) => {
         cursor.current.style.transform = `translate3d(${e.clientX - 3}px, ${e.clientY - 84}px, 0)`
 
       if (e.target.getAttribute('data-cursor')) {
-        setSize(70)
+        setSize(60)
       } else {
-        setSize(50)
+        setSize(40)
       }
     })
   }, [])
