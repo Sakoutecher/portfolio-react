@@ -126,7 +126,7 @@ const UnderlineContainer = styled.div`
     }
 `
 
-const Links = styled.a`
+const Links = styled.span`
     font-size: 16px;
     color: ${props => props.textColor};
     font-family: 'Poppins';
