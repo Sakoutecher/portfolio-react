@@ -6,7 +6,8 @@ function Resume({ styles, colors }) {
     return (
         <ResumeBackground 
             id='resume' 
-            href='#' 
+            href='./resume.pdf' 
+            target='_blank'
             background={colors.colorLinks.primary} 
             borderColor={styles.colors.text}
         >
