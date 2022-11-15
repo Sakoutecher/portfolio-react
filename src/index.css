@@ -6,11 +6,13 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  cursor: none;
 }
 
 body {
   transition: background-color 300ms ease;
   width: 100vh;
+  cursor: none;
 }
 
 #root {
