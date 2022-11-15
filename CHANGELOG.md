@@ -1,10 +1,11 @@
 # Changelog
 
 <a name="0.1.0"></a>
-## 0.1.0 (2022-11-14)
+## 0.1.0 (2022-11-15)
 
 ### Added
 
+- 🔊 Update logs [[447a975](https://github.com/Sakoutecher/portfolio-react/commit/447a975aa7a01dcc286b1195f3711a6d7ecef224)]
 - ✨ Adding new cursor wich following the mouse of the user [[9a7d51e](https://github.com/Sakoutecher/portfolio-react/commit/9a7d51ee219ae443edf1b0362905a11d26539e87)]
 - ✨ Link the projects button to the projects page [[e378a15](https://github.com/Sakoutecher/portfolio-react/commit/e378a15b6be59f467c381223ab43416520f53fca)]
 - 🔊 Update logs [[b680db4](https://github.com/Sakoutecher/portfolio-react/commit/b680db4534e2f1422619a9a7f57b8e7de07657cb)]
@@ -56,6 +57,10 @@
 - 🔥 Remove the data folder [[71f87ff](https://github.com/Sakoutecher/portfolio-react/commit/71f87fff8e7c3e172554ebc28d6981760dc14872)]
 - 🔥 Remove anim.css it was useless [[10d92f2](https://github.com/Sakoutecher/portfolio-react/commit/10d92f24fb8816f07547148e4dbe880add51a4c8)]
 - 🔥 Remove useless things from create-react-app [[938962f](https://github.com/Sakoutecher/portfolio-react/commit/938962fab7a21b01ce3823dcf42abc3fc422ab96)]
+
+### Fixed
+
+- 🐛 Removing the cursor on the body [[226f128](https://github.com/Sakoutecher/portfolio-react/commit/226f128396ac3c3c1d290446493f765bbd79e5f5)]
 
 ### Miscellaneous
 
