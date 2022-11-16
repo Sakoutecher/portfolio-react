@@ -1,10 +1,12 @@
 # Changelog
 
 <a name="0.1.0"></a>
-## 0.1.0 (2022-11-15)
+## 0.1.0 (2022-11-16)
 
 ### Added
 
+- ✨ Adding links in the presentation text in the description component [[54bcbb9](https://github.com/Sakoutecher/portfolio-react/commit/54bcbb9c05b49fd5723a2ac9be200efe1a9104f7)]
+- 🔊 Update logs [[46c97b1](https://github.com/Sakoutecher/portfolio-react/commit/46c97b11008042140a2c3e643a7bdb45a383c2a7)]
 - 🔊 Update logs [[447a975](https://github.com/Sakoutecher/portfolio-react/commit/447a975aa7a01dcc286b1195f3711a6d7ecef224)]
 - ✨ Adding new cursor wich following the mouse of the user [[9a7d51e](https://github.com/Sakoutecher/portfolio-react/commit/9a7d51ee219ae443edf1b0362905a11d26539e87)]
 - ✨ Link the projects button to the projects page [[e378a15](https://github.com/Sakoutecher/portfolio-react/commit/e378a15b6be59f467c381223ab43416520f53fca)]
@@ -30,6 +32,8 @@
 
 ### Changed
 
+- 💬 Update the presentation text in the description component [[31848f1](https://github.com/Sakoutecher/portfolio-react/commit/31848f1dd97c4c8bf838d048b20ef487aa48909a)]
+- ⚡ Delete array from component and putting them into a data folder [[a1e9823](https://github.com/Sakoutecher/portfolio-react/commit/a1e982332a84fb0eaab7999c034f0483590e919a)]
 - 💄 Adding cursor none on every button or link for the custom cursor [[dee37e6](https://github.com/Sakoutecher/portfolio-react/commit/dee37e657e9dd2b7e33a913f30f67c3e79148a79)]
 - 🎨 Moving list of technologies into a data folder [[af814e3](https://github.com/Sakoutecher/portfolio-react/commit/af814e35ec026c0a71c1712f0bd7d0aedfb878cf)]
 - 🚨 Changing a into span for resolving console error [[734e226](https://github.com/Sakoutecher/portfolio-react/commit/734e2262631896262513273fc158cffd22a523be)]
