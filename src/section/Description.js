@@ -4,7 +4,7 @@ import Resume from '../components/Resume'
 import Text from '../components/Text'
 import Title from '../components/Title';
 import styled from 'styled-components'
-import { description, hobbies } from '../data/DataDescription'
+import { hobbies } from '../data/DataDescription'
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom'
 import uuid from 'react-uuid'
@@ -36,10 +36,9 @@ function Description({ styles, colors }) {
                 </TopMiddle>
                 <BottomMiddle>
                     <Fade>
-                       <Text 
-                            styles={styles} 
-                            text={description} 
-                        /> 
+                        <Paragraph color={styles.colors.text}>
+                            Hello everyone, i'm hcampos or hugo campos like you want 🙂. I'm a student who learning actually web development at Niort in France. I like to learn new things and to share my knowledges. I have been coding for 3 years from now, so i have done some <Link to='/projects'><DescriptionLink data-cursor textColor={colors.colorLinks.primary}>projects</DescriptionLink></Link>, i hope you will enjoy it. You can see with my portfolio all of my school career and all the things i use for the development. If you have any question or if you want to talk with me no problem, see you in the <DescriptionLink href='#contact' data-cursor textColor={colors.colorLinks.primary}>contact section</DescriptionLink> ☎️.
+                        </Paragraph>
                     </Fade>
                 </BottomMiddle>
             </Middle>
@@ -194,6 +193,22 @@ const ButtonLink = styled.span`
     &:hover {
         background-color: #1d9f81;
     }
+`
+
+const DescriptionLink = styled.a`
+    font-family: Poppins;
+    color: ${props => props.textColor} !important;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+`
+
+const Paragraph = styled.p`
+    font-family: Poppins;
+    color: ${props => props.color};
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
 `
 
 export default Description;

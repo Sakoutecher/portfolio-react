@@ -8,7 +8,7 @@ import uuid from 'react-uuid'
 
 function Contact({styles, colors}) {
   return (
-    <ContactContainer>
+    <ContactContainer id='contact'>
       <Center>
         <Top>
           <Title 
