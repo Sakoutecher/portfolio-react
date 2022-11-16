@@ -2,44 +2,11 @@ import React from 'react';
 import Title from '../components/Title';
 import Text from '../components/Text';
 import SocialLinks from '../components/SocialLinks';
+import { externalLinks, sectionText } from '../data/DataContact'
 import styled from 'styled-components'
+import uuid from 'react-uuid'
 
 function Contact({styles, colors}) {
-
-  const sectionText = [
-    {
-      key: 'first',
-      text: 'Thank you for visiting ! 🙂',
-    }, 
-
-    {
-      key: 'second',
-      text: 'If you would like to contact me this happens just below.',
-    }, 
-    
-    {
-      key: 'third',
-      text: 'Have a good day 🚀',
-    },
-  ]
-
-  const externalLinks = [
-    {
-      title: 'github',
-      link: 'https://github.com/Sakoutecher',
-    },
-
-    {
-      title: 'linkedin',
-      link: 'https://www.linkedin.com/in/hugo-campos-782702203/',
-    },
-
-    {
-      title: 'gmail',
-      link: 'mailto:hcampospro@gmail.com',
-    },
-  ]
-
   return (
     <ContactContainer>
       <Center>
@@ -50,10 +17,10 @@ function Contact({styles, colors}) {
           />
         </Top>
         <Bottom>
-          {sectionText.map(({ key, text }) => {
+          {sectionText.map(({ text }) => {
             return (
               <Text 
-                key={key} 
+                key={uuid()} 
                 text={text} 
                 styles={styles}
               />

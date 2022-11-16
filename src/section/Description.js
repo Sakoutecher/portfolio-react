@@ -4,35 +4,12 @@ import Resume from '../components/Resume'
 import Text from '../components/Text'
 import Title from '../components/Title';
 import styled from 'styled-components'
+import { description, hobbies } from '../data/DataDescription'
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom'
+import uuid from 'react-uuid'
 
 function Description({ styles, colors }) {
-
-  const description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis lorem pulvinar, eleifend ex vitae, varius erat. Proin commodo libero ligula, quis aliquam nulla fringilla sed. Quisque euismod orci ut ipsum mattis tempus. Curabitur metus lectus, congue nec nunc placerat, efficitur lacinia risus. Sed vitae lectus in sem pulvinar fringilla. Donec lacinia ut nisi vitae accumsan. Vestibulum pulvinar eget justo nec porta. Curabitur justo nibh, malesuada in porttitor ut, cursus nec nulla. Fusce lobortis ultrices tincidunt. Phasellus laoreet lacus sapien.'
-
-  const hobbies = [
-    {
-      key: 'first',
-      text: '• Development',
-    }, 
-
-    {
-      key: 'second',
-      text: '• Gaming',
-    }, 
-    
-    {
-      key: 'third',
-      text: '• Streaming',
-    },
-
-    {
-      key: 'fourth',
-      text: '• See some friends 🤙',
-    },
-  ]
-
   return (
     <DescriptionContainer>
         <Center>
@@ -75,10 +52,10 @@ function Description({ styles, colors }) {
                 </TopBottom>
                 <BottomBottom>
                     <Fade>
-                    {hobbies.map(({ key, text }) => {
+                    {hobbies.map(({ text }) => {
                         return (
                         <Text 
-                            key={key} 
+                            key={uuid()} 
                             text={text} 
                             styles={styles}
                         />
