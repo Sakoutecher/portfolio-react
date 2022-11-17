@@ -11,8 +11,6 @@ function Technologies({ styles }) {
 
     const [filter, setFilter] = useState('noStar')
 
-    console.log(filter)
-
     const starborder = {
         stroke: styles.colors.text,
         strokeWidth: '35',

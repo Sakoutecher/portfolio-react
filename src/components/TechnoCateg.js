@@ -14,6 +14,10 @@ function TechnoCateg({ styles, title, links, filter }) {
         strokeWidth: '50',
     }
 
+    const showGap = filter === '1' || filter === '2' || filter === '3' ? 'none' : '1em'
+
+    const marginFilter = filter === '1' || filter === '2' || filter === '3' ? '1em' : 'none'
+
     return (
         <Categ>
             <Text 
@@ -23,7 +27,9 @@ function TechnoCateg({ styles, title, links, filter }) {
             <Line 
                 color={styles.colors.text} 
             />
-            <Container>
+            <Container
+                filter={showGap}
+            >
                 {links.map(({ title, link, star}) => (
                     <Fade top key={uuid()}>
                     <SmallContainer 
@@ -34,10 +40,10 @@ function TechnoCateg({ styles, title, links, filter }) {
                                 <Tech 
                                     key={uuid()}
                                     src={link} 
-                                    alt={title} 
+                                    alt={title}
                                 />
                                 <Star 
-                                key={uuid()}
+                                    key={uuid()}
                                     background={styles.colors.text}
                                 > 
                                     <FontAwesomeIcon 
@@ -69,6 +75,7 @@ function TechnoCateg({ styles, title, links, filter }) {
                                     key={uuid()}
                                     src={link} 
                                     alt={title} 
+                                    marginFilter={marginFilter} 
                                 />
                                 <Star 
                                 key={uuid()}
@@ -126,7 +133,7 @@ const Container = styled.div`
     //background-color: brown;
     display: flex;
     justify-content: flex-start;
-    gap: 1em;
+    gap: ${props => props.filter};
     align-items: center;
     flex-wrap: wrap;
 `
@@ -143,6 +150,7 @@ const Line = styled.hr`
 const Tech = styled.img`
     position: relative;
     cursor: none;
+    margin-right: ${props => props.marginFilter};
 `
 
 const Star = styled.div`
