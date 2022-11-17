@@ -3,11 +3,21 @@ import Title from '../components/Title';
 import TechnoCateg from '../components/TechnoCateg'
 import styled from 'styled-components'
 import { TechnoLinksLanguages, TechnoLinksFramework, TechnoLinksFront, TechnoLinksBack } from '../data/ListTechno';
-//import { useState } from 'react'
+import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 function Technologies({ styles }) {
 
-    //const [filter, setFilter] = useState(0)
+    const [filter, setFilter] = useState('noStar')
+
+    console.log(filter)
+
+    const starborder = {
+        stroke: styles.colors.text,
+        strokeWidth: '35',
+        cursor: 'none',
+    }
 
     return (
         <TechnologiesContainer>
@@ -18,7 +28,30 @@ function Technologies({ styles }) {
                         styles={styles} 
                     />
                     <FilterContainer>
-
+                        <FontAwesomeIcon 
+                            icon={faStar} 
+                            color={filter === '1Star' || filter === '2Star' || filter === '3Star' ? '#3BC3A4' : styles.colors.background} 
+                            size='lg' 
+                            style={starborder}
+                            data-cursor
+                            onClick={() => setFilter('1Star')}
+                        />
+                        <FontAwesomeIcon 
+                            icon={faStar} 
+                            color={filter === '2Star' || filter === '3Star' ? '#3BC3A4' : styles.colors.background} 
+                            size='lg' 
+                            style={starborder}
+                            data-cursor
+                            onClick={() => setFilter('2Star')}
+                        />
+                        <FontAwesomeIcon 
+                            icon={faStar} 
+                            color={filter === '3Star' ? '#3BC3A4' : styles.colors.background} 
+                            size='lg' 
+                            style={starborder}
+                            data-cursor
+                            onClick={() => setFilter('3Star')}
+                        />
                     </FilterContainer>
                 </Top>
                 <Bottom>
@@ -26,21 +59,25 @@ function Technologies({ styles }) {
                         title={'👀 FrontEnd'} 
                         styles={styles} 
                         links={TechnoLinksFront} 
+                        filter={filter}
                     />
                     <TechnoCateg 
                         title={'🔐 BackEnd'} 
                         styles={styles} 
                         links={TechnoLinksBack} 
+                        filter={filter}
                     />
                     <TechnoCateg 
                         title={'🧰 Framework & Librairies'} 
                         styles={styles} 
                         links={TechnoLinksFramework} 
+                        filter={filter}
                     />
                     <TechnoCateg 
                         title={'🌐 Languages'} 
                         styles={styles} 
                         links={TechnoLinksLanguages} 
+                        filter={filter}
                     />
                 </Bottom>
             </Center>
@@ -67,7 +104,7 @@ const Center = styled.div`
 const Top = styled.div`
     height: 10%;
     width: 100%;
-    background-color: yellow;
+    //background-color: yellow;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,8 +112,11 @@ const Top = styled.div`
 
 const FilterContainer = styled.div`
     height: 80%;
-    width: 20%;
-    background-color: red;
+    width: 15%;
+    //background-color: red;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
 `
 
 const Bottom = styled.div`
