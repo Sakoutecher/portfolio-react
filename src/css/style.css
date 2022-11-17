@@ -19,7 +19,7 @@ path {
     }
 }
 
-.starfull {
-    stroke: #1E1E1E;
-    stroke-width: 50;
+
+.svg-inline--fa.fa-star.fa-lg.test path:hover {
+    color: '#3BC3A4';
 }

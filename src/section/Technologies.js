@@ -6,6 +6,7 @@ import { TechnoLinksLanguages, TechnoLinksFramework, TechnoLinksFront, TechnoLin
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
+import '../css/style.css'
 
 function Technologies({ styles }) {
 
@@ -27,7 +28,16 @@ function Technologies({ styles }) {
                     />
                     <FilterContainer
                         data-cursor
+                        strokeColor={styles.colors.text}
                     >
+                        <FontAwesomeIcon 
+                            icon={faStar} 
+                            color={styles.colors.background} 
+                            size='lg' 
+                            style={starborder}
+                            data-cursor
+                            onClick={() => setFilter('noStar')}
+                        />
                         <FontAwesomeIcon 
                             icon={faStar} 
                             color={filter === '1' || filter === '2' || filter === '3' ? '#3BC3A4' : styles.colors.background} 
@@ -35,6 +45,7 @@ function Technologies({ styles }) {
                             style={starborder}
                             data-cursor
                             onClick={() => setFilter('1')}
+                            className='test'
                         />
                         <FontAwesomeIcon 
                             icon={faStar} 
@@ -117,6 +128,18 @@ const FilterContainer = styled.div`
     display: flex; 
     justify-content: space-evenly;
     align-items: center;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: 51%;
+        left: 7.5%;
+        width: 18px;
+        height: 2px;
+        background-color: ${props => props.strokeColor};
+        content: '';
+        transform: rotate(-55deg);
+    }
 `
 
 const Bottom = styled.div`
