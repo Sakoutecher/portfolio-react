@@ -1,10 +1,13 @@
 # Changelog
 
 <a name="0.1.0"></a>
-## 0.1.0 (2022-11-16)
+## 0.1.0 (2022-11-17)
 
 ### Added
 
+- ✨ Now when you put a filter the techno display with the filter [[3411adb](https://github.com/Sakoutecher/portfolio-react/commit/3411adbdc4c01b4a501d3788e9d44b839cf4fc59)]
+- ✨ Add the filter with the state [[0cd5357](https://github.com/Sakoutecher/portfolio-react/commit/0cd5357d608eafd2d804125113538f82d1f4b206)]
+- 🔊 Update logs [[935d7f2](https://github.com/Sakoutecher/portfolio-react/commit/935d7f29be9c66575ab6675beb1683104bca71c8)]
 - ✨ Adding links in the presentation text in the description component [[54bcbb9](https://github.com/Sakoutecher/portfolio-react/commit/54bcbb9c05b49fd5723a2ac9be200efe1a9104f7)]
 - 🔊 Update logs [[46c97b1](https://github.com/Sakoutecher/portfolio-react/commit/46c97b11008042140a2c3e643a7bdb45a383c2a7)]
 - 🔊 Update logs [[447a975](https://github.com/Sakoutecher/portfolio-react/commit/447a975aa7a01dcc286b1195f3711a6d7ecef224)]
@@ -32,6 +35,7 @@
 
 ### Changed
 
+- 💄 Update the margin in the technologies component when a filter is applied [[e837080](https://github.com/Sakoutecher/portfolio-react/commit/e837080d643c35b218a73070990800faac0cf4b9)]
 - 💬 Update the presentation text in the description component [[31848f1](https://github.com/Sakoutecher/portfolio-react/commit/31848f1dd97c4c8bf838d048b20ef487aa48909a)]
 - ⚡ Delete array from component and putting them into a data folder [[a1e9823](https://github.com/Sakoutecher/portfolio-react/commit/a1e982332a84fb0eaab7999c034f0483590e919a)]
 - 💄 Adding cursor none on every button or link for the custom cursor [[dee37e6](https://github.com/Sakoutecher/portfolio-react/commit/dee37e657e9dd2b7e33a913f30f67c3e79148a79)]
@@ -68,6 +72,7 @@
 
 ### Miscellaneous
 
+- 🚧 Start the filter for the technologies star [[1ed08a6](https://github.com/Sakoutecher/portfolio-react/commit/1ed08a60e8a76ba652cf980f1c3978c352acc65b)]
 - 💫 Add animation while hovering link or button on the custom cursor [[87e7140](https://github.com/Sakoutecher/portfolio-react/commit/87e7140945531c84df7462c9a686ac637215dc52)]
 - 💫 Add animation on the resume button wich following the mouse of the user [[06cc22c](https://github.com/Sakoutecher/portfolio-react/commit/06cc22c9cdf1196876ea60524a536d87aea93855)]
 - 🚧 Link the resume button to my resume but need to change some info on the resume [[99947d6](https://github.com/Sakoutecher/portfolio-react/commit/99947d65df50389aa9fd1c758d2d033d2c79b845)]
