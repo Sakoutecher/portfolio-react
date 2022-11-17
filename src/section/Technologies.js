@@ -3,16 +3,23 @@ import Title from '../components/Title';
 import TechnoCateg from '../components/TechnoCateg'
 import styled from 'styled-components'
 import { TechnoLinksLanguages, TechnoLinksFramework, TechnoLinksFront, TechnoLinksBack } from '../data/ListTechno';
+//import { useState } from 'react'
 
 function Technologies({ styles }) {
+
+    //const [filter, setFilter] = useState(0)
+
     return (
         <TechnologiesContainer>
             <Center>
                 <Top>
-                <Title 
-                    text={'📟 Technologies & Other'} 
-                    styles={styles} 
-                />
+                    <Title 
+                        text={'📟 Technologies & Other'} 
+                        styles={styles} 
+                    />
+                    <FilterContainer>
+
+                    </FilterContainer>
                 </Top>
                 <Bottom>
                     <TechnoCateg 
@@ -60,10 +67,16 @@ const Center = styled.div`
 const Top = styled.div`
     height: 10%;
     width: 100%;
-    //background-color: yellow;
+    background-color: yellow;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+`
+
+const FilterContainer = styled.div`
+    height: 80%;
+    width: 20%;
+    background-color: red;
 `
 
 const Bottom = styled.div`
