@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '../components/Title';
 import TechnoCateg from '../components/TechnoCateg'
 import styled from 'styled-components'
-import { TechnoLinksLanguages, TechnoLinksFramework, TechnoLinksFront, TechnoLinksBack } from '../data/ListTechno';
+import { TechnoLinksLanguages, TechnoLinksFramework, TechnoLinksFront, TechnoLinksBack } from '../data/DataTechno';
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'

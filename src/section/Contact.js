@@ -65,7 +65,7 @@ const Center = styled.div`
 const Top = styled.div`
     height: 20%;
     width: 100%;
-    //background-color: yellow;
+    background-color: yellow;
     display: flex;
     justify-content: flex-start;
     align-items: center;

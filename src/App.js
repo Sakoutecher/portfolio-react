@@ -104,7 +104,7 @@ function App() {
           />
           <Route 
             path='/hardware' 
-            element={ <Hardware /> } 
+            element={ <Hardware styles={styles} /> } 
           />
           <Route 
             path='/projects' 
