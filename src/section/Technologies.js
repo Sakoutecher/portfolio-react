@@ -27,30 +27,32 @@ function Technologies({ styles }) {
                         text={'📟 Technologies & Other'} 
                         styles={styles} 
                     />
-                    <FilterContainer>
+                    <FilterContainer
+                        data-cursor
+                    >
                         <FontAwesomeIcon 
                             icon={faStar} 
-                            color={filter === '1Star' || filter === '2Star' || filter === '3Star' ? '#3BC3A4' : styles.colors.background} 
+                            color={filter === '1' || filter === '2' || filter === '3' ? '#3BC3A4' : styles.colors.background} 
                             size='lg' 
                             style={starborder}
                             data-cursor
-                            onClick={() => setFilter('1Star')}
+                            onClick={() => setFilter('1')}
                         />
                         <FontAwesomeIcon 
                             icon={faStar} 
-                            color={filter === '2Star' || filter === '3Star' ? '#3BC3A4' : styles.colors.background} 
+                            color={filter === '2' || filter === '3' ? '#3BC3A4' : styles.colors.background} 
                             size='lg' 
                             style={starborder}
                             data-cursor
-                            onClick={() => setFilter('2Star')}
+                            onClick={() => setFilter('2')}
                         />
                         <FontAwesomeIcon 
                             icon={faStar} 
-                            color={filter === '3Star' ? '#3BC3A4' : styles.colors.background} 
+                            color={filter === '3' ? '#3BC3A4' : styles.colors.background} 
                             size='lg' 
                             style={starborder}
                             data-cursor
-                            onClick={() => setFilter('3Star')}
+                            onClick={() => setFilter('3')}
                         />
                     </FilterContainer>
                 </Top>

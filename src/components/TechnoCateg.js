@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade'
 import uuid from 'react-uuid'
 import '../css/style.css'
 
-function TechnoCateg({ styles, title, links }) {
+function TechnoCateg({ styles, title, links, filter }) {
 
     const starfullstyle = {
         stroke: styles.colors.star,
@@ -29,114 +29,75 @@ function TechnoCateg({ styles, title, links }) {
                     <SmallContainer 
                         key={uuid()}
                     >
-                        <Tech 
-                            key={uuid()}
-                            src={link} 
-                            alt={title} 
-                        />
-                            {star === '1' ?
-                            <Star 
-                            key={uuid()}
-                                background={styles.colors.text}
-                            > 
-                                <FontAwesomeIcon 
-                                    icon={faStar} 
-                                    color={'#3BC3A4'} 
-                                    size='xs'
-                                    style={starfullstyle}
+                        {filter === 'noStar' ? 
+                            <>
+                                <Tech 
                                     key={uuid()}
-                                /> 
-                                <FontAwesomeIcon 
-                                    icon={faStar} 
-                                    color={styles.colors.background} 
-                                    size='xs' 
-                                    key={uuid()}
+                                    src={link} 
+                                    alt={title} 
                                 />
-                                <FontAwesomeIcon 
-                                    icon={faStar} 
-                                    color={styles.colors.background} 
-                                    size='xs'
-                                    key={uuid()}
-                                />
-                            </Star>
-                            : star === '2' ?
-                            <Star 
+                                <Star 
                                 key={uuid()}
-                                background={styles.colors.text}
-                            > 
-                                <FontAwesomeIcon 
-                                    icon={faStar} 
-                                    color={'#3BC3A4'} 
-                                    size='xs'
-                                    style={starfullstyle}
+                                    background={styles.colors.text}
+                                > 
+                                    <FontAwesomeIcon 
+                                        icon={faStar} 
+                                        color={star === '1' || star === '2' || star === '3' ? '#3BC3A4' : styles.colors.background} 
+                                        size='xs'
+                                        style={star === '1' || star === '2' || star === '3' ? starfullstyle : ''}
+                                        key={uuid()}
+                                    /> 
+                                    <FontAwesomeIcon 
+                                        icon={faStar} 
+                                        color={star === '2' || star === '3' ? '#3BC3A4' : styles.colors.background} 
+                                        size='xs' 
+                                        style={star === '2' || star === '3' ? starfullstyle : ''}
+                                        key={uuid()}
+                                    />
+                                    <FontAwesomeIcon 
+                                        icon={faStar} 
+                                        color={star === '3' ? '#3BC3A4' : styles.colors.background} 
+                                        size='xs'
+                                        style={star === '3' ? starfullstyle : ''}
+                                        key={uuid()}
+                                    />
+                                </Star>
+                            </>
+                            : filter === star ? 
+                            <>
+                                <Tech 
                                     key={uuid()}
-                                /> 
-                                <FontAwesomeIcon 
-                                    icon={faStar} 
-                                    color={'#3BC3A4'} 
-                                    size='xs' 
-                                    style={starfullstyle}
-                                    key={uuid()}
+                                    src={link} 
+                                    alt={title} 
                                 />
-                                <FontAwesomeIcon 
-                                    icon={faStar} 
-                                    color={styles.colors.background} 
-                                    size='xs'
-                                    key={uuid()}
-                                />
-                            </Star>
-                            : star === '3' ?
-                            <Star 
+                                <Star 
                                 key={uuid()}
-                                background={styles.colors.text}
-                            > 
-                                <FontAwesomeIcon 
-                                    icon={faStar} 
-                                    color={'#3BC3A4'} 
-                                    size='xs'
-                                    style={starfullstyle}
-                                    key={uuid()}
-                                /> 
-                                <FontAwesomeIcon 
-                                    icon={faStar} 
-                                    color={'#3BC3A4'} 
-                                    size='xs' 
-                                    style={starfullstyle}
-                                    key={uuid()}
-                                />
-                                <FontAwesomeIcon 
-                                    icon={faStar} 
-                                    color={'#3BC3A4'} 
-                                    size='xs'
-                                    style={starfullstyle}
-                                    key={uuid()}
-                                />
-                            </Star>
-                            : 
-                            <Star 
-                                key={uuid()}
-                                background={styles.colors.text}
-                            > 
-                                <FontAwesomeIcon 
-                                    icon={faStar} 
-                                    color={styles.colors.background} 
-                                    size='xs'
-                                    key={uuid()}
-                                /> 
-                                <FontAwesomeIcon 
-                                    icon={faStar} 
-                                    color={styles.colors.background} 
-                                    size='xs' 
-                                    key={uuid()}
-                                />
-                                <FontAwesomeIcon 
-                                    icon={faStar} 
-                                    color={styles.colors.background} 
-                                    size='xs'
-                                    key={uuid()}
-                                />
-                            </Star>
-                            }
+                                    background={styles.colors.text}
+                                > 
+                                    <FontAwesomeIcon 
+                                        icon={faStar} 
+                                        color={star === '1' || star === '2' || star === '3' ? '#3BC3A4' : styles.colors.background} 
+                                        size='xs'
+                                        style={star === '1' || star === '2' || star === '3' ? starfullstyle : ''}
+                                        key={uuid()}
+                                    /> 
+                                    <FontAwesomeIcon 
+                                        icon={faStar} 
+                                        color={star === '2' || star === '3' ? '#3BC3A4' : styles.colors.background} 
+                                        size='xs' 
+                                        style={star === '2' || star === '3' ? starfullstyle : ''}
+                                        key={uuid()}
+                                    />
+                                    <FontAwesomeIcon 
+                                        icon={faStar} 
+                                        color={star === '3' ? '#3BC3A4' : styles.colors.background} 
+                                        size='xs'
+                                        style={star === '3' ? starfullstyle : ''}
+                                        key={uuid()}
+                                    />
+                                </Star>
+                            </>
+                            : ''}
                     </SmallContainer>
                     </Fade>
                 ))}
