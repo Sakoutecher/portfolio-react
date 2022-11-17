@@ -75,7 +75,7 @@ function TechnoCateg({ styles, title, links, filter }) {
                                     key={uuid()}
                                     src={link} 
                                     alt={title} 
-                                    marginFilter={marginFilter} 
+                                    marginFilter={marginFilter}
                                 />
                                 <Star 
                                 key={uuid()}
@@ -150,7 +150,7 @@ const Line = styled.hr`
 const Tech = styled.img`
     position: relative;
     cursor: none;
-    margin-right: ${props => props.marginFilter};
+    margin-right: ${props => props.marginFilter}; 
 `
 
 const Star = styled.div`

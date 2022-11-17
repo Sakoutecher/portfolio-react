@@ -9,6 +9,10 @@
   cursor: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   transition: background-color 300ms ease;
   width: 100vh;

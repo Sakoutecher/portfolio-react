@@ -1,4 +1,5 @@
 import React from 'react'
+import Loader from './partials/Loader'
 import Navbar from './partials/Navbar'
 import Welcome from './section/Welcome'
 import Description from './section/Description'
@@ -14,6 +15,7 @@ import { Routes, Route } from 'react-router-dom'
 
 function App() {
 
+  const [loading, setLoading] = useState(false)
   const [theme, setTheme] = useState('dark')
 
   const colors = {
@@ -64,45 +66,56 @@ function App() {
   }
 
   useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3500);
+  }, []);
+
+  useEffect(() => {
     document.body.style.background = styles.colors.background
   }, [styles.colors.background])
 
   return (
     <>
-      <CustomCursor styles={styles} />
-      <Navbar 
-        theme={theme} 
-        setTheme={setTheme} 
-        styles={styles}
-      />
-      <Routes>
-        <Route 
-          path='/' 
-          element={ 
-            <>
-              <Welcome styles={styles} />
-              <Description styles={styles}colors={colors} />
-              <Technologies styles={styles} /> 
-              <Contact colors={colors} styles={styles} />
-            </>
-          } 
-        />
-        <Route 
-          path='/parcours' 
-          element={ <Parcours /> } 
-        />
-        <Route 
-          path='/hardware' 
-          element={ <Hardware /> } 
-        />
-        <Route 
-          path='/projects' 
-          element={ <Project /> } 
-        />
-      </Routes>
-      <Footer 
+      {loading ? <Loader /> :
+      <>
+        <CustomCursor styles={styles} />
+        <Navbar 
+          theme={theme} 
+          setTheme={setTheme} 
           styles={styles}
-      />
+        />
+        <Routes>
+          <Route 
+            path='/' 
+            element={ 
+              <>
+                <Welcome styles={styles} />
+                <Description styles={styles}colors={colors} />
+                <Technologies styles={styles} /> 
+                <Contact colors={colors} styles={styles} />
+              </>
+            } 
+          />
+          <Route 
+            path='/parcours' 
+            element={ <Parcours /> } 
+          />
+          <Route 
+            path='/hardware' 
+            element={ <Hardware /> } 
+          />
+          <Route 
+            path='/projects' 
+            element={ <Project /> } 
+          />
+        </Routes>
+        <Footer 
+            styles={styles}
+        />
+      </>
+      }
     </>
   );
 }
