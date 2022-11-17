@@ -5,6 +5,10 @@
 
 ### Added
 
+- ✨ Add the hardware page [[ae35154](https://github.com/Sakoutecher/portfolio-react/commit/ae35154d4c989a12ced00bc8c410657e9183c5fd)]
+- ✨ Add a loading screen [[f56b17e](https://github.com/Sakoutecher/portfolio-react/commit/f56b17e001c647814e17a4a938a5575507a8bdec)]
+- ✨ Adding a button to reset the filter [[2444c38](https://github.com/Sakoutecher/portfolio-react/commit/2444c38320e028862d6d35c9276aaa4b3b03cd88)]
+- 🔊 Update logs [[273d165](https://github.com/Sakoutecher/portfolio-react/commit/273d16508c2c1cf6e48f3facf17c6f22f055bf1d)]
 - ✨ Now when you put a filter the techno display with the filter [[3411adb](https://github.com/Sakoutecher/portfolio-react/commit/3411adbdc4c01b4a501d3788e9d44b839cf4fc59)]
 - ✨ Add the filter with the state [[0cd5357](https://github.com/Sakoutecher/portfolio-react/commit/0cd5357d608eafd2d804125113538f82d1f4b206)]
 - 🔊 Update logs [[935d7f2](https://github.com/Sakoutecher/portfolio-react/commit/935d7f29be9c66575ab6675beb1683104bca71c8)]
@@ -68,6 +72,7 @@
 
 ### Fixed
 
+- 🐛 Removing background yellow on the contact component [[237f21a](https://github.com/Sakoutecher/portfolio-react/commit/237f21a1c8e6fada307cbeeb61f9fb1cfe73b63b)]
 - 🐛 Removing the cursor on the body [[226f128](https://github.com/Sakoutecher/portfolio-react/commit/226f128396ac3c3c1d290446493f765bbd79e5f5)]
 
 ### Miscellaneous
