@@ -1,8 +1,11 @@
 import React from 'react';
 import styled from 'styled-components'
+import ProjectDiv from '../components/ProjectDiv';
 import Title from '../components/Title'
 
 function Project({ styles }) {
+    console.log(styles)
+
     return (
         <HardwareContainer>
             <Center>
@@ -14,9 +17,9 @@ function Project({ styles }) {
                         />
                     </Top>
                     <Bottom>
-                        <Item />
-                        <Item />
-                        <Item />
+                        <ProjectDiv styles={styles} />
+                        <ProjectDiv styles={styles} />
+                        <ProjectDiv styles={styles} />
                     </Bottom>
                 </CenterCenter>
             </Center>
@@ -69,16 +72,6 @@ const Bottom = styled.div`
     flex-wrap: wrap;
     gap: 1em;
     margin-bottom: 1em;
-`
-
-const Item = styled.div`
-    min-height: 400px;
-    width: 45%;
-    background-color: pink;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 1em;
-    margin-bottom: 0.6em;
 `
 
 export default Project;

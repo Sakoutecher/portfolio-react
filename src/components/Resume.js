@@ -1,17 +1,22 @@
 import React from 'react';
 import styled from 'styled-components'
 import '../css/style.css'
+import { useRef } from 'react'
 
-document.onmousemove = (ev) => {
-    const resume = document.querySelector('#resume');
-    resume.style.transform = `translate(${ev.clientX / 20}px, ${ev.clientY / 20}px)`
-}
+
 
 function Resume({ styles, colors }) {
+
+    const resume = useRef()
+    document.onmousemove = (ev) => {
+        resume.current.style.transform = `translate(${ev.clientX / 20}px, ${ev.clientY / 20}px)`
+    }
+    
     return (
         <ResumeBackground 
             data-cursor
             id='resume' 
+            ref={resume}
             href='./resume.pdf' 
             target='_blank'
             background={colors.colorLinks.primary} 
