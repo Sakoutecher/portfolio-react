@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import Title from '../components/Title'
 
 function Project({ styles }) {
     return (
@@ -7,11 +8,10 @@ function Project({ styles }) {
             <Center>
                 <CenterCenter>
                     <Top>
-                        <Titleh2 
-                            color={styles.colors.text}
-                        >
-                            🗂️ Projects
-                        </Titleh2>
+                        <Title
+                            styles={styles}
+                            text={'🗂️ Projects'}
+                        />
                     </Top>
                     <Bottom>
                         <Item />
@@ -68,6 +68,7 @@ const Bottom = styled.div`
     align-items: center;
     flex-wrap: wrap;
     gap: 1em;
+    margin-bottom: 1em;
 `
 
 const Item = styled.div`
@@ -78,25 +79,6 @@ const Item = styled.div`
     margin-right: 1em;
     margin-top: 1em;
     margin-bottom: 0.6em;
-`
-
-const Titleh2 = styled.h2`
-    font-family: Cooper Black;
-    color: ${props => props.color};
-    position: relative;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-
-    &:before {
-        content: '';
-        position: absolute; 
-        width: 100%;
-        height: 3px;
-        background-color: ${props => props.color};
-        bottom: -4px;
-        left: 0;
-    }
 `
 
 export default Project;
