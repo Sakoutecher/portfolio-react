@@ -12,12 +12,12 @@ const Navbar = ({styles, setTheme, theme}) => {
           <LinksContainer>
             <UnderlineContainer>
               <Link to='/parcours'>
-                <Links data-cursor textColor={styles.colors.text}>Parcours</Links>
+                <Links data-cursor textColor={styles.colors.text}>Career</Links>
               </Link>
             </UnderlineContainer>
             <UnderlineContainer>
               <Link to='/projects'>
-                <Links data-cursor textColor={styles.colors.text}>Projets</Links>
+                <Links data-cursor textColor={styles.colors.text}>Projects</Links>
               </Link>
             </UnderlineContainer>
             <UnderlineContainer>

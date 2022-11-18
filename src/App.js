@@ -108,7 +108,7 @@ function App() {
           />
           <Route 
             path='/projects' 
-            element={ <Project /> } 
+            element={ <Project styles={styles} /> } 
           />
         </Routes>
         <Footer 
