@@ -7,16 +7,16 @@ import { useRef } from 'react'
 
 function Resume({ styles, colors }) {
 
-    const resume = useRef()
-    document.onmousemove = (ev) => {
-        resume.current.style.transform = `translate(${ev.clientX / 20}px, ${ev.clientY / 20}px)`
-    }
+    //const resume = useRef()
+    //document.onmousemove = (ev) => {
+        //resume.current.style.transform = `translate(${ev.clientX / 20}px, ${ev.clientY / 20}px)`
+    //}
     
     return (
         <ResumeBackground 
             data-cursor
             id='resume' 
-            ref={resume}
+            //ref={resume}
             href='./resume.pdf' 
             target='_blank'
             background={colors.colorLinks.primary} 

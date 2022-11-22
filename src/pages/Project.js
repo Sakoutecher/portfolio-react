@@ -3,9 +3,7 @@ import styled from 'styled-components'
 import ProjectDiv from '../components/ProjectDiv';
 import Title from '../components/Title'
 
-function Project({ styles }) {
-    console.log(styles)
-
+function Project({ styles, colors }) {
     return (
         <HardwareContainer>
             <Center>
@@ -17,9 +15,13 @@ function Project({ styles }) {
                         />
                     </Top>
                     <Bottom>
-                        <ProjectDiv styles={styles} />
-                        <ProjectDiv styles={styles} />
-                        <ProjectDiv styles={styles} />
+                        <ProjectDiv styles={styles} colors={colors} />
+                        <ProjectDiv styles={styles} colors={colors} />
+                        <ProjectDiv styles={styles} colors={colors} />
+                        <ProjectDiv styles={styles} colors={colors} />
+                        <ProjectDiv styles={styles} colors={colors} />
+                        <ProjectDiv styles={styles} colors={colors} />
+                        <ProjectDiv styles={styles} colors={colors} />
                     </Bottom>
                 </CenterCenter>
             </Center>

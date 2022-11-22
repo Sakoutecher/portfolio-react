@@ -92,7 +92,7 @@ function App() {
             element={ 
               <>
                 <Welcome styles={styles} />
-                <Description styles={styles}colors={colors} />
+                <Description styles={styles} colors={colors} />
                 <Technologies styles={styles} /> 
                 <Contact colors={colors} styles={styles} />
               </>
@@ -108,7 +108,7 @@ function App() {
           />
           <Route 
             path='/projects' 
-            element={ <Project styles={styles} /> } 
+            element={ <Project styles={styles} colors={colors} /> } 
           />
         </Routes>
         <Footer 
