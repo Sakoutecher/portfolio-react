@@ -1,45 +1,73 @@
-const ProjectsData = [
+const Portfolio = [
     {
-        title: 'Portfolio',
-        techno : [
-            {
-                alt: 'react',
-                src: './techno-icons/React.png'
-            },
-
-            {
-                alt: 'styledcomponent',
-                src: './techno-icons/StyledComponent.png'
-            },
-
-            {
-                alt: 'js',
-                src: './techno-icons/JS.png'
-            },
-
-            {
-                alt: 'eslint',
-                src: './techno-icons/ESLint.png'
-            },
-
-            {
-                alt: 'prettier',
-                src: './techno-icons/Prettier.png'
-            }
-        ]
+        alt: 'react',
+        src: './techno-icons/React.png'
     },
 
     {
-        title: "Cuicuiteday's Website",
-        link: 'https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white',
-        star: '3',
+        alt: 'styledcomponent',
+        src: './techno-icons/StyledComponent.png'
     },
 
     {
-        title: 'Color guess game',
-        link: 'https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white',
-        star: '3',
+        alt: 'js',
+        src: './techno-icons/JS.png'
+    },
+
+    {
+        alt: 'eslint',
+        src: './techno-icons/ESLint.png'
+    },
+
+    {
+        alt: 'prettier',
+        src: './techno-icons/Prettier.png'
+    }
+]
+
+const Cuicuitedays = [
+    {
+        alt: 'html',
+        src: './techno-icons/html5.png'
+    },
+
+    {
+        alt: 'sass',
+        src: './techno-icons/sass.png'
+    },
+
+    {
+        alt: 'js',
+        src: './techno-icons/JS.png'
+    },
+
+    {
+        alt: 'php',
+        src: './techno-icons/php-logo.svg'
     },
 ]
 
-export {ProjectsData}
+const ColorGuess = [
+    {
+        alt: 'react',
+        src: './techno-icons/React.png'
+    },
+
+
+    {
+        alt: 'ts',
+        src: './techno-icons/TS.png'
+    },
+
+    {
+        alt: 'eslint',
+        src: './techno-icons/ESLint.png'
+    },
+
+    {
+        alt: 'prettier',
+        src: './techno-icons/Prettier.png'
+    }
+]
+
+export {Portfolio, Cuicuitedays, ColorGuess}

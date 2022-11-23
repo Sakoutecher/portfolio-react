@@ -1,19 +1,17 @@
 import React from 'react'
+import uuid from 'react-uuid'
 import styled from 'styled-components'
 import Text from '../components/Text'
 
-function ProjectDiv({ styles, colors }) {
+function ProjectDiv({ styles, colors, projects, title, bg }) {
   return (
-    <Item text={'Portfolio'} color={styles.colors.text} background={colors.colorLinks.primary} data-cursor>
+    <Item text={title} color={styles.colors.text} background={colors.colorLinks.primary} imgBg={bg} data-cursor>
       <Bottom backgroundColor={colors.colorLinks.primary}>
         <Text styles={styles} text={'Technologies'} />
         <TechnoContainer>
-          <Logo src='./techno-icons/JS.png' />
-          <Logo src='./techno-icons/Node.png' />
-          <Logo src='./techno-icons/Prettier.png' />
-          <Logo src='./techno-icons/React.png' />
-          <Logo src='./techno-icons/StyledComponent.png' />
-          <Logo src='./techno-icons/TS.png' />
+          {projects.map(({alt, src}) => (
+            <Logo key={uuid()} src={src} alt={alt} />
+          ))}
         </TechnoContainer>
       </Bottom>
     </Item>
@@ -23,7 +21,7 @@ function ProjectDiv({ styles, colors }) {
 const Item = styled.div`
   height: 23em;
   width: 45%;
-  background: url('./photo-projects/portfolio.jpeg');
+  background: url('${props => props.imgBg}');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -44,7 +42,7 @@ const Item = styled.div`
     padding: 0.6em 1.5em;
     top: 1.5em;
     left: 1.5em;
-    background-color: red;
+    //background-color: red;
     border-radius: 8px;
     font-family: Cooper Black;
     color: ${props => props.color};
@@ -77,20 +75,7 @@ const TechnoContainer = styled.div`
 `
 
 const Logo = styled.img`
-  width: 1.2em;
-`
-
-const ProjectTitle = styled.h3`
-  font-family: Cooper Black;
-  color: ${props => props.color};
-  position: relative;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 15px 30px;
-  background-color: ${props => props.background + '61'};
-  backdrop-filter: blur(5px);
-  border-radius: 8px 8px 0px 0px;
+  width: 1.4em;
 `
 
 export default ProjectDiv
