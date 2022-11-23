@@ -5,12 +5,27 @@ import Text from '../components/Text'
 
 function ProjectDiv({ styles, colors, projects, title, bg }) {
   return (
-    <Item text={title} color={styles.colors.text} background={colors.colorLinks.primary} imgBg={bg} data-cursor>
-      <Bottom backgroundColor={colors.colorLinks.primary}>
-        <Text styles={styles} text={'Technologies'} />
+    <Item 
+      text={title} 
+      color={styles.colors.text} 
+      background={colors.colorLinks.primary} 
+      imgBg={bg} 
+      data-cursor
+    >
+      <Bottom 
+        backgroundColor={colors.colorLinks.primary}
+      >
+        <Text 
+          styles={styles} 
+          text={'Technologies'} 
+        />
         <TechnoContainer>
           {projects.map(({alt, src}) => (
-            <Logo key={uuid()} src={src} alt={alt} />
+            <Logo 
+              key={uuid()} 
+              src={src} 
+              alt={alt} 
+            />
           ))}
         </TechnoContainer>
       </Bottom>
