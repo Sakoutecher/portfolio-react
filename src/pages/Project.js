@@ -35,7 +35,7 @@ function Project({ styles, colors }) {
                             colors={colors} 
                             projects={ColorGuess} 
                             title={'Color-Guess Game'} 
-                            bg={'./photo-projects/color-guess.jpeg'} 
+                            bg={'./photo-projects/color-guess.png'} 
                         />
                     </Bottom>
                 </CenterCenter>
