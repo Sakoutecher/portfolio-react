@@ -4,10 +4,7 @@ import Text from '../components/Text'
 
 function ProjectDiv({ styles, colors }) {
   return (
-    <Item>
-      <ProjectTitle color={styles.colors.text} background={colors.colorLinks.primary}>
-        Portfolio
-      </ProjectTitle>
+    <Item text={'Portfolio'} color={styles.colors.text} background={colors.colorLinks.primary} data-cursor>
       <Bottom backgroundColor={colors.colorLinks.primary}>
         <Text styles={styles} text={'Technologies'} />
         <TechnoContainer>
@@ -36,8 +33,27 @@ const Item = styled.div`
   margin-bottom: 0.6em;
   border-radius: 8px;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  &::before {
+    content: '${props => props.text}';
+    position: absolute;
+    padding: 0.6em 1.5em;
+    top: 1.5em;
+    left: 1.5em;
+    background-color: red;
+    border-radius: 8px;
+    font-family: Cooper Black;
+    color: ${props => props.color};
+    background-color: ${props => props.background + '61'};
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    backdrop-filter: blur(5px);
+  }
 `
 
 const Bottom = styled.div`
