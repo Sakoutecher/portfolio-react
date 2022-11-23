@@ -1,10 +1,12 @@
 # Changelog
 
 <a name="0.1.0"></a>
-## 0.1.0 (2022-11-17)
+## 0.1.0 (2022-11-23)
 
 ### Added
 
+- ✨ Finish the project page with automatic show with an array [[0fff12e](https://github.com/Sakoutecher/portfolio-react/commit/0fff12e12e40c0ab59dfa5ad388068f786243cba)]
+- 🔊 Update logs [[c3ec529](https://github.com/Sakoutecher/portfolio-react/commit/c3ec529947f18c2cd77e6278776428c8ac5a9f99)]
 - ✨ Add the hardware page [[ae35154](https://github.com/Sakoutecher/portfolio-react/commit/ae35154d4c989a12ced00bc8c410657e9183c5fd)]
 - ✨ Add a loading screen [[f56b17e](https://github.com/Sakoutecher/portfolio-react/commit/f56b17e001c647814e17a4a938a5575507a8bdec)]
 - ✨ Adding a button to reset the filter [[2444c38](https://github.com/Sakoutecher/portfolio-react/commit/2444c38320e028862d6d35c9276aaa4b3b03cd88)]
@@ -39,6 +41,13 @@
 
 ### Changed
 
+- 🍱 Update the img of the color guess project [[905b140](https://github.com/Sakoutecher/portfolio-react/commit/905b140be84d037e4bb49e3871bb7587c214c168)]
+- 🎨 Add back to line in project files [[a050079](https://github.com/Sakoutecher/portfolio-react/commit/a0500796b28fc72a72edb47f531985519675f8fd)]
+- 💄 Update project div [[f6f6955](https://github.com/Sakoutecher/portfolio-react/commit/f6f69551e33d09adcf673283117c8e5de9001896)]
+- 💄 Finish the style of the projects [[f143780](https://github.com/Sakoutecher/portfolio-react/commit/f14378052f1d12730f436b691731bc1725995cd4)]
+- 🏗️ Add a techno-icons folder with the icons [[76e26d8](https://github.com/Sakoutecher/portfolio-react/commit/76e26d875d63aee0a13c9e1f3b7ef9d39c70d1a3)]
+- 💄 Style of the project page done and the grid for the projects [[795bc57](https://github.com/Sakoutecher/portfolio-react/commit/795bc577d1a53d754243ceb7dd1fee1828da1140)]
+- 💬 Swicth the link in the navbar into english words [[6d7ab05](https://github.com/Sakoutecher/portfolio-react/commit/6d7ab0540e707a9161fdcb216ccacafe84222e00)]
 - 💄 Update the margin in the technologies component when a filter is applied [[e837080](https://github.com/Sakoutecher/portfolio-react/commit/e837080d643c35b218a73070990800faac0cf4b9)]
 - 💬 Update the presentation text in the description component [[31848f1](https://github.com/Sakoutecher/portfolio-react/commit/31848f1dd97c4c8bf838d048b20ef487aa48909a)]
 - ⚡ Delete array from component and putting them into a data folder [[a1e9823](https://github.com/Sakoutecher/portfolio-react/commit/a1e982332a84fb0eaab7999c034f0483590e919a)]
@@ -77,6 +86,8 @@
 
 ### Miscellaneous
 
+- 🚧 Start the data file for the project [[5b04098](https://github.com/Sakoutecher/portfolio-react/commit/5b04098ff113a637388a6a9733a9edca866d6f1b)]
+- 🚧 Work on the ProjectDiv component, add photos fot the projects [[e64c590](https://github.com/Sakoutecher/portfolio-react/commit/e64c590de5ca7e0a4abf9e0f15bfcf7e6e3b1b97)]
 - 🚧 Start the filter for the technologies star [[1ed08a6](https://github.com/Sakoutecher/portfolio-react/commit/1ed08a60e8a76ba652cf980f1c3978c352acc65b)]
 - 💫 Add animation while hovering link or button on the custom cursor [[87e7140](https://github.com/Sakoutecher/portfolio-react/commit/87e7140945531c84df7462c9a686ac637215dc52)]
 - 💫 Add animation on the resume button wich following the mouse of the user [[06cc22c](https://github.com/Sakoutecher/portfolio-react/commit/06cc22c9cdf1196876ea60524a536d87aea93855)]
