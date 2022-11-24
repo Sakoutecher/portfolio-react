@@ -8,12 +8,12 @@ function ProjectDiv({ styles, colors, projects, title, bg }) {
     <Item 
       text={title} 
       color={styles.colors.text} 
-      background={colors.colorLinks.primary} 
+      background={styles.colors.background} 
       imgBg={bg} 
       data-cursor
     >
       <Bottom 
-        backgroundColor={colors.colorLinks.primary}
+        backgroundColor={styles.colors.background}
       >
         <Text 
           styles={styles} 
@@ -61,7 +61,7 @@ const Item = styled.div`
     border-radius: 8px;
     font-family: Cooper Black;
     color: ${props => props.color};
-    background-color: ${props => props.background + '61'};
+    background-color: ${props => props.background + 'C4'};
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -72,7 +72,7 @@ const Item = styled.div`
 const Bottom = styled.div`
   height: 25%;
   width: 100%;
-  background-color: ${props => props.backgroundColor + '61'}; 
+  background-color: ${props => props.backgroundColor + 'C4'}; 
   border-radius: 0px 0px 8px 8px;
   backdrop-filter: blur(5px);
   padding: 15px 30px;

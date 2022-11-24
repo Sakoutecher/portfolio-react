@@ -21,7 +21,7 @@ function Project({ styles, colors }) {
                             colors={colors} 
                             projects={Portfolio} 
                             title={'Portfolio'} 
-                            bg={'./photo-projects/portfolio.jpeg'} 
+                            bg={'./photo-projects/portfolio.png'} 
                         />
                         <ProjectDiv 
                             styles={styles} 
