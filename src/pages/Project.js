@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import ProjectDiv from '../components/ProjectDiv';
 import Title from '../components/Title'
-import { Portfolio, Cuicuitedays, ColorGuess } from '../data/DataProjects'
+import { Portfolio, Cuicuitedays, ColorGuess, JungleHouse } from '../data/DataProjects'
 
 function Project({ styles, colors }) {
     return (
@@ -36,6 +36,13 @@ function Project({ styles, colors }) {
                             projects={ColorGuess} 
                             title={'Color-Guess Game'} 
                             bg={'./photo-projects/color-guess.png'} 
+                        />
+                        <ProjectDiv 
+                            styles={styles} 
+                            colors={colors} 
+                            projects={JungleHouse} 
+                            title={'Jungle-House Site'} 
+                            bg={'./photo-projects/jungle-house.png'} 
                         />
                     </Bottom>
                 </CenterCenter>

@@ -70,4 +70,27 @@ const ColorGuess = [
     }
 ]
 
-export {Portfolio, Cuicuitedays, ColorGuess}
+const JungleHouse = [
+    {
+        alt: 'react',
+        src: './techno-icons/React.png'
+    },
+
+
+    {
+        alt: 'js',
+        src: './techno-icons/JS.png'
+    },
+
+    {
+        alt: 'eslint',
+        src: './techno-icons/ESLint.png'
+    },
+
+    {
+        alt: 'prettier',
+        src: './techno-icons/Prettier.png'
+    }
+]
+
+export {Portfolio, Cuicuitedays, ColorGuess, JungleHouse}
