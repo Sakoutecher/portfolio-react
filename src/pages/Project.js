@@ -3,51 +3,58 @@ import styled from 'styled-components'
 import ProjectDiv from '../components/ProjectDiv';
 import Title from '../components/Title'
 import { Portfolio, Cuicuitedays, ColorGuess, JungleHouse } from '../data/DataProjects'
+import { Routes, Route } from 'react-router-dom'
 
 function Project({ styles, colors }) {
     return (
-        <HardwareContainer>
-            <Center>
-                <CenterCenter>
-                    <Top>
-                        <Title
-                            styles={styles}
-                            text={'🗂️ Projects'}
-                        />
-                    </Top>
-                    <Bottom>
-                        <ProjectDiv 
-                            styles={styles} 
-                            colors={colors} 
-                            projects={Portfolio} 
-                            title={'Portfolio'} 
-                            bg={'./photo-projects/portfolio.png'} 
-                        />
-                        <ProjectDiv 
-                            styles={styles} 
-                            colors={colors} 
-                            projects={Cuicuitedays} 
-                            title={'CuicuiteDays Website'} 
-                            bg={'./photo-projects/cuicuitedays.png'} 
-                        />
-                        <ProjectDiv 
-                            styles={styles} 
-                            colors={colors} 
-                            projects={ColorGuess} 
-                            title={'Color-Guess Game'} 
-                            bg={'./photo-projects/color-guess.png'} 
-                        />
-                        <ProjectDiv 
-                            styles={styles} 
-                            colors={colors} 
-                            projects={JungleHouse} 
-                            title={'Jungle-House Site'} 
-                            bg={'./photo-projects/jungle-house.png'} 
-                        />
-                    </Bottom>
-                </CenterCenter>
-            </Center>
-        </HardwareContainer>
+        <>
+            <Routes>
+                <Route path='/' element={
+                    <HardwareContainer>
+                        <Center>
+                            <CenterCenter>
+                                <Top>
+                                    <Title
+                                        styles={styles}
+                                        text={'🗂️ Projects'}
+                                    />
+                                </Top>
+                                <Bottom>
+                                    <ProjectDiv 
+                                        styles={styles} 
+                                        colors={colors} 
+                                        projects={Portfolio} 
+                                        title={'Portfolio'} 
+                                        bg={'./photo-projects/portfolio.png'} 
+                                    />
+                                    <ProjectDiv 
+                                        styles={styles} 
+                                        colors={colors} 
+                                        projects={Cuicuitedays} 
+                                        title={'CuicuiteDays Website'} 
+                                        bg={'./photo-projects/cuicuitedays.png'} 
+                                    />
+                                    <ProjectDiv 
+                                        styles={styles} 
+                                        colors={colors} 
+                                        projects={ColorGuess} 
+                                        title={'Color-Guess Game'} 
+                                        bg={'./photo-projects/color-guess.png'} 
+                                    />
+                                    <ProjectDiv 
+                                        styles={styles} 
+                                        colors={colors} 
+                                        projects={JungleHouse} 
+                                        title={'Jungle-House Site'} 
+                                        bg={'./photo-projects/jungle-house.png'} 
+                                    />
+                                </Bottom>
+                            </CenterCenter>
+                        </Center>
+                    </HardwareContainer>
+                }/>
+            </Routes>
+        </>
     );
 }
 

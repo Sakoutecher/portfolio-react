@@ -6,7 +6,7 @@ import Text from '../components/Text'
 function ProjectDiv({ styles, colors, projects, title, bg }) {
   return (
     <Item 
-      text={title} 
+      title={title} 
       color={styles.colors.text} 
       background={styles.colors.background} 
       imgBg={bg} 
@@ -52,11 +52,28 @@ const Item = styled.div`
   position: relative;
 
   &::before {
-    content: '${props => props.text}';
+    content: '${props => props.title}';
     position: absolute;
     padding: 0.6em 1.5em;
     top: 1.5em;
     left: 1.5em;
+    //background-color: red;
+    border-radius: 8px;
+    font-family: Cooper Black;
+    color: ${props => props.color};
+    background-color: ${props => props.background + 'C4'};
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    backdrop-filter: blur(5px);
+  }
+
+  &::after {
+    content: '😁';
+    position: absolute;
+    padding: 0.6em 1.5em;
+    top: 1.5em;
+    right: 1.5em;
     //background-color: red;
     border-radius: 8px;
     font-family: Cooper Black;
