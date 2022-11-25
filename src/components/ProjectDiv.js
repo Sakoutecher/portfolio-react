@@ -2,16 +2,25 @@ import React from 'react'
 import uuid from 'react-uuid'
 import styled from 'styled-components'
 import Text from '../components/Text'
+import { Link } from 'react-router-dom'
 
-function ProjectDiv({ styles, colors, projects, title, bg }) {
+function ProjectDiv({ styles, page, projects, title, bg }) {
   return (
     <Item 
       title={title} 
       color={styles.colors.text} 
       background={styles.colors.background} 
       imgBg={bg} 
-      data-cursor
     >
+      <Link to={'/projects/' + page}>
+        <ShowMore
+          color={styles.colors.text} 
+          background={styles.colors.background} 
+          data-cursor
+        >
+          👀
+        </ShowMore>
+      </Link>
       <Bottom 
         backgroundColor={styles.colors.background}
       >
@@ -54,36 +63,36 @@ const Item = styled.div`
   &::before {
     content: '${props => props.title}';
     position: absolute;
-    padding: 0.6em 1.5em;
-    top: 1.5em;
+    padding: 1em 1.5em;
+    margin-top: 1.5em;
+    top: 0;
     left: 1.5em;
     //background-color: red;
     border-radius: 8px;
     font-family: Cooper Black;
     color: ${props => props.color};
     background-color: ${props => props.background + 'C4'};
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
     backdrop-filter: blur(5px);
   }
+`
 
-  &::after {
-    content: '😁';
-    position: absolute;
-    padding: 0.6em 1.5em;
-    top: 1.5em;
-    right: 1.5em;
-    //background-color: red;
-    border-radius: 8px;
-    font-family: Cooper Black;
-    color: ${props => props.color};
-    background-color: ${props => props.background + 'C4'};
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    backdrop-filter: blur(5px);
-  }
+const ShowMore = styled.div`
+  position: absolute;
+  padding: 1em 1.5em;
+  margin-top: 1.5em;
+  top: 0;
+  right: 1.5em;
+  //background-color: red;
+  border-radius: 8px;
+  font-family: Cooper Black;
+  color: ${props => props.color};
+  background-color: ${props => props.background + 'C4'};
+  font-size: 14px;
+  letter-spacing: 2px;
+  backdrop-filter: blur(5px);
 `
 
 const Bottom = styled.div`

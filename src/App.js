@@ -12,6 +12,7 @@ import Project from './pages/Project'
 import CustomCursor from './components/CustomCursor'
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import ShowProject from './pages/ShowProject'
 
 function App() {
 
@@ -109,6 +110,10 @@ function App() {
           <Route 
             path='/projects' 
             element={ <Project styles={styles} colors={colors} /> } 
+          />
+          <Route
+            path='/projects/:page'
+            element={ <ShowProject /> }
           />
         </Routes>
         <Footer 
