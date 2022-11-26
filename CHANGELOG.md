@@ -1,10 +1,13 @@
 # Changelog
 
 <a name="0.1.0"></a>
-## 0.1.0 (2022-11-23)
+## 0.1.0 (2022-11-26)
 
 ### Added
 
+- ✨ Show all the project on the showproject page from array [[64f72bb](https://github.com/Sakoutecher/portfolio-react/commit/64f72bbd5b00ef3f6df65c814b5d96cbb9d6af50)]
+- ✨ Style for showproject and add react icons and justify some text [[7292e81](https://github.com/Sakoutecher/portfolio-react/commit/7292e811e70a20f9f56e214739fd08f96d08f2df)]
+- 🔊 Update logs [[e6fae8c](https://github.com/Sakoutecher/portfolio-react/commit/e6fae8c77ef6c2486796bea527afebe377db7182)]
 - ✨ Finish the project page with automatic show with an array [[0fff12e](https://github.com/Sakoutecher/portfolio-react/commit/0fff12e12e40c0ab59dfa5ad388068f786243cba)]
 - 🔊 Update logs [[c3ec529](https://github.com/Sakoutecher/portfolio-react/commit/c3ec529947f18c2cd77e6278776428c8ac5a9f99)]
 - ✨ Add the hardware page [[ae35154](https://github.com/Sakoutecher/portfolio-react/commit/ae35154d4c989a12ced00bc8c410657e9183c5fd)]
@@ -41,6 +44,11 @@
 
 ### Changed
 
+- ⚡ Reduce the duration loader [[2a1e2d1](https://github.com/Sakoutecher/portfolio-react/commit/2a1e2d196e925746ec0016c480eaf6d3a2912066)]
+- 🎨 Add space in the show project page code [[d42f96c](https://github.com/Sakoutecher/portfolio-react/commit/d42f96c2b556b2e748f2cdf7e97e1cdd27317f40)]
+- 💄 Finish the style to the show more button [[ca95dfd](https://github.com/Sakoutecher/portfolio-react/commit/ca95dfdab7ef67145a4b619bf8c2c3cd66f893fd)]
+- 💄 Update the colors for the title projects and technologies project [[8fc3402](https://github.com/Sakoutecher/portfolio-react/commit/8fc34028e07f0debd050277f1bddd9f7ccc76603)]
+- 🍱 Add another projects [[b5b2121](https://github.com/Sakoutecher/portfolio-react/commit/b5b2121022e878faec09ba4e1c59ebc4ffaf6016)]
 - 🍱 Update the img of the color guess project [[905b140](https://github.com/Sakoutecher/portfolio-react/commit/905b140be84d037e4bb49e3871bb7587c214c168)]
 - 🎨 Add back to line in project files [[a050079](https://github.com/Sakoutecher/portfolio-react/commit/a0500796b28fc72a72edb47f531985519675f8fd)]
 - 💄 Update project div [[f6f6955](https://github.com/Sakoutecher/portfolio-react/commit/f6f69551e33d09adcf673283117c8e5de9001896)]
@@ -81,11 +89,14 @@
 
 ### Fixed
 
+- 🐛 Change color for the code source link [[a75a4a4](https://github.com/Sakoutecher/portfolio-react/commit/a75a4a4e97c98c0003a9a8d11ac08cfb60853a5a)]
+- 🐛 Removing error in the console from the resume component [[f9b6ac4](https://github.com/Sakoutecher/portfolio-react/commit/f9b6ac46abf741646d90505a1c7fda25c9bd3074)]
 - 🐛 Removing background yellow on the contact component [[237f21a](https://github.com/Sakoutecher/portfolio-react/commit/237f21a1c8e6fada307cbeeb61f9fb1cfe73b63b)]
 - 🐛 Removing the cursor on the body [[226f128](https://github.com/Sakoutecher/portfolio-react/commit/226f128396ac3c3c1d290446493f765bbd79e5f5)]
 
 ### Miscellaneous
 
+- 🚧 Add routes to project pages and start to add a button to show more [[85b2bfa](https://github.com/Sakoutecher/portfolio-react/commit/85b2bfadc6e91eac822bd9f78f248c5278c72fa2)]
 - 🚧 Start the data file for the project [[5b04098](https://github.com/Sakoutecher/portfolio-react/commit/5b04098ff113a637388a6a9733a9edca866d6f1b)]
 - 🚧 Work on the ProjectDiv component, add photos fot the projects [[e64c590](https://github.com/Sakoutecher/portfolio-react/commit/e64c590de5ca7e0a4abf9e0f15bfcf7e6e3b1b97)]
 - 🚧 Start the filter for the technologies star [[1ed08a6](https://github.com/Sakoutecher/portfolio-react/commit/1ed08a60e8a76ba652cf980f1c3978c352acc65b)]
