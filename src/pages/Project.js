@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import ProjectDiv from '../components/ProjectDiv';
 import Title from '../components/Title'
-import { Portfolio, Cuicuitedays, ColorGuess, JungleHouse } from '../data/DataProjects'
+import { Portfolio, Cuicuitedays, ColorGuess, JungleHouse } from '../data/DataTechnoProjects'
 
 function Project({ styles, colors }) {
     return (

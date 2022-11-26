@@ -113,7 +113,7 @@ function App() {
           />
           <Route
             path='/projects/:page'
-            element={ <ShowProject /> }
+            element={ <ShowProject styles={styles} colors={colors} /> }
           />
         </Routes>
         <Footer 

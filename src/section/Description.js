@@ -209,6 +209,7 @@ const Paragraph = styled.p`
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 1px;
+    text-align: justify;
 `
 
 export default Description;
