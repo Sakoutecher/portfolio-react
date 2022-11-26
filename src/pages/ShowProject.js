@@ -4,35 +4,56 @@ import styled from 'styled-components'
 import Title from '../components/Title'
 import Text from '../components/Text'
 import { FaGithub } from "react-icons/fa";
+import { portfolio, cuicuitedays, colorGuess, jungleHouse } from '../data/DataAllProjects'
+import uuid from 'react-uuid'
 
 function ShowProject({ styles, colors }) {
     const page = useParams()
-    const namePage = page.page
+    let usePage = ''
+    if (page.page === 'portfolio') {
+        usePage = portfolio
+    } else if (page.page === 'cuicuitedays') {
+        usePage = cuicuitedays
+    } else if (page.page === 'colorGuess') {
+        usePage = colorGuess 
+    } else {
+        usePage = jungleHouse
+    }
 
     return (
         <HardwareContainer>
             <Center>
                 <CenterCenter>
                     <Top>
-                        <ImgProject src={'../photo-projects/jungle-house.png'} />
+                        <ImgProject src={usePage.img} />
                         <InfoProject>
-                            <Title styles={styles} text={'jungle-house'} />
+                            <Title styles={styles} text={usePage.title} />
                             <Techno>
-                                <ImgTechno src='../techno-icons/React.png' />
-                                <ImgTechno src='../techno-icons/JS.png' />
-                                <ImgTechno src='../techno-icons/TS.png' />
-                                <ImgTechno src='../techno-icons/Eslint.png' />
-                                <ImgTechno src='../techno-icons/Prettier.png' />
-                                <ImgTechno src='../techno-icons/Sass.png' />
+                                {
+                                   usePage.techno.map(({alt, src}) => {
+                                        return (
+                                            <ImgTechno src={src} alt={alt} key={uuid()} />
+                                        )
+                                   }) 
+                                }
                             </Techno>
-                            <SourceLink background={colors.colorLinks.primary} data-cursor>
-                                <FaGithub style={{marginRight: '0.5em'}} />
-                                Source code
-                            </SourceLink>
+                            {
+                                usePage.source === true ?
+                                    <SourceLink href={usePage.sourceCode} target={'_blank'} background={colors.colorLinks.primary} data-cursor>
+                                        <FaGithub style={{marginRight: '0.5em'}} />
+                                        Source code
+                                    </SourceLink>
+                                : 
+                                    <SourceLink background={'rgb(231 76 60 / 60%)'}>
+                                        <FaGithub style={{marginRight: '0.5em'}} />
+                                        No source code 😩
+                                    </SourceLink>
+                            }
+                            
                         </InfoProject>
                     </Top>
                     <Bottom>
-                        <Text styles={styles} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id eros nec libero convallis ultrices non ac metus. Duis molestie at arcu id posuere. Fusce blandit purus non nibh condimentum lobortis. Integer lobortis, neque at mattis pellentesque, massa tortor dapibus ipsum, id tincidunt nibh diam in leo. Nam id elit mi. Nullam auctor, nibh eu tristique elementum, lorem nisl consequat libero, ac mollis purus erat sit amet mi. Cras eget diam nec arcu aliquam vehicula id in sapien. In et lorem mollis, maximus nulla at, aliquet augue. Sed porta fermentum arcu, nec viverra erat bibendum sit amet.'}/>
+                        <Text styles={styles} text={usePage.description}/>
                     </Bottom>
                 </CenterCenter>
             </Center>
@@ -116,7 +137,7 @@ const ImgTechno = styled.img`
     width: 12%;
 `
 
-const SourceLink = styled.div`
+const SourceLink = styled.a`
     width: 100%;
     height: 26%;
     background-color: ${props => props.background};
@@ -131,7 +152,7 @@ const SourceLink = styled.div`
     font-weight: 500;
 
     &:hover {
-        background-color: #1d9f81;
+        background-color: ${props => props.background + 'D7'};
     }
 `
 
