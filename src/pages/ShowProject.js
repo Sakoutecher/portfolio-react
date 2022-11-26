@@ -53,6 +53,7 @@ function ShowProject({ styles, colors }) {
                                         target={'_blank'} 
                                         background={colors.colorLinks.primary} 
                                         data-cursor
+                                        color={colors.light.textColor}
                                     >
                                         <FaGithub 
                                             style={{marginRight: '0.5em'}} 
@@ -173,6 +174,8 @@ const SourceLink = styled.a`
     font-family: Poppins;
     font-size: 15px;
     font-weight: 500;
+    text-decoration: none;
+    color: ${props => props.color};
 
     &:hover {
         background-color: ${props => props.background + 'D7'};
