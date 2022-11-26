@@ -25,27 +25,47 @@ function ShowProject({ styles, colors }) {
             <Center>
                 <CenterCenter>
                     <Top>
-                        <ImgProject src={usePage.img} />
+                        <ImgProject 
+                            src={usePage.img} 
+                        />
                         <InfoProject>
-                            <Title styles={styles} text={usePage.title} />
+                            <Title 
+                                styles={styles} 
+                                text={usePage.title} 
+                            />
                             <Techno>
                                 {
                                    usePage.techno.map(({alt, src}) => {
                                         return (
-                                            <ImgTechno src={src} alt={alt} key={uuid()} />
+                                            <ImgTechno 
+                                                src={src} 
+                                                alt={alt} 
+                                                key={uuid()} 
+                                            />
                                         )
                                    }) 
                                 }
                             </Techno>
                             {
                                 usePage.source === true ?
-                                    <SourceLink href={usePage.sourceCode} target={'_blank'} background={colors.colorLinks.primary} data-cursor>
-                                        <FaGithub style={{marginRight: '0.5em'}} />
+                                    <SourceLink 
+                                        href={usePage.sourceCode} 
+                                        target={'_blank'} 
+                                        background={colors.colorLinks.primary} 
+                                        data-cursor
+                                    >
+                                        <FaGithub 
+                                            style={{marginRight: '0.5em'}} 
+                                        />
                                         Source code
                                     </SourceLink>
                                 : 
-                                    <SourceLink background={'rgb(231 76 60 / 60%)'}>
-                                        <FaGithub style={{marginRight: '0.5em'}} />
+                                    <SourceLink 
+                                        background={'rgb(231 76 60 / 60%)'}
+                                    >
+                                        <FaGithub 
+                                            style={{marginRight: '0.5em'}} 
+                                        />
                                         No source code 😩
                                     </SourceLink>
                             }
@@ -53,7 +73,10 @@ function ShowProject({ styles, colors }) {
                         </InfoProject>
                     </Top>
                     <Bottom>
-                        <Text styles={styles} text={usePage.description}/>
+                        <Text 
+                            styles={styles} 
+                            text={usePage.description}
+                        />
                     </Bottom>
                 </CenterCenter>
             </Center>
