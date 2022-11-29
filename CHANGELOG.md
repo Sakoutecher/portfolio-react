@@ -1,10 +1,13 @@
 # Changelog
 
 <a name="0.1.0"></a>
-## 0.1.0 (2022-11-26)
+## 0.1.0 (2022-11-29)
 
 ### Added
 
+- ➕ Add react-chrono [[9db6395](https://github.com/Sakoutecher/portfolio-react/commit/9db63956da8b0902a1227d2edd31218ee9670e26)]
+- ➕ Add AOS.js [[17e1f26](https://github.com/Sakoutecher/portfolio-react/commit/17e1f262a529800a4f65213fb6ffbefc5ccea1a1)]
+- 🔊 Update logs [[838624b](https://github.com/Sakoutecher/portfolio-react/commit/838624bb12cba6f0a4094b700e5b5ddaf3ef7613)]
 - ✨ Show all the project on the showproject page from array [[64f72bb](https://github.com/Sakoutecher/portfolio-react/commit/64f72bbd5b00ef3f6df65c814b5d96cbb9d6af50)]
 - ✨ Style for showproject and add react icons and justify some text [[7292e81](https://github.com/Sakoutecher/portfolio-react/commit/7292e811e70a20f9f56e214739fd08f96d08f2df)]
 - 🔊 Update logs [[e6fae8c](https://github.com/Sakoutecher/portfolio-react/commit/e6fae8c77ef6c2486796bea527afebe377db7182)]
@@ -44,6 +47,8 @@
 
 ### Changed
 
+- ⚡ Change en in fr in index.html [[c718d9e](https://github.com/Sakoutecher/portfolio-react/commit/c718d9e5751f33100010bfd8830bb475b8b444be)]
+- 💄 Add style for the career page with some data [[a8377ee](https://github.com/Sakoutecher/portfolio-react/commit/a8377ee59990f2ef856412993c3dc3859a464e03)]
 - ⚡ Reduce the duration loader [[2a1e2d1](https://github.com/Sakoutecher/portfolio-react/commit/2a1e2d196e925746ec0016c480eaf6d3a2912066)]
 - 🎨 Add space in the show project page code [[d42f96c](https://github.com/Sakoutecher/portfolio-react/commit/d42f96c2b556b2e748f2cdf7e97e1cdd27317f40)]
 - 💄 Finish the style to the show more button [[ca95dfd](https://github.com/Sakoutecher/portfolio-react/commit/ca95dfdab7ef67145a4b619bf8c2c3cd66f893fd)]
@@ -83,12 +88,14 @@
 
 ### Removed
 
+- 🔥 Try react chrono but finaly dont use it [[0c33740](https://github.com/Sakoutecher/portfolio-react/commit/0c33740fcc67939fcacdb3dfc80926b07b40485e)]
 - 🔥 Remove the data folder [[71f87ff](https://github.com/Sakoutecher/portfolio-react/commit/71f87fff8e7c3e172554ebc28d6981760dc14872)]
 - 🔥 Remove anim.css it was useless [[10d92f2](https://github.com/Sakoutecher/portfolio-react/commit/10d92f24fb8816f07547148e4dbe880add51a4c8)]
 - 🔥 Remove useless things from create-react-app [[938962f](https://github.com/Sakoutecher/portfolio-react/commit/938962fab7a21b01ce3823dcf42abc3fc422ab96)]
 
 ### Fixed
 
+- 🐛 Now the img of the portfolio project will change with the theme of the site for better colors contrast [[0f0d9ff](https://github.com/Sakoutecher/portfolio-react/commit/0f0d9ff8a421772e92d14efea6c998957e104349)]
 - 🐛 Change color for the code source link [[a75a4a4](https://github.com/Sakoutecher/portfolio-react/commit/a75a4a4e97c98c0003a9a8d11ac08cfb60853a5a)]
 - 🐛 Removing error in the console from the resume component [[f9b6ac4](https://github.com/Sakoutecher/portfolio-react/commit/f9b6ac46abf741646d90505a1c7fda25c9bd3074)]
 - 🐛 Removing background yellow on the contact component [[237f21a](https://github.com/Sakoutecher/portfolio-react/commit/237f21a1c8e6fada307cbeeb61f9fb1cfe73b63b)]
@@ -96,6 +103,7 @@
 
 ### Miscellaneous
 
+- 🚧 Work on the timeline component [[41b0731](https://github.com/Sakoutecher/portfolio-react/commit/41b073103fc8aed119704953bbfb3bd7d278d7c0)]
 - 🚧 Add routes to project pages and start to add a button to show more [[85b2bfa](https://github.com/Sakoutecher/portfolio-react/commit/85b2bfadc6e91eac822bd9f78f248c5278c72fa2)]
 - 🚧 Start the data file for the project [[5b04098](https://github.com/Sakoutecher/portfolio-react/commit/5b04098ff113a637388a6a9733a9edca866d6f1b)]
 - 🚧 Work on the ProjectDiv component, add photos fot the projects [[e64c590](https://github.com/Sakoutecher/portfolio-react/commit/e64c590de5ca7e0a4abf9e0f15bfcf7e6e3b1b97)]
