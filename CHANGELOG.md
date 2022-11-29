@@ -5,6 +5,8 @@
 
 ### Added
 
+- ✨ Finis the career page and show career from a json file [[8197e22](https://github.com/Sakoutecher/portfolio-react/commit/8197e2269d426c8f16c472be5ec5ed8f0918b66c)]
+- 🔊 Update logs [[776b365](https://github.com/Sakoutecher/portfolio-react/commit/776b36517008ca34ddbde91d6998cc271fbc4ba1)]
 - ➕ Add react-chrono [[9db6395](https://github.com/Sakoutecher/portfolio-react/commit/9db63956da8b0902a1227d2edd31218ee9670e26)]
 - ➕ Add AOS.js [[17e1f26](https://github.com/Sakoutecher/portfolio-react/commit/17e1f262a529800a4f65213fb6ffbefc5ccea1a1)]
 - 🔊 Update logs [[838624b](https://github.com/Sakoutecher/portfolio-react/commit/838624bb12cba6f0a4094b700e5b5ddaf3ef7613)]
@@ -47,6 +49,7 @@
 
 ### Changed
 
+- ⬆️ Upgrade dependencies [[3e64632](https://github.com/Sakoutecher/portfolio-react/commit/3e646329437e69b8dca4e6fcbf4199f324327735)]
 - ⚡ Change en in fr in index.html [[c718d9e](https://github.com/Sakoutecher/portfolio-react/commit/c718d9e5751f33100010bfd8830bb475b8b444be)]
 - 💄 Add style for the career page with some data [[a8377ee](https://github.com/Sakoutecher/portfolio-react/commit/a8377ee59990f2ef856412993c3dc3859a464e03)]
 - ⚡ Reduce the duration loader [[2a1e2d1](https://github.com/Sakoutecher/portfolio-react/commit/2a1e2d196e925746ec0016c480eaf6d3a2912066)]
