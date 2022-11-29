@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components'
-import { Chrono } from 'react-chrono'
 import { items } from '../data/DataParcours'
+import Timeline from '../components/Timeline'
 
 function Parcours({ styles }) {
     return (
         <ParcoursContainer>
             <Center>
                 <CenterCenter>
-                    <Chrono items={items} mode='VERTICAL_ALTERNATING'/>
+                    <Timeline styles={styles} />
                 </CenterCenter>
             </Center>
         </ParcoursContainer>

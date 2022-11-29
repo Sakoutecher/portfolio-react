@@ -18,6 +18,8 @@ body {
   width: 100vh;
   cursor: none;
   scroll-behavior: smooth;
+  font-family: 'Poppins';
+  text-decoration: none;
 }
 
 #root {

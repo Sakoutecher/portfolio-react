@@ -101,7 +101,7 @@ function App() {
           />
           <Route 
             path='/parcours' 
-            element={ <Parcours /> } 
+            element={ <Parcours styles={styles} /> } 
           />
           <Route 
             path='/hardware' 
