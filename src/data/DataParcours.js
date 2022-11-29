@@ -57,3 +57,33 @@ export const itemsSchool = [{
     title: "Domaine Martin Grape",
     desc:"Val en vignes (🇫🇷) - 1 month",
   },];
+
+  export const itemsITExperience = [{
+    title: "Eliott Consulting",
+    desc:"Dev Web in Niort (🇫🇷) - 1 year",
+    side: 'left',
+    invertSide: 'right',
+    bg: './img-parcours/eliottconsulting.png',
+    date: '2022 / 2023',
+  },{
+    title: "A&MS Tecnagri Intership",
+    desc:"Dev an application for the employe at Vihier (🇫🇷) - 2 months",
+    side: 'right',
+    invertSide: 'left',
+    bg: './img-parcours/tecnagri.webp',
+    date: '2022',
+  },{
+    title: "Billaud Segeba Intership",
+    desc:"Dev an application for the employe at Vihier (🇫🇷) - 5 weeks",
+    side: 'left',
+    invertSide: 'right',
+    bg: './img-parcours/bs.webp',
+    date: '2020 / 2021',
+  },{
+    title: "Conseil General - IT Technician",
+    desc:"Intership in Bressuire (🇫🇷) - 1 week",
+    side: 'right',
+    invertSide: 'left',
+    bg: './img-parcours/cg.webp',
+    date: '2016 / 2017',
+  },];
