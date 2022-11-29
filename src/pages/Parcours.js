@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components'
+import { Chrono } from 'react-chrono'
+import { items } from '../data/DataParcours'
 
 function Parcours({ styles }) {
     return (
         <ParcoursContainer>
             <Center>
                 <CenterCenter>
-                   
+                    <Chrono items={items} mode='VERTICAL_ALTERNATING'/>
                 </CenterCenter>
             </Center>
         </ParcoursContainer>
