@@ -17,8 +17,8 @@ function Parcours({ styles }) {
 
 const ParcoursContainer = styled.div`
     width: 100vw;
-    height: 80vh;
-    margin-top: 10vh;
+    //height: 80vh;
+    margin-top: 13vh;
     background-color: red;
     display: flex;
     justify-content: center;
