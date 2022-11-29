@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import { items } from '../data/DataParcours'
+import { itemsSchool, itemsSummerJobs } from '../data/DataParcours'
 import Timeline from '../components/Timeline'
 import Title from '../components/Title'
 import uuid from 'react-uuid'
@@ -13,12 +13,35 @@ function Parcours({ styles }) {
                     <Top>
                         <Title 
                             styles={styles}
-                            text={'📚 Career'}
+                            text={'📚 School'}
                         />
                     </Top>
                     <TimelineContainer>
                         <LineMid color={styles.colors.text} />
-                        {items.map(({side, invertSide, desc, date, bg, title}) => {
+                        {itemsSchool.map(({side, invertSide, desc, date, bg, title}) => {
+                            return (
+                               <Timeline 
+                                    styles={styles} 
+                                    key={uuid()} 
+                                    side={side}
+                                    invertSide={invertSide}
+                                    desc={desc}
+                                    date={date}
+                                    bg={bg}
+                                    title={title}
+                                /> 
+                            )
+                        })}
+                    </TimelineContainer> 
+                    <Top style={{marginTop: '8em'}}>
+                        <Title 
+                            styles={styles}
+                            text={'👨‍🌾 Summer Jobs'}
+                        />
+                    </Top>
+                    <TimelineContainer>
+                        <LineMid color={styles.colors.text} />
+                        {itemsSummerJobs.map(({side, invertSide, desc, date, bg, title}) => {
                             return (
                                <Timeline 
                                     styles={styles} 

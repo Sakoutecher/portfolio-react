@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Title from '../components/Title'
 import Text from '../components/Text'
 
 function Timeline({ styles, side, invertSide, date, desc, bg, title }) {

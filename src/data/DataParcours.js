@@ -1,4 +1,4 @@
-export const items = [{
+export const itemsSchool = [{
     title: "Bachelor Dev Web",
     desc:"ICSSA at Niort (79000) (🇫🇷)",
     side: 'left',
@@ -26,4 +26,34 @@ export const items = [{
     date: '2016 / 2017',
     title: "College Diploma",
     desc:"College Blaise Pascal at Argentonnay 79150 (🇫🇷)",
+  },];
+
+  export const itemsSummerJobs = [{
+    title: "Aquatic Center Coeur d'o",
+    desc:"Bressuire (🇫🇷) - 2 months",
+    side: 'left',
+    invertSide: 'right',
+    bg: './img-parcours/piscine.webp',
+    date: 'Summer 2022',
+  },{
+    title: "DS Smith Machine operator",
+    desc:"Nueil les aubiers (🇫🇷) - 1 month",
+    side: 'right',
+    invertSide: 'left',
+    bg: './img-parcours/dssmith.webp',
+    date: 'Summer 2021',
+  },{
+    title: "Galliance (chicken sector)",
+    desc:"Nueil les aubiers (🇫🇷) - 2 months",
+    side: 'left',
+    invertSide: 'right',
+    bg: './img-parcours/galliance.webp',
+    date: 'Summer 2020',
+  },{
+    side: 'right',
+    invertSide: 'left',
+    bg: './img-parcours/domainemartin.webp',
+    date: 'Summer 2018',
+    title: "Domaine Martin Grape",
+    desc:"Val en vignes (🇫🇷) - 1 month",
   },];
