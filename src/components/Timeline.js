@@ -3,17 +3,19 @@ import styled from 'styled-components'
 import Title from '../components/Title'
 import Text from '../components/Text'
 
-function Timeline({ styles, side, invertSide, date, desc, bg }) {
+function Timeline({ styles, side, invertSide, date, desc, bg, title }) {
   return (
     <CardContainer>
         <Card side={side} invertSide={invertSide} dotColor={styles.colors.text} bg={bg}>
             <CardTop background={styles.colors.background} >
-                <Title 
-                    styles={styles}
-                    text={date}
-                />
+                <Date color={styles.colors.text}>
+                    {date}
+                </Date>
             </CardTop>
             <CardBottom background={styles.colors.background}>
+                <Name color={styles.colors.text}>
+                    {title}
+                </Name>
                 <Text 
                     styles={styles}
                     text={desc}
@@ -94,6 +96,31 @@ const CardBottom = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+`
+
+const Name = styled.h4`
+    color: ${props => props.color};
+    font-size: 16px;
+`
+
+const Date = styled.h2`
+    font-family: Poppins;
+    color: ${props => props.color};
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &:before {
+        content: '';
+        position: absolute; 
+        width: 100%;
+        height: 3px;
+        background-color: ${props => props.color};
+        bottom: -4px;
+        left: 0;
+    }
 `
 
 export default Timeline

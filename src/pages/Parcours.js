@@ -28,6 +28,7 @@ function Parcours({ styles }) {
                                     desc={desc}
                                     date={date}
                                     bg={bg}
+                                    title={title}
                                 /> 
                             )
                         })}
