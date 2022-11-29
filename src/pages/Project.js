@@ -4,7 +4,7 @@ import ProjectDiv from '../components/ProjectDiv';
 import Title from '../components/Title'
 import { Portfolio, Cuicuitedays, ColorGuess, JungleHouse } from '../data/DataTechnoProjects'
 
-function Project({ styles, colors }) {
+function Project({ styles, colors, theme }) {
     return (
         <HardwareContainer>
             <Center>
@@ -21,7 +21,9 @@ function Project({ styles, colors }) {
                             colors={colors} 
                             projects={Portfolio} 
                             title={'Portfolio'} 
-                            bg={'./photo-projects/portfolio.png'} 
+                            bg={
+                                theme === 'light' ? './photo-projects/portfolio-night.png' : './photo-projects/portfolio-light.png' 
+                            } 
                             page={'portfolio'}
                         />
                         <ProjectDiv 

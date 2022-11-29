@@ -8,7 +8,6 @@ import uuid from 'react-uuid'
 import '../css/style.css'
 
 function TechnoCateg({ styles, title, links, filter }) {
-
     const starfullstyle = {
         stroke: styles.colors.star,
         strokeWidth: '50',
@@ -30,7 +29,7 @@ function TechnoCateg({ styles, title, links, filter }) {
             <Container
                 filter={showGap}
             >
-                {links.map(({ title, link, star}) => (
+                {links.map(({ title, link, star, delay}) => (
                     <Fade top key={uuid()}>
                     <SmallContainer 
                         key={uuid()}

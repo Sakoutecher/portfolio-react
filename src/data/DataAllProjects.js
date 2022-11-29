@@ -1,6 +1,7 @@
 const portfolio = {
     namePage: 'portfolio', 
-    img: '../photo-projects/portfolio.png',
+    imgLight: '../photo-projects/portfolio-light.png',
+    imgNight: '../photo-projects/portfolio-night.png',
     title: 'Portfolio',
     source: true,
     sourceCode: 'https://github.com/Sakoutecher/portfolio-react',

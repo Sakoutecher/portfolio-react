@@ -109,11 +109,11 @@ function App() {
           />
           <Route 
             path='/projects' 
-            element={ <Project styles={styles} colors={colors} /> } 
+            element={ <Project styles={styles} colors={colors} theme={theme} /> } 
           />
           <Route
             path='/projects/:page'
-            element={ <ShowProject styles={styles} colors={colors} /> }
+            element={ <ShowProject styles={styles} colors={colors} theme={theme} /> }
           />
         </Routes>
         <Footer 

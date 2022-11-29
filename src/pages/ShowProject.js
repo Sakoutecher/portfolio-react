@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 import { portfolio, cuicuitedays, colorGuess, jungleHouse } from '../data/DataAllProjects'
 import uuid from 'react-uuid'
 
-function ShowProject({ styles, colors }) {
+function ShowProject({ styles, colors, theme }) {
     const page = useParams()
     let usePage = ''
     if (page.page === 'portfolio') {
@@ -26,7 +26,11 @@ function ShowProject({ styles, colors }) {
                 <CenterCenter>
                     <Top>
                         <ImgProject 
-                            src={usePage.img} 
+                            src={
+                                page.page === 'portfolio' ? (
+                                    theme === 'light' ? usePage.imgNight : usePage.imgLight 
+                                ) : usePage.img
+                            } 
                         />
                         <InfoProject>
                             <Title 
