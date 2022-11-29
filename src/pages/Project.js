@@ -6,7 +6,7 @@ import { Portfolio, Cuicuitedays, ColorGuess, JungleHouse } from '../data/DataTe
 
 function Project({ styles, colors, theme }) {
     return (
-        <HardwareContainer>
+        <ProjectContainer>
             <Center>
                 <CenterCenter>
                     <Top>
@@ -53,11 +53,11 @@ function Project({ styles, colors, theme }) {
                     </Bottom>
                 </CenterCenter>
             </Center>
-        </HardwareContainer>
+        </ProjectContainer>
     );
 }
 
-const HardwareContainer = styled.div`
+const ProjectContainer = styled.div`
     width: 100vw;
     //height: 80vh;
     margin-top: 10vh;

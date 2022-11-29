@@ -1,41 +1,29 @@
 export const items = [{
-    cardTitle: "College Diploma",
-    url: "https://www.collegeblaisepascal.com/",
-    cardSubtitle:"College Blaise Pascal at Argentonnay 79150 (🇫🇷)",
-    media: {
-      type: "IMAGE",
-      source: {
-        url: "./img-parcours/college.jpeg"
-      }
-    }
+    title: "Bachelor Dev Web",
+    desc:"ICSSA at Niort (79000) (🇫🇷)",
+    side: 'left',
+    invertSide: 'right',
+    bg: './img-parcours/icssa.jpeg',
+    date: '2016 / 2018',
   },{
-    cardTitle: "BAC Social and Economy",
-    url: "http://www.genevoix-signoret-vinci.fr/",
-    cardSubtitle:"Maurice Genevoix at Bressuire 79300 (🇫🇷)",
-    media: {
-      type: "IMAGE",
-      source: {
-        url: "./img-parcours/lycee.webp"
-      }
-    }
+    title: "BTS SIO (IT Service and Organization) SLAM option",
+    desc:"Campus la Futaie at Bressuire 79300 (🇫🇷)",
+    side: 'right',
+    invertSide: 'left',
+    bg: './img-parcours/campus.webp',
+    date: '2016 / 2018',
   },{
-    cardTitle: "BTS SIO (IT Service and Organization) SLAM option",
-    url: "http://saintjo.org/campus/",
-    cardSubtitle:"Campus la Futaie at Bressuire 79300 (🇫🇷)",
-    media: {
-      type: "IMAGE",
-      source: {
-        url: "./img-parcours/campus.webp"
-      }
-    }
+    title: "BAC Social and Economy",
+    desc:"Maurice Genevoix at Bressuire 79300 (🇫🇷)",
+    side: 'left',
+    invertSide: 'right',
+    bg: './img-parcours/lycee.webp',
+    date: '2016 / 2018',
   },{
-    cardTitle: "Bachelor Dev Web",
-    url: "https://www.icssa-niort.com/",
-    cardSubtitle:"ICSSA at Niort (79000) (🇫🇷)",
-    media: {
-      type: "IMAGE",
-      source: {
-        url: "./img-parcours/icssa.png"
-      }
-    }
+    side: 'right',
+    invertSide: 'left',
+    bg: './img-parcours/college.jpeg',
+    date: '2016 / 2018',
+    title: "College Diploma",
+    desc:"College Blaise Pascal at Argentonnay 79150 (🇫🇷)",
   },];
