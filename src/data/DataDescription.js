@@ -2,19 +2,23 @@ const description = "Hello everyone, i'm hcampos or hugo campos like you want �
 
 const hobbies = [
   {
-    text: '• Development',
+    textEn: '• Development',
+    textFr: '• Développement',
   }, 
 
   {
-    text: '• Gaming',
+    textEn: '• Gaming',
+    textFr: '• Jeux-vidéos',
   }, 
   
   {
-    text: '• Streaming',
+    textEn: '• Streaming',
+    textFr: '• Streaming',
   },
 
   {
-    text: '• See some friends 🤙',
+    textEn: '• See some friends 🤙',
+    textFr: '• Voir mes amis 🤙',
   },
 ]
 

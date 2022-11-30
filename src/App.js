@@ -98,7 +98,7 @@ function App() {
             element={ 
               <>
                 <Welcome styles={styles} language={language} />
-                <Description styles={styles} colors={colors} />
+                <Description styles={styles} colors={colors} language={language} />
                 <Technologies styles={styles} /> 
                 <Contact colors={colors} styles={styles} />
               </>
