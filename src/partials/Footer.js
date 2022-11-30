@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 import CopyRight from '../components/CopyRight'
 
-const Footer = ({ styles }) => {
+const Footer = ({ styles, language }) => {
   return (
     <FooterContainer>
         <CopyRight 
             styles={styles} 
+            language={language}
         />
     </FooterContainer>
   )

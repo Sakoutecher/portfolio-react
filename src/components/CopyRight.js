@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
-const CopyRight = ({ styles }) => {
+const CopyRight = ({ styles, language }) => {
   return (
     <CopyRightText 
         colorText={styles.colors.text}
     >
-        © 2022 CAMPOS Hugo. All Rights Reserved.
+        {language === 'en' ? '© 2022 CAMPOS Hugo. All Rights Reserved.' : '© 2022 CAMPOS Hugo. Tous droits réservés.'}
     </CopyRightText>
   )
 }

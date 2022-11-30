@@ -128,6 +128,7 @@ function App() {
         />
         <Footer 
             styles={styles}
+            language={language}
         />
       </>
       }
