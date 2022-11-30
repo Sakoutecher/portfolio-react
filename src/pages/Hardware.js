@@ -3,18 +3,18 @@ import styled from 'styled-components'
 import HardwareCateg from '../components/HardwareCateg'
 import { HardwareLink, UseLink } from '../data/DataHardware'
 
-function Hardware({ styles }) {
+function Hardware({ styles, language }) {
     return (
         <HardwareContainer>
             <Center>
                 <CenterCenter>
                     <HardwareCateg 
-                        title={'💻 HARDWARE'} 
+                        title={language === 'en' ? '💻 HARDWARE' : '💻 MATERIELS'} 
                         styles={styles} 
                         links={HardwareLink} 
                     />
                     <HardwareCateg 
-                        title={'🔨 WHAT DID I USE'} 
+                        title={language === 'en' ? '🔨 WHAT DID I USE' : `🔨 CE QUE J'UTILISE`} 
                         styles={styles} 
                         links={UseLink} 
                     />

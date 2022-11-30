@@ -110,7 +110,7 @@ function App() {
           />
           <Route 
             path='/hardware' 
-            element={ <Hardware styles={styles} /> } 
+            element={ <Hardware styles={styles} language={language} /> } 
           />
           <Route 
             path='/projects' 
