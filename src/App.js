@@ -99,7 +99,7 @@ function App() {
               <>
                 <Welcome styles={styles} language={language} />
                 <Description styles={styles} colors={colors} language={language} />
-                <Technologies styles={styles} /> 
+                <Technologies styles={styles} language={language} /> 
                 <Contact colors={colors} styles={styles} />
               </>
             } 

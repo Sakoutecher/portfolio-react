@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import '../css/style.css'
 
-function Technologies({ styles }) {
+function Technologies({ styles, language }) {
 
     const [filter, setFilter] = useState('noStar')
 
@@ -23,7 +23,7 @@ function Technologies({ styles }) {
             <Center>
                 <Top>
                     <Title 
-                        text={'📟 Technologies & Other'} 
+                        text={language === 'en' ? '📟 Technologies & Other' : '📟 Technologies & Autres'} 
                         styles={styles} 
                     />
                     <FilterContainer
