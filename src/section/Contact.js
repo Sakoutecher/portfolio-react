@@ -6,7 +6,7 @@ import { externalLinks, sectionText } from '../data/DataContact'
 import styled from 'styled-components'
 import uuid from 'react-uuid'
 
-function Contact({styles, colors}) {
+function Contact({styles, colors, language}) {
   return (
     <ContactContainer id='contact'>
       <Center>
@@ -17,11 +17,11 @@ function Contact({styles, colors}) {
           />
         </Top>
         <Bottom>
-          {sectionText.map(({ text }) => {
+          {sectionText.map(({ textEn, textFr }) => {
             return (
               <Text 
                 key={uuid()} 
-                text={text} 
+                text={language === 'en' ? textEn : textFr} 
                 styles={styles}
               />
             )

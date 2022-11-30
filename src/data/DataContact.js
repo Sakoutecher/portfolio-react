@@ -1,14 +1,17 @@
 const sectionText = [
     {
-        text: 'Thank you for visiting ! 🙂',
+        textEn: 'Thank you for visiting ! 🙂',
+        textFr: `Merci de t'as visite ! 🙂`,
     }, 
 
     {
-        text: 'If you would like to contact me this happens just below.',
+        textEn: 'If you would like to contact me this happens just below.',
+        textFr: `Si tu veux prendre contact avec moi ca se passe juste ici.`,
     }, 
 
     {
-        text: 'Have a good day 🚀',
+        textEn: 'Have a good day 🚀',
+        textFr: `Passe une bonne journée 🚀`,
     },
 ]
 
