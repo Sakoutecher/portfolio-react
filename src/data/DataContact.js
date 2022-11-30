@@ -23,7 +23,7 @@ const externalLinks = [
 
     {
         title: 'linkedin',
-        link: 'https://www.linkedin.com/in/hugo-campos-782702203/',
+        link: 'https://www.linkedin.com/in/hcamposdev/',
     },
 
     {
