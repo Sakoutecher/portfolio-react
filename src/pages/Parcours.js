@@ -5,7 +5,7 @@ import Timeline from '../components/Timeline'
 import Title from '../components/Title'
 import uuid from 'react-uuid'
 
-function Parcours({ styles }) {
+function Parcours({ styles, language }) {
     return (
         <ParcoursContainer>
             <Center>
@@ -13,22 +13,22 @@ function Parcours({ styles }) {
                     <Top>
                         <Title 
                             styles={styles}
-                            text={'👨‍💻 IT Experience'}
+                            text={language === 'en' ? '👨‍💻 IT Experience' : '👨‍💻 Expériences informatiques'}
                         />
                     </Top>
                     <TimelineContainer>
                         <LineMid color={styles.colors.text} />
-                        {itemsITExperience.map(({side, invertSide, desc, date, bg, title}) => {
+                        {itemsITExperience.map(({side, invertSide, descEn, descFr, date, bg, titleEn, titleFr}) => {
                             return (
                                <Timeline 
                                     styles={styles} 
                                     key={uuid()} 
                                     side={side}
                                     invertSide={invertSide}
-                                    desc={desc}
+                                    desc={language === 'en' ? descEn : descFr}
                                     date={date}
                                     bg={bg}
-                                    title={title}
+                                    title={language === 'en' ? titleEn : titleFr}
                                 /> 
                             )
                         })}
@@ -36,22 +36,22 @@ function Parcours({ styles }) {
                     <Top style={{marginTop: '8em'}}>
                         <Title 
                             styles={styles}
-                            text={'📚 School'}
+                            text={language === 'en' ? '📚 School' : '📚 Parcours scolaires'}
                         />
                     </Top>
                     <TimelineContainer>
                         <LineMid color={styles.colors.text} />
-                        {itemsSchool.map(({side, invertSide, desc, date, bg, title}) => {
+                        {itemsSchool.map(({side, invertSide, descEn, descFr, date, bg, titleEn, titleFr}) => {
                             return (
                                <Timeline 
                                     styles={styles} 
                                     key={uuid()} 
                                     side={side}
                                     invertSide={invertSide}
-                                    desc={desc}
+                                    desc={language === 'en' ? descEn : descFr}
                                     date={date}
                                     bg={bg}
-                                    title={title}
+                                    title={language === 'en' ? titleEn : titleFr}
                                 /> 
                             )
                         })}
@@ -59,22 +59,22 @@ function Parcours({ styles }) {
                     <Top style={{marginTop: '8em'}}>
                         <Title 
                             styles={styles}
-                            text={'👨‍🌾 Summer Jobs'}
+                            text={language ==='en' ? '👨‍🌾 Summer Jobs' : `👨‍🌾 Jobs d'été`}
                         />
                     </Top>
                     <TimelineContainer style={{marginBottom: '1em'}}>
                         <LineMid color={styles.colors.text} />
-                        {itemsSummerJobs.map(({side, invertSide, desc, date, bg, title}) => {
+                        {itemsSummerJobs.map(({side, invertSide, descEn, descFr, dateEn, dateFr, bg, titleEn, titleFr}) => {
                             return (
                                <Timeline 
                                     styles={styles} 
                                     key={uuid()} 
                                     side={side}
                                     invertSide={invertSide}
-                                    desc={desc}
-                                    date={date}
+                                    desc={language === 'en' ? descEn : descFr}
+                                    date={language === 'en' ? dateEn : dateFr}
                                     bg={bg}
-                                    title={title}
+                                    title={language === 'en' ? titleEn : titleFr}
                                 /> 
                             )
                         })}
