@@ -1,10 +1,12 @@
 # Changelog
 
 <a name="0.1.0"></a>
-## 0.1.0 (2022-11-29)
+## 0.1.0 (2022-11-30)
 
 ### Added
 
+- ✨ Add a switch for the language [[0f6c916](https://github.com/Sakoutecher/portfolio-react/commit/0f6c916959d5033b4ae2ff99001d3aedb1480f69)]
+- 🔊 Update logs [[8f401bc](https://github.com/Sakoutecher/portfolio-react/commit/8f401bcd64db3a0a3db1667bb6c03f90de9f612b)]
 - ✨ Finis the career page and show career from a json file [[8197e22](https://github.com/Sakoutecher/portfolio-react/commit/8197e2269d426c8f16c472be5ec5ed8f0918b66c)]
 - 🔊 Update logs [[776b365](https://github.com/Sakoutecher/portfolio-react/commit/776b36517008ca34ddbde91d6998cc271fbc4ba1)]
 - ➕ Add react-chrono [[9db6395](https://github.com/Sakoutecher/portfolio-react/commit/9db63956da8b0902a1227d2edd31218ee9670e26)]
@@ -49,6 +51,11 @@
 
 ### Changed
 
+- 🎨 Change order of the timelines [[046783d](https://github.com/Sakoutecher/portfolio-react/commit/046783d74c7c126d57874e76cc4c0ff917594193)]
+- 💬 Add a new timeline [[6006e08](https://github.com/Sakoutecher/portfolio-react/commit/6006e08d8877a8ff827170f0c91bb5dfe59966ad)]
+- 🍱 Add a new timeline [[396398e](https://github.com/Sakoutecher/portfolio-react/commit/396398e6329db56f0885e404d2126b84461e1f6b)]
+- 💬 Update informations in timeline [[46559eb](https://github.com/Sakoutecher/portfolio-react/commit/46559ebb78960783bcdcecbc3521202949c69921)]
+- 💄 Change font and add title on timeline [[91b066e](https://github.com/Sakoutecher/portfolio-react/commit/91b066ef528eaf7ae4ca9d0b9e84bc741ce210cb)]
 - ⬆️ Upgrade dependencies [[3e64632](https://github.com/Sakoutecher/portfolio-react/commit/3e646329437e69b8dca4e6fcbf4199f324327735)]
 - ⚡ Change en in fr in index.html [[c718d9e](https://github.com/Sakoutecher/portfolio-react/commit/c718d9e5751f33100010bfd8830bb475b8b444be)]
 - 💄 Add style for the career page with some data [[a8377ee](https://github.com/Sakoutecher/portfolio-react/commit/a8377ee59990f2ef856412993c3dc3859a464e03)]
@@ -106,6 +113,14 @@
 
 ### Miscellaneous
 
+- 🌐 Add fr on timeline [[ccb138a](https://github.com/Sakoutecher/portfolio-react/commit/ccb138acf54994e25117c6effa39fcac57e1993f)]
+- 🌐 Add fr on hardware [[d24a151](https://github.com/Sakoutecher/portfolio-react/commit/d24a15142941781859378902a7f93d129d0ed3bb)]
+- 🌐 Add fr on contact [[2b49765](https://github.com/Sakoutecher/portfolio-react/commit/2b49765eec9dd405934370ed0cbdf95c76d6b4e3)]
+- 🌐 Add fr on technologies [[7c50c50](https://github.com/Sakoutecher/portfolio-react/commit/7c50c5084e6507c54c8ac29821f18e048a124585)]
+- 🌐 Add fr on description [[7be9781](https://github.com/Sakoutecher/portfolio-react/commit/7be9781b45dab30df772a21d714fbd297035b65e)]
+- 🌐 Add fr on welcome [[89b343f](https://github.com/Sakoutecher/portfolio-react/commit/89b343f7229e7f37e68c1af094c47e19a8eab84e)]
+- 🌐 Add fr on footer [[46b93ec](https://github.com/Sakoutecher/portfolio-react/commit/46b93ecbe803c5fca63cd516af0ed763dc00a470)]
+- 🌐 Add fr on navbar [[9e57ff4](https://github.com/Sakoutecher/portfolio-react/commit/9e57ff48e54eb8c8f644390413223377e051b085)]
 - 🚧 Work on the timeline component [[41b0731](https://github.com/Sakoutecher/portfolio-react/commit/41b073103fc8aed119704953bbfb3bd7d278d7c0)]
 - 🚧 Add routes to project pages and start to add a button to show more [[85b2bfa](https://github.com/Sakoutecher/portfolio-react/commit/85b2bfadc6e91eac822bd9f78f248c5278c72fa2)]
 - 🚧 Start the data file for the project [[5b04098](https://github.com/Sakoutecher/portfolio-react/commit/5b04098ff113a637388a6a9733a9edca866d6f1b)]
