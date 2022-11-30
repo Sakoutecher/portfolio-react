@@ -13,6 +13,29 @@ function Parcours({ styles }) {
                     <Top>
                         <Title 
                             styles={styles}
+                            text={'👨‍💻 IT Experience'}
+                        />
+                    </Top>
+                    <TimelineContainer>
+                        <LineMid color={styles.colors.text} />
+                        {itemsITExperience.map(({side, invertSide, desc, date, bg, title}) => {
+                            return (
+                               <Timeline 
+                                    styles={styles} 
+                                    key={uuid()} 
+                                    side={side}
+                                    invertSide={invertSide}
+                                    desc={desc}
+                                    date={date}
+                                    bg={bg}
+                                    title={title}
+                                /> 
+                            )
+                        })}
+                    </TimelineContainer> 
+                    <Top style={{marginTop: '8em'}}>
+                        <Title 
+                            styles={styles}
                             text={'📚 School'}
                         />
                     </Top>
@@ -39,32 +62,9 @@ function Parcours({ styles }) {
                             text={'👨‍🌾 Summer Jobs'}
                         />
                     </Top>
-                    <TimelineContainer>
+                    <TimelineContainer style={{marginBottom: '1em'}}>
                         <LineMid color={styles.colors.text} />
                         {itemsSummerJobs.map(({side, invertSide, desc, date, bg, title}) => {
-                            return (
-                               <Timeline 
-                                    styles={styles} 
-                                    key={uuid()} 
-                                    side={side}
-                                    invertSide={invertSide}
-                                    desc={desc}
-                                    date={date}
-                                    bg={bg}
-                                    title={title}
-                                /> 
-                            )
-                        })}
-                    </TimelineContainer> 
-                    <Top style={{marginTop: '8em'}}>
-                        <Title 
-                            styles={styles}
-                            text={'👨‍💻 IT Experience'}
-                        />
-                    </Top>
-                    <TimelineContainer>
-                        <LineMid color={styles.colors.text} />
-                        {itemsITExperience.map(({side, invertSide, desc, date, bg, title}) => {
                             return (
                                <Timeline 
                                     styles={styles} 
