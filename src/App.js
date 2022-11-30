@@ -97,7 +97,7 @@ function App() {
             path='/' 
             element={ 
               <>
-                <Welcome styles={styles} />
+                <Welcome styles={styles} language={language} />
                 <Description styles={styles} colors={colors} />
                 <Technologies styles={styles} /> 
                 <Contact colors={colors} styles={styles} />

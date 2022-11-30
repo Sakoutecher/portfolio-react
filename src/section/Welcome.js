@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-function Welcome({ styles }) {
+function Welcome({ styles, language }) {
   return (
     <WelcomeContainer>
         <Center>
@@ -9,7 +9,7 @@ function Welcome({ styles }) {
             textColor={styles.colors.text} 
             background={styles.colors.highlight}
           >
-            Hello, i am hcampos an french web developper based in Niort 👋 
+            {language === 'en' ? 'Hello, i am hcampos an french web developper based in Niort 👋' : 'Bonjour, je suis hcampos un developpeur web basé sur Niort 👋'}
           </Hightlight>
         </Center>
     </WelcomeContainer>
