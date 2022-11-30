@@ -12,17 +12,17 @@ const Navbar = ({styles, colors, language, setLanguage}) => {
           <LinksContainer>
             <UnderlineContainer>
               <Link to='/parcours'>
-                <Links data-cursor textColor={styles.colors.text}>Career</Links>
+                <Links data-cursor textColor={styles.colors.text}>{language === 'en' ? 'Career' : 'Parcours'}</Links>
               </Link>
             </UnderlineContainer>
             <UnderlineContainer>
               <Link to='/projects'>
-                <Links data-cursor textColor={styles.colors.text}>Projects</Links>
+                <Links data-cursor textColor={styles.colors.text}>{language === 'en' ? 'Projects' : 'Projets'}</Links>
               </Link>
             </UnderlineContainer>
             <UnderlineContainer>
               <Link to='hardware'>
-                <Links data-cursor textColor={styles.colors.text}>Hardware</Links>
+                <Links data-cursor textColor={styles.colors.text}>{language === 'en' ? 'Hardware' : 'Matériels'}</Links>
               </Link>
             </UnderlineContainer>
           </LinksContainer>
