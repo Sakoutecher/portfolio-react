@@ -3,12 +3,12 @@ import styled from 'styled-components'
 import { keyframes } from 'styled-components'
 import { useState } from 'react'
 
-function ToggleTheme({styles, setTheme, theme}) {
+function ToggleLanguage({ colors, language, setLanguage }) {
 
     const [active, setActive] = useState(false)
 
     const handleChange = () => {
-        setTheme(theme === 'dark' ? 'light' : 'dark')
+        setLanguage(language === 'en' ? 'fr' : 'en')
         setActive(true)
     }
 
@@ -16,16 +16,13 @@ function ToggleTheme({styles, setTheme, theme}) {
         <ToggleBackground 
             data-cursor
             onClick={handleChange} 
-            hoverBackground={styles.colors.toggleColorHover} 
-            colorBackground={styles.colors.toggleColor}
+            colorBackground={colors.colorLinks.primary}
             onAnimationEnd={() => setActive(false)}
             isActive={active}
         >
-            <ToggleLogo 
-                data-cursor
-                src={`./toggle-button/${styles.colors.toggleSymbol}.svg`} 
-                alt={styles.colors.toggleSymbol} 
-            />
+            {
+                language === 'en' ? '🇫🇷' : '🇬🇧'
+            }
         </ToggleBackground>
     );
 }
@@ -55,17 +52,11 @@ const ToggleBackground = styled.button`
     transition: background 300ms ease;
     animation: ${props => props.isActive ? slideDown : null} 0.3s linear;
     cursor: none;
-    position: fixed;
-    bottom: 4em;
-    right: 5em;
 
     &:hover {
-        background-color: ${props => props.hoverBackground};
+        background-color: #1d9f81;
     }
 `
 
-const ToggleLogo = styled.img`
-    width: 50%;
-`
-export default ToggleTheme;
+export default ToggleLanguage;
 

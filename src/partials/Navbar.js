@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 import { keyframes } from 'styled-components'
-import ToggleTheme from '../components/ToggleTheme'
+import ToggleLanguage from '../components/ToggleLanguage'
 import { Link } from 'react-router-dom'
 
-const Navbar = ({styles, setTheme, theme}) => {
+const Navbar = ({styles, colors, language, setLanguage}) => {
   return (
     <Nav background={styles.colors.navbar}>
       <NavContainer>
@@ -27,10 +27,10 @@ const Navbar = ({styles, setTheme, theme}) => {
             </UnderlineContainer>
           </LinksContainer>
           <Toggle>
-            <ToggleTheme 
-              theme={theme} 
-              setTheme={setTheme} 
-              styles={styles} 
+            <ToggleLanguage 
+              colors={colors}
+              language={language}
+              setLanguage={setLanguage} 
             />
           </Toggle>
         </RightPart>

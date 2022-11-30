@@ -13,11 +13,13 @@ import CustomCursor from './components/CustomCursor'
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import ShowProject from './pages/ShowProject'
+import ToggleTheme from './components/ToggleTheme'
 
 function App() {
 
   const [loading, setLoading] = useState(false)
   const [theme, setTheme] = useState('dark')
+  const [language, setLanguage] = useState('en')
 
   const colors = {
     black: {
@@ -85,7 +87,10 @@ function App() {
         <Navbar 
           theme={theme} 
           setTheme={setTheme} 
+          language={language}
+          setLanguage={setLanguage}
           styles={styles}
+          colors={colors}
         />
         <Routes>
           <Route 
@@ -116,6 +121,11 @@ function App() {
             element={ <ShowProject styles={styles} colors={colors} theme={theme} /> }
           />
         </Routes>
+        <ToggleTheme 
+              theme={theme} 
+              setTheme={setTheme} 
+              styles={styles} 
+        />
         <Footer 
             styles={styles}
         />
