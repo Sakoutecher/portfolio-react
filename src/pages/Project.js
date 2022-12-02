@@ -4,7 +4,7 @@ import ProjectDiv from '../components/ProjectDiv';
 import Title from '../components/Title'
 import { Portfolio, Cuicuitedays, ColorGuess, JungleHouse } from '../data/DataTechnoProjects'
 
-function Project({ styles, colors, theme }) {
+function Project({ styles, colors, theme, language }) {
     return (
         <ProjectContainer>
             <Center>
@@ -12,7 +12,7 @@ function Project({ styles, colors, theme }) {
                     <Top>
                         <Title
                             styles={styles}
-                            text={'🗂️ Projects'}
+                            text={language === 'en' ? '🗂️ Projects' : '🗂️ Projets'}
                         />
                     </Top>
                     <Bottom>
@@ -25,30 +25,34 @@ function Project({ styles, colors, theme }) {
                                 theme === 'light' ? './photo-projects/portfolio-night.png' : './photo-projects/portfolio-light.png' 
                             } 
                             page={'portfolio'}
+                            language={language}
                         />
                         <ProjectDiv 
                             styles={styles} 
                             colors={colors} 
                             projects={Cuicuitedays} 
-                            title={'CuicuiteDays Website'} 
+                            title={'CuicuiteDays'} 
                             bg={'./photo-projects/cuicuitedays.png'} 
                             page={'cuicuitedays'}
+                            language={language}
                         />
                         <ProjectDiv 
                             styles={styles} 
                             colors={colors} 
                             projects={ColorGuess} 
-                            title={'Color-Guess Game'} 
+                            title={'Color-Guess'} 
                             bg={'./photo-projects/color-guess.png'} 
                             page={'color-guess'}
+                            language={language}
                         />
                         <ProjectDiv 
                             styles={styles} 
                             colors={colors} 
                             projects={JungleHouse} 
-                            title={'Jungle-House Site'} 
+                            title={'Jungle-House'} 
                             bg={'./photo-projects/jungle-house.png'} 
                             page={'jungle-house'}
+                            language={language}
                         />
                     </Bottom>
                 </CenterCenter>

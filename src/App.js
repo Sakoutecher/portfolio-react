@@ -114,11 +114,11 @@ function App() {
           />
           <Route 
             path='/projects' 
-            element={ <Project styles={styles} colors={colors} theme={theme} /> } 
+            element={ <Project styles={styles} colors={colors} theme={theme} language={language} /> } 
           />
           <Route
             path='/projects/:page'
-            element={ <ShowProject styles={styles} colors={colors} theme={theme} /> }
+            element={ <ShowProject styles={styles} colors={colors} theme={theme} language={language} /> }
           />
         </Routes>
         <ToggleTheme 

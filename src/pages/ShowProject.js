@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 import { portfolio, cuicuitedays, colorGuess, jungleHouse } from '../data/DataAllProjects'
 import uuid from 'react-uuid'
 
-function ShowProject({ styles, colors, theme }) {
+function ShowProject({ styles, colors, theme, language }) {
     const page = useParams()
     let usePage = ''
     if (page.page === 'portfolio') {
@@ -62,7 +62,7 @@ function ShowProject({ styles, colors, theme }) {
                                         <FaGithub 
                                             style={{marginRight: '0.5em'}} 
                                         />
-                                        Source code
+                                        {language === 'en' ? 'Source code' : 'Code source'}
                                     </SourceLink>
                                 : 
                                     <SourceLink 
@@ -71,7 +71,7 @@ function ShowProject({ styles, colors, theme }) {
                                         <FaGithub 
                                             style={{marginRight: '0.5em'}} 
                                         />
-                                        No source code 😩
+                                        {language === 'en' ? 'No source code 😩' : 'Pas de code source 😩'}
                                     </SourceLink>
                             }
                             
@@ -80,7 +80,7 @@ function ShowProject({ styles, colors, theme }) {
                     <Bottom>
                         <Text 
                             styles={styles} 
-                            text={usePage.description}
+                            text={language === 'en' ? usePage.descriptionEn : usePage.descriptionFr}
                         />
                     </Bottom>
                 </CenterCenter>
