@@ -36,14 +36,16 @@ function Description({ styles, colors, language }) {
                 </TopMiddle>
                 <BottomMiddle>
                     <Fade>
-                        <Paragraph color={styles.colors.text}>
-                            {
-                                language === 'en' ?
-                                    `Hello everyone, i'm hcampos or hugo campos like you want 🙂. I'm a student who learning actually web development at Niort in France. I like to learn new things and to share my knowledges. I have been coding for 3 years from now, so i have done some ${<Link to='/projects'><DescriptionLink data-cursor textColor={colors.colorLinks.primary}>projects</DescriptionLink></Link>}, i hope you will enjoy it. You can see with my portfolio all of my school career and all the things i use for the development. If you have any question or if you want to talk with me no problem, see you in the ${<DescriptionLink href='#contact' data-cursor textColor={colors.colorLinks.primary}>contact section</DescriptionLink>} ☎️.`
-                                :
-                                    `Bonjour tout le monde, je suis hcampos ou hugo campos c'est comme tu veux. Je suis un étudiant qui apprend le développement web à Niort en France. J'aime apprendre de nouvelles choses et partager mes connaissances. Cela fait 3 ans maintenant que je code. Donc j'ai pu réaliser quelques ${<Link to='/projects'><DescriptionLink data-cursor textColor={colors.colorLinks.primary}>projets</DescriptionLink></Link>}. Tu peut voir à l'aide de mon portfolio mon parcours ainsi que toutes les choses que j'utilise pour développer. Si tu as des questions ou bien que tu souhaites juste discuter pas de soucis, on se voit dans la section ${<DescriptionLink href='#contact' data-cursor textColor={colors.colorLinks.primary}>contact</DescriptionLink>} ☎️.`
-                            }
-                        </Paragraph>
+                        {
+                            language === 'en' ?
+                                <Paragraph color={styles.colors.text}>
+                                    Hello everyone, i'm hcampos or hugo campos like you want 🙂. I'm a student who learning actually web development at Niort in France. I like to learn new things and to share my knowledges. I have been coding for 3 years from now, so i have done some <Link to='/projects'><DescriptionLink data-cursor textColor={colors.colorLinks.primary}>projects</DescriptionLink></Link>, i hope you will enjoy it. You can see with my portfolio all of my school career and all the things i use for the development. If you have any question or if you want to talk with me no problem, see you in the <DescriptionLink href='#contact' data-cursor textColor={colors.colorLinks.primary}>contact section</DescriptionLink> ☎️.
+                                </Paragraph>
+                            :
+                                <Paragraph color={styles.colors.text}>
+                                    Bonjour tout le monde, je suis hcampos ou hugo campos c'est comme tu veux. Je suis un étudiant qui apprend le développement web à Niort en France. J'aime apprendre de nouvelles choses et partager mes connaissances. Cela fait 3 ans maintenant que je code. Donc j'ai pu réaliser quelques <Link to='/projects'><DescriptionLink data-cursor textColor={colors.colorLinks.primary}>projets</DescriptionLink></Link>. Tu peut voir à l'aide de mon portfolio mon parcours ainsi que toutes les choses que j'utilise pour développer. Si tu as des questions ou bien que tu souhaites juste discuter pas de soucis, on se voit dans la section <DescriptionLink href='#contact' data-cursor textColor={colors.colorLinks.primary}>contact</DescriptionLink> ☎️.
+                                </Paragraph>
+                        }
                     </Fade>
                 </BottomMiddle>
             </Middle>
