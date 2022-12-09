@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import ProjectDiv from '../components/ProjectDiv';
 import Title from '../components/Title'
-import { Portfolio, Cuicuitedays, ColorGuess, JungleHouse, TodoReactNative, AngularMatch } from '../data/DataTechnoProjects'
+import { Portfolio, Cuicuitedays, ColorGuess, JungleHouse, TodoReactNative, AngularMatch, AngularBookshelf } from '../data/DataTechnoProjects'
 
 function Project({ styles, colors, theme, language }) {
     return (
@@ -70,6 +70,15 @@ function Project({ styles, colors, theme, language }) {
                             title={'App-Match'} 
                             bg={'./photo-projects/match-angular.png'} 
                             page={'angular-match'}
+                            language={language}
+                        />
+                        <ProjectDiv 
+                            styles={styles} 
+                            colors={colors} 
+                            projects={AngularBookshelf} 
+                            title={'App-Bookshelf'} 
+                            bg={'./photo-projects/bookshelf-angular.png'} 
+                            page={'angular-bookshelf'}
                             language={language}
                         />
                     </Bottom>

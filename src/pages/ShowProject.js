@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Title from '../components/Title'
 import Text from '../components/Text'
 import { FaGithub } from "react-icons/fa";
-import { portfolio, cuicuitedays, colorGuess, jungleHouse, todoReactNative, angularMatch } from '../data/DataAllProjects'
+import { portfolio, cuicuitedays, colorGuess, jungleHouse, todoReactNative, angularMatch, angularBookshelf } from '../data/DataAllProjects'
 import uuid from 'react-uuid'
 
 function ShowProject({ styles, colors, theme, language }) {
@@ -20,6 +20,8 @@ function ShowProject({ styles, colors, theme, language }) {
         usePage = todoReactNative
     } else if (page.page === 'angular-match') {
         usePage = angularMatch
+    } else if (page.page === 'angular-bookshelf') {
+        usePage = angularBookshelf
     } else {
         usePage = jungleHouse
     }

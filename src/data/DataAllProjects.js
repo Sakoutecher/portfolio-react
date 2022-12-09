@@ -199,4 +199,41 @@ const angularMatch = {
     descriptionFr: `Application qui permet d'afficher les résultats de trois matchs de football via une api. Ce projet à été réaliser durant mon cours d'apprentissage au framework Angular. Pour ce projet j'ai utilisé Angular, Typescript, Eslint, Prettier et Sass.`
 }
 
-export {portfolio, cuicuitedays, colorGuess, jungleHouse, todoReactNative, angularMatch}
+const angularBookshelf = {
+    namePage: 'angular-bookshelf', 
+    img: '../photo-projects/bookshelf-angular.png',
+    title: 'App-Bookshelf',
+    source: true,
+    sourceCode: 'https://github.com/Sakoutecher/bookshelf-angular-school',
+    techno : [
+        {
+            alt: 'angular',
+            src: '../techno-icons/angular.png'
+        },
+    
+    
+        {
+            alt: 'ts',
+            src: '../techno-icons/TS.png'
+        },
+    
+        {
+            alt: 'eslint',
+            src: '../techno-icons/ESLint.png'
+        },
+    
+        {
+            alt: 'prettier',
+            src: '../techno-icons/Prettier.png'
+        },
+
+        {
+            alt: 'sass',
+            src: '../techno-icons/sass.png'
+        },
+    ],
+    descriptionEn: `Application that allows to show a fake system of book reselling in a library. This project was carried out during my Angular learning course. For this project I used Angular, Typescript, Eslint, Prettier and Sass.`,
+    descriptionFr: `Application qui permet de montrer un faux système de réseveration de livre dans une bibliothèque. Ce projet à été réaliser durant mon cours d'apprentissage au framework Angular. Pour ce projet j'ai utilisé Angular, Typescript, Eslint, Prettier et Sass.`
+}
+
+export {portfolio, cuicuitedays, colorGuess, jungleHouse, todoReactNative, angularMatch, angularBookshelf}

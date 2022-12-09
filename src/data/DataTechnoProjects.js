@@ -144,4 +144,32 @@ const AngularMatch = [
     },
 ]
 
-export {Portfolio, Cuicuitedays, ColorGuess, JungleHouse, TodoReactNative, AngularMatch}
+const AngularBookshelf = [
+    {
+        alt: 'angular',
+        src: './techno-icons/angular.png'
+    },
+
+
+    {
+        alt: 'ts',
+        src: './techno-icons/TS.png'
+    },
+
+    {
+        alt: 'eslint',
+        src: './techno-icons/ESLint.png'
+    },
+
+    {
+        alt: 'prettier',
+        src: './techno-icons/Prettier.png'
+    },
+
+    {
+        alt: 'sass',
+        src: './techno-icons/sass.png'
+    },
+]
+
+export {Portfolio, Cuicuitedays, ColorGuess, JungleHouse, TodoReactNative, AngularMatch, AngularBookshelf}
