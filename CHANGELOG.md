@@ -5,6 +5,7 @@
 
 ### Added
 
+- 🔊 Update logs [[7a2ab32](https://github.com/Sakoutecher/portfolio-react/commit/7a2ab3242cb9dc2b5b27b1e9e69ef0700ad5cfc6)]
 - 🔊 Update logs [[da1bc8a](https://github.com/Sakoutecher/portfolio-react/commit/da1bc8a1d60400357c480aada9bd247aa448539a)]
 - 🔊 Update logs [[91258f3](https://github.com/Sakoutecher/portfolio-react/commit/91258f3527c2c290f66327332cd0fb50ab69986f)]
 - ✨ Add a switch for the language [[0f6c916](https://github.com/Sakoutecher/portfolio-react/commit/0f6c916959d5033b4ae2ff99001d3aedb1480f69)]
@@ -53,6 +54,7 @@
 
 ### Changed
 
+- 🍱 Add a new techno (react-native) [[8a44a96](https://github.com/Sakoutecher/portfolio-react/commit/8a44a96fb280db6a0e5a009763bf0cbaabe77053)]
 - 🍱 Add a new project (bookshelf-angular) [[2ba4043](https://github.com/Sakoutecher/portfolio-react/commit/2ba404316104c26d0dd64c41ce5f31a95ce5fd12)]
 - 🍱 Add a new project (angular-match) [[a62986c](https://github.com/Sakoutecher/portfolio-react/commit/a62986cfafec15f2ecae4af3c30f1808c0db1fb5)]
 - 🍱 Add a new project (todo-react-native) [[66da32c](https://github.com/Sakoutecher/portfolio-react/commit/66da32cc399434fd74aa51928a97300d6d80b4b6)]
