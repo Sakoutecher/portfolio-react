@@ -14,7 +14,7 @@ function ShowProject({ styles, colors, theme, language }) {
         usePage = portfolio
     } else if (page.page === 'cuicuitedays') {
         usePage = cuicuitedays
-    } else if (page.page === 'colorGuess') {
+    } else if (page.page === 'color-guess') {
         usePage = colorGuess 
     } else if (page.page === 'todo-react-native') {
         usePage = todoReactNative
