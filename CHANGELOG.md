@@ -1,10 +1,11 @@
 # Changelog
 
 <a name="0.1.0"></a>
-## 0.1.0 (2022-12-02)
+## 0.1.0 (2022-12-09)
 
 ### Added
 
+- 🔊 Update logs [[da1bc8a](https://github.com/Sakoutecher/portfolio-react/commit/da1bc8a1d60400357c480aada9bd247aa448539a)]
 - 🔊 Update logs [[91258f3](https://github.com/Sakoutecher/portfolio-react/commit/91258f3527c2c290f66327332cd0fb50ab69986f)]
 - ✨ Add a switch for the language [[0f6c916](https://github.com/Sakoutecher/portfolio-react/commit/0f6c916959d5033b4ae2ff99001d3aedb1480f69)]
 - 🔊 Update logs [[8f401bc](https://github.com/Sakoutecher/portfolio-react/commit/8f401bcd64db3a0a3db1667bb6c03f90de9f612b)]
@@ -52,6 +53,10 @@
 
 ### Changed
 
+- 🍱 Add a new project (bookshelf-angular) [[2ba4043](https://github.com/Sakoutecher/portfolio-react/commit/2ba404316104c26d0dd64c41ce5f31a95ce5fd12)]
+- 🍱 Add a new project (angular-match) [[a62986c](https://github.com/Sakoutecher/portfolio-react/commit/a62986cfafec15f2ecae4af3c30f1808c0db1fb5)]
+- 🍱 Add a new project (todo-react-native) [[66da32c](https://github.com/Sakoutecher/portfolio-react/commit/66da32cc399434fd74aa51928a97300d6d80b4b6)]
+- 🍱 Add a new techno icon Angular [[3b50bfa](https://github.com/Sakoutecher/portfolio-react/commit/3b50bfa664c3a93f9c68bb83d0a68fb553c7a464)]
 - 💬 Update link linkedin [[6ce3b0d](https://github.com/Sakoutecher/portfolio-react/commit/6ce3b0d506cb6c2cc8f2e8b5a1d2a99ddd54b9a7)]
 - 🎨 Change order of the timelines [[046783d](https://github.com/Sakoutecher/portfolio-react/commit/046783d74c7c126d57874e76cc4c0ff917594193)]
 - 💬 Add a new timeline [[6006e08](https://github.com/Sakoutecher/portfolio-react/commit/6006e08d8877a8ff827170f0c91bb5dfe59966ad)]
@@ -107,6 +112,7 @@
 
 ### Fixed
 
+- 🐛 Show more button for the color guess doesn&#x27;t show the good project [[f4630e3](https://github.com/Sakoutecher/portfolio-react/commit/f4630e376fbfc3a84758869da02aac555dc30b4b)]
 - 🐛 Fix links in the description [[3e1a8d7](https://github.com/Sakoutecher/portfolio-react/commit/3e1a8d7b96113815d51f15cfa24547d2a8be2ef9)]
 - 🐛 Now the img of the portfolio project will change with the theme of the site for better colors contrast [[0f0d9ff](https://github.com/Sakoutecher/portfolio-react/commit/0f0d9ff8a421772e92d14efea6c998957e104349)]
 - 🐛 Change color for the code source link [[a75a4a4](https://github.com/Sakoutecher/portfolio-react/commit/a75a4a4e97c98c0003a9a8d11ac08cfb60853a5a)]
