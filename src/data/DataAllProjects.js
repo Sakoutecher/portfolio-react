@@ -130,4 +130,36 @@ const jungleHouse = {
     descriptionFr: `Lors de mon apprentissage au framework React.js, j'ai suivis une formations sur le site de OpenClassRoom, lors de cette formation j'ai du réaliser ce site à l'aide de l'instructeur. Cela m'as permis de voir les bases de ce framework. J'ai donc utiliser pour ce projet React.js, Css, Javascript, Prettier et Eslint.`
 }
 
-export {portfolio, cuicuitedays, colorGuess, jungleHouse}
+const todoReactNative = {
+    namePage: 'todo-react-native', 
+    img: '../photo-projects/todo-react-native.png',
+    title: 'Todo-App',
+    source: true,
+    sourceCode: 'https://github.com/Sakoutecher/todo-react-native',
+    techno : [
+        {
+            alt: 'react-native',
+            src: '../techno-icons/React.png'
+        },
+    
+    
+        {
+            alt: 'js',
+            src: '../techno-icons/JS.png'
+        },
+    
+        {
+            alt: 'eslint',
+            src: '../techno-icons/ESLint.png'
+        },
+    
+        {
+            alt: 'prettier',
+            src: '../techno-icons/Prettier.png'
+        }
+    ],
+    descriptionEn: `This is a small application of Todo List that I realized using the framework React Native, I took inspiration from a tutorial on Youtube in order to realize this application. For this project I used React Native, Javascript, Eslint and Prettier.`,
+    descriptionFr: `Ceci est une petite application de Todo List que j'ai réalisé à l'aide du framework React Native, je me suis inspirer d'un tutoriel sur Youtube afin de réaliser cette application. Pour ce projet j'ai utilisé React Native, Javascript, Eslint et Prettier.`
+}
+
+export {portfolio, cuicuitedays, colorGuess, jungleHouse, todoReactNative}

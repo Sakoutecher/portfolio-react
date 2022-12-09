@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Title from '../components/Title'
 import Text from '../components/Text'
 import { FaGithub } from "react-icons/fa";
-import { portfolio, cuicuitedays, colorGuess, jungleHouse } from '../data/DataAllProjects'
+import { portfolio, cuicuitedays, colorGuess, jungleHouse, todoReactNative } from '../data/DataAllProjects'
 import uuid from 'react-uuid'
 
 function ShowProject({ styles, colors, theme, language }) {
@@ -16,6 +16,8 @@ function ShowProject({ styles, colors, theme, language }) {
         usePage = cuicuitedays
     } else if (page.page === 'colorGuess') {
         usePage = colorGuess 
+    } else if (page.page === 'todo-react-native') {
+        usePage = todoReactNative
     } else {
         usePage = jungleHouse
     }
