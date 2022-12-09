@@ -140,6 +140,12 @@ const TechnoLinksFramework = [
         link: 'https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white',
         star: '1',
     },
+
+    {
+        title: 'react-native',
+        link: 'https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB',
+        star: '1',
+    },
 ]
 
 const TechnoLinksLanguages = [
