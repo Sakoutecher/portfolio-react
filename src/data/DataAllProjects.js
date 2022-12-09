@@ -162,4 +162,41 @@ const todoReactNative = {
     descriptionFr: `Ceci est une petite application de Todo List que j'ai réalisé à l'aide du framework React Native, je me suis inspirer d'un tutoriel sur Youtube afin de réaliser cette application. Pour ce projet j'ai utilisé React Native, Javascript, Eslint et Prettier.`
 }
 
-export {portfolio, cuicuitedays, colorGuess, jungleHouse, todoReactNative}
+const angularMatch = {
+    namePage: 'angular-match', 
+    img: '../photo-projects/match-angular.png',
+    title: 'App-Match',
+    source: true,
+    sourceCode: 'https://github.com/Sakoutecher/match-angular-school',
+    techno : [
+        {
+            alt: 'angular',
+            src: '../techno-icons/angular.png'
+        },
+    
+    
+        {
+            alt: 'ts',
+            src: '../techno-icons/TS.png'
+        },
+    
+        {
+            alt: 'eslint',
+            src: '../techno-icons/ESLint.png'
+        },
+    
+        {
+            alt: 'prettier',
+            src: '../techno-icons/Prettier.png'
+        },
+
+        {
+            alt: 'sass',
+            src: '../techno-icons/sass.png'
+        },
+    ],
+    descriptionEn: `Application that allows to display the results of three football matches via an api. This project was carried out during my Angular learning course. For this project I used Angular, Typescript, Eslint, Prettier and Sass.`,
+    descriptionFr: `Application qui permet d'afficher les résultats de trois matchs de football via une api. Ce projet à été réaliser durant mon cours d'apprentissage au framework Angular. Pour ce projet j'ai utilisé Angular, Typescript, Eslint, Prettier et Sass.`
+}
+
+export {portfolio, cuicuitedays, colorGuess, jungleHouse, todoReactNative, angularMatch}
