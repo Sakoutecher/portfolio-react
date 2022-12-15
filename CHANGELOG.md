@@ -1,10 +1,11 @@
 # Changelog
 
 <a name="0.1.0"></a>
-## 0.1.0 (2022-12-09)
+## 0.1.0 (2022-12-15)
 
 ### Added
 
+- 🔊 Update logs [[2e3ca82](https://github.com/Sakoutecher/portfolio-react/commit/2e3ca82f7d6752c70f27eff0f36d1b7af7427880)]
 - 🔊 Update logs [[7a2ab32](https://github.com/Sakoutecher/portfolio-react/commit/7a2ab3242cb9dc2b5b27b1e9e69ef0700ad5cfc6)]
 - 🔊 Update logs [[da1bc8a](https://github.com/Sakoutecher/portfolio-react/commit/da1bc8a1d60400357c480aada9bd247aa448539a)]
 - 🔊 Update logs [[91258f3](https://github.com/Sakoutecher/portfolio-react/commit/91258f3527c2c290f66327332cd0fb50ab69986f)]
@@ -54,6 +55,7 @@
 
 ### Changed
 
+- 🍱 Add new project (socket-chat-app) [[193ca88](https://github.com/Sakoutecher/portfolio-react/commit/193ca88c8823e047ccd13d688790226a0629efb3)]
 - 🍱 Add a new techno (react-native) [[8a44a96](https://github.com/Sakoutecher/portfolio-react/commit/8a44a96fb280db6a0e5a009763bf0cbaabe77053)]
 - 🍱 Add a new project (bookshelf-angular) [[2ba4043](https://github.com/Sakoutecher/portfolio-react/commit/2ba404316104c26d0dd64c41ce5f31a95ce5fd12)]
 - 🍱 Add a new project (angular-match) [[a62986c](https://github.com/Sakoutecher/portfolio-react/commit/a62986cfafec15f2ecae4af3c30f1808c0db1fb5)]
