@@ -1,10 +1,11 @@
 # Changelog
 
 <a name="0.1.0"></a>
-## 0.1.0 (2022-12-15)
+## 0.1.0 (2023-01-04)
 
 ### Added
 
+- 🔊 Update logs [[aa14dd8](https://github.com/Sakoutecher/portfolio-react/commit/aa14dd898e2e1a771b1d26f54022d13210a84eee)]
 - 🔊 Update logs [[4dcecfb](https://github.com/Sakoutecher/portfolio-react/commit/4dcecfb13653abc0b2ed7b61829de7d3ca825d39)]
 - 🔊 Update logs [[2e3ca82](https://github.com/Sakoutecher/portfolio-react/commit/2e3ca82f7d6752c70f27eff0f36d1b7af7427880)]
 - 🔊 Update logs [[7a2ab32](https://github.com/Sakoutecher/portfolio-react/commit/7a2ab3242cb9dc2b5b27b1e9e69ef0700ad5cfc6)]
@@ -56,6 +57,9 @@
 
 ### Changed
 
+- 🍱 Add new technos (ESLint and Prettier) [[592b39b](https://github.com/Sakoutecher/portfolio-react/commit/592b39bb4d4299dc1089e3d938198c26274b183a)]
+- ⬆️ Bump json5 from 1.0.1 to 1.0.2 [[a8042b5](https://github.com/Sakoutecher/portfolio-react/commit/a8042b5694cd909f63177c66dae88141d8fd7871)]
+- ⬆️ Bump loader-utils from 2.0.3 to 2.0.4 [[8ad0e59](https://github.com/Sakoutecher/portfolio-react/commit/8ad0e59f1f52ba10bf3269528a2be1c7b90fb196)]
 - 🍱 Add new technos (expressjs, socket.io) [[7cdb636](https://github.com/Sakoutecher/portfolio-react/commit/7cdb6363816abddd42023bb1647fafe5177d71ee)]
 - 🍱 Add new project (socket-chat-app) [[193ca88](https://github.com/Sakoutecher/portfolio-react/commit/193ca88c8823e047ccd13d688790226a0629efb3)]
 - 🍱 Add a new techno (react-native) [[8a44a96](https://github.com/Sakoutecher/portfolio-react/commit/8a44a96fb280db6a0e5a009763bf0cbaabe77053)]
@@ -128,6 +132,8 @@
 
 ### Miscellaneous
 
+-  Merge pull request [#2](https://github.com/Sakoutecher/portfolio-react/issues/2) from Sakoutecher/dependabot/npm_and_yarn/json5-1.0.2 [[3d18c9c](https://github.com/Sakoutecher/portfolio-react/commit/3d18c9c11e99655fa1238de92a7100176293a075)]
+-  Merge pull request [#1](https://github.com/Sakoutecher/portfolio-react/issues/1) from Sakoutecher/dependabot/npm_and_yarn/loader-utils-2.0.4 [[3d5c88a](https://github.com/Sakoutecher/portfolio-react/commit/3d5c88a86d5320093afcca5f7d1d8c603792bed3)]
 - 🌐 Add fr on projects [[711496f](https://github.com/Sakoutecher/portfolio-react/commit/711496f2a7d506a5031bef20feaafce039d7cbdc)]
 - 🌐 Add fr on timeline [[ccb138a](https://github.com/Sakoutecher/portfolio-react/commit/ccb138acf54994e25117c6effa39fcac57e1993f)]
 - 🌐 Add fr on hardware [[d24a151](https://github.com/Sakoutecher/portfolio-react/commit/d24a15142941781859378902a7f93d129d0ed3bb)]
