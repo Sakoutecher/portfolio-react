@@ -157,6 +157,18 @@ const TechnoLinksFramework = [
     title: 'socket.io',
     link: 'https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white',
     star: '1'
+  },
+
+  {
+    title: 'eslint',
+    link: 'https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white',
+    star: '2'
+  },
+
+  {
+    title: 'prettier',
+    link: 'https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E',
+    star: '2'
   }
 ]
 
